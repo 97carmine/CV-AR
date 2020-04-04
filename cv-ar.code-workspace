@@ -1,0 +1,66 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "(Windows) Abrir en Firefox",
+			"command": "explorer",
+			"windows": {
+				"command": "C:/Program Files/Mozilla Firefox/firefox.exe"
+			},
+			"args": [
+				"${file}"
+			],
+			"presentation": {
+				"reveal": "never"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "(Linux) Abrir en Firefox",
+			"command": "explorer",
+			"windows": {
+				"command": "/usr/bin/firefox"
+			},
+			"args": [
+				"${file}"
+			],
+			"presentation": {
+				"reveal": "never"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "(Windows) Abrir en Chrome",
+			"command": "explorer",
+			"windows": {
+				"command": "C:/Program Files/Google/Chrome/Application/chrome.exe"
+			},
+			"args": [
+				"${file}"
+			],
+			"presentation": {
+				"reveal": "never"
+			},
+			"problemMatcher": []
+		}
+	],
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"extensions": {
+		"recommendations": [
+			"dbaeumer.vscode-eslint",
+			"felixfbecker.php-debug",
+		]
+	},
+	"settings": {
+		"eslint.format.enable": true,
+		"eslint.validate": [
+			"javascript",
+		]
+	},
+}
