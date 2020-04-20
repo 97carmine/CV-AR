@@ -6,5 +6,16 @@ body {
 }
 .foto{
     width: 85%;
-    height: 375px;
+    height: 400px;
+}
+.titulo{
+    font-size: 70px;
+    font-weight: bold;
+}
+.subtitulo{
+    font-size: 50px;
+    font-weight: bold;
+}
+.argumento{
+    font-size: 19px;
 }
