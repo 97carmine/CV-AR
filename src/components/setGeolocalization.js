@@ -1,5 +1,5 @@
 import { checkHTTPS } from "./checkHTTPS.js";
-import { detectLanguaje } from "./detect_languaje.js";
+import { detectLanguaje } from "./detectLanguaje.js";
 
 export function getLocation() {
     if ( navigator.geolocation ) {
