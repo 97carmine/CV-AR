@@ -9,11 +9,12 @@ module.exports = {
     "jquery",
   ],
   globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly'
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly"
   },
   parserOptions: {
-    ecmaVersion: 2018
+    ecmaVersion: 2018,
+    sourceType: "module",
   },
   rules: {
     "semi": ["error", "always"],
