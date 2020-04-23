@@ -9,7 +9,7 @@ export function getLocation() {
             } else {
                 $( ".text_error" ).text( "You need HTTPS to access geolocation." );
             }
-            $( ".alert" ).removeAttr( "hidden" );
+            $( ".alert" ).removeAttr( "style" );
         } else {
             navigator.geolocation.getCurrentPosition(  obtainData, getError );
         }
@@ -19,7 +19,7 @@ export function getLocation() {
         } else {
             $( ".text_error" ).text( "Geolocation is not supported by this browser." );
         }
-        $( ".alert" ).removeAttr( "hidden" );
+        $( ".alert" ).removeAttr( "style" );
     }
 }
 
@@ -56,7 +56,7 @@ function getError( error ) {
             }
             break;
     }
-    $( ".alert" ).removeAttr( "hidden" );
+    $( ".alert" ).removeAttr( "style" );
 }
 
 
