@@ -47,12 +47,12 @@
         <article class="text-center">
             <h1 class="p-4">FORMULARIO</h1>
             <p class="p-3">Rellena las opciones del formulario, las que poseen un asterísco son obligatorias</p>
-            <div class="alert alert-danger alert-dismissible fade show" hidden>
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <div class="alert alert-danger" style="opacity: 0; display: none;">
                 <span class="text_error"></span>
             </div>
 
             <form class="text-left" action="#" method="post">
+                <input type="hidden" name="design" max="3" required>
                 <legend>DATOS PERSONALES</legend>
                 <fieldset>
                     <div class="form-row">
@@ -74,7 +74,7 @@
                                 d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z" />
                             <circle cx="8" cy="4.5" r="1" />
                         </svg>
-                        Si quieres que se geolocalice tu posición, haz click <span onclick="getLocation()">aquí</span>.
+                        Si quieres que se geolocalice tu posición, haz click <span class="start-geolocalization" onclick="getLocation()">aquí</span>.
                     </div>
 
                     <div class="form-group">
@@ -167,9 +167,8 @@
         </article>
     </section>
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>

@@ -1,4 +1,4 @@
-import { detectLanguaje } from "../components/detect_languaje.js";
+import { detectLanguaje } from "../components/detectLanguaje.js";
 
 if ( detectLanguaje() === "es-ES" ) {
     location.href = "es/index.html";
