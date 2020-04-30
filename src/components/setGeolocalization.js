@@ -59,40 +59,29 @@ function getError( error ) {
     $( ".alert" ).removeAttr( "style" );
 }
 
-
 function obtainData( position ) {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
 
     var URL = `https://nominatim.openstreetmap.org/reverse?format=xml&lat=${latitude}&lon=${longitude}&accept-language=<browser language string>`;
 
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if ( this.readyState === 4 && this.status === 200 ) {
-            writeForm( this );
+    $.ajax( { url: URL, method: "GET", dataType: "XML", success: function( result ) {
+        $( result ).find( "addressparts" ).each( function() {
+            if ( $( this ).find( "road" ).length > 0 ) {
+                $( this ).find( "road" ).each( function() {
+                    $( "input[name ='home']" ).val( $( this ).text() );
+                } );
+            }
+            $( this ).find( "city" ).each( function() {
+                 $( "input[name ='city']" ).val( $( this ).text() );
+            } );
+            $( this ).find( "country" ).each( function() {
+                $( "input[name ='country']" ).val( $( this ).text() );
+            } );
+            $( this ).find( "postcode" ).each( function() {
+                $( "input[name ='zip']" ).val( $( this ).text() );
+            } );
+        } );
         }
-    };
-    xhttp.open( "GET", URL, true );
-    xhttp.send();
-}
-
-function writeForm( xml ) {
-    var xmlDoc = xml.responseXML;
-    var xmlData = xmlDoc.getElementsByTagName( "addressparts" );
-    for ( var i = 0; i < xmlData.length; i++ ) {
-        if ( xmlData[ i ].getElementsByTagName( "road" ).length > 0 ) {
-            $( "input[name ='home']" ).val(
-                xmlData[ i ].getElementsByTagName( "road" )[ 0 ].childNodes[ 0 ].nodeValue
-                );
-        }
-        $( "input[name ='city']" ).val(
-            xmlData[ i ].getElementsByTagName( "city" )[ 0 ].childNodes[ 0 ].nodeValue
-            );
-        $( "input[name ='country']" ).val(
-            xmlData[ i ].getElementsByTagName( "country" )[ 0 ].childNodes[ 0 ].nodeValue
-            );
-        $( "input[name ='zip']" ).val(
-            xmlData[ i ].getElementsByTagName( "postcode" )[ 0 ].childNodes[ 0 ].nodeValue
-            );
-    }
+    } );
 }
