@@ -11,8 +11,6 @@ if ( obtainNum() >= 1 && obtainNum() <= 3 ) {
 
 $( ".start-geolocalization" ).click( function() {
     window.setTimeout( function() {
-        $( ".alert" ).fadeTo( 500, 0 ).slideUp( 500, function() {
-            $( ".alert" ).hide();
-        } );
+        $( ".alert" ).fadeOut( "slow" );
     }, 3000 );
 } );
