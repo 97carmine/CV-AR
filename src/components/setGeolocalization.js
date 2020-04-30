@@ -59,7 +59,6 @@ function getError( error ) {
     $( ".alert" ).removeAttr( "style" );
 }
 
-
 function obtainData( position ) {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
