@@ -47,7 +47,7 @@
         <article class="text-center">
             <h1 class="p-4">FORMULARIO</h1>
             <p class="p-3">Rellena las opciones del formulario, las que poseen un asterísco son obligatorias</p>
-            <div class="alert alert-danger" style="opacity: 0; display: none;">
+            <div class="alert alert-danger" style="display: none;">
                 <span class="text_error"></span>
             </div>
 
@@ -74,9 +74,9 @@
                                 d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z" />
                             <circle cx="8" cy="4.5" r="1" />
                         </svg>
-                        Si quieres que se geolocalice tu posición, haz click <span class="start-geolocalization" onclick="getLocation()">aquí</span>.
+                        Si quieres que se geolocalice tu posición, haz click <span
+                            id="start-geolocalization">aquí</span>.
                     </div>
-
                     <div class="form-group">
                         <label for="home">Domicilio *</label>
                         <input type="text" class="form-control" name="home" placeholder="Calle falsa 123" required>
