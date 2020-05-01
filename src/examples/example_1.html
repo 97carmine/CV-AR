@@ -6,11 +6,16 @@
 
 <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
-        <a-marker type="pattern" url="../data/example_pattern_1.patt">
-            <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
-            <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow></a-sphere>
-            <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
-            <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+        <a-marker preset="hiro">
+                <a-entity id="user" text="align: center; value: RICARDO MILOS; width: 4; tabSize: 6" position="0 2.07976 0">
+                </a-entity>
+                <a-image id="photo" position="0 3 0" src="user_example_1.jpg" material="" geometry="" visible="">
+                </a-image>
+                <a-entity text="value: Calle falsa 123, 28044, Madrid, Hispania; width: 2" position="0 1.81743 0" id="home">
+                </a-entity>
+                <a-entity id="phone" text="value: 696596590; width: 2" position="0 1.64226 0">
+                </a-entity>
+                <a-entity position="0 1.47623 0" text="value: ricardo_milos@example.com; width: 2" id="email" link="href: mailto:ricardo_milos@example.com; title: Send email"></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
