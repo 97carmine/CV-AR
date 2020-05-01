@@ -7,7 +7,7 @@ if ( obtainNum() >= 1 && obtainNum() <= 3 ) {
     location.href = "templates.html";
 }
 
-$( ".start-geolocalization" ).click( function() {
+$( "#start-geolocalization" ).click( function() {
     getLocation();
     window.setTimeout( function() {
         $( ".alert" ).fadeOut( "slow" );
