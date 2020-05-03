@@ -58,11 +58,11 @@
                     <div class="form-row">
                         <div class="form-group col-md">
                             <label for="first_name">Nombre *</label>
-                            <input type="text" class="form-control" name="first_name" placeholder="Ricardo" required>
+                            <input type="text" class="form-control" name="first_name" required>
                         </div>
                         <div class="form-group col-md">
                             <label for="last_name">Apellidos *</label>
-                            <input type="text" class="form-control" name="last_name" placeholder="Milos" required>
+                            <input type="text" class="form-control" name="last_name" required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -79,16 +79,16 @@
                     </div>
                     <div class="form-group">
                         <label for="home">Domicilio *</label>
-                        <input type="text" class="form-control" name="home" placeholder="Calle falsa 123" required>
+                        <input type="text" class="form-control" name="home" required>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-6 col-md-12">
                             <label for="city">Ciudad *</label>
-                            <input type="text" class="form-control" name="city" placeholder="Madrid" required>
+                            <input type="text" class="form-control" name="city" required>
                         </div>
                         <div class="form-group col-lg-4 col-md-8">
                             <label for="country">País *</label>
-                            <input type="text" class="form-control" name="country" placeholder="España" required>
+                            <input type="text" class="form-control" name="country" required>
                         </div>
                         <div class="form-group col-lg-2 col-md-4">
                             <label for="zip">Código postal *</label>
@@ -116,8 +116,106 @@
                         </div>
                         <div class="form-group col-md">
                             <label for="email">Correo electrónico *</label>
-                            <input type="email" class="form-control" id="email" placeholder="ejemplo@ejemplo.com"
-                                required>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                    </div>
+                </fieldset>
+                <legend>EXPERIENCIA PROFESIONAL</legend>
+                <fieldset>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="date_job_start">Indique la fecha de inicio del trabajo</label>
+                            <input type="date" class="form-control check-start-date" name="date_job_start"
+                                min="1900-01-01">
+                            <div class="invalid-feedback">
+                                La fecha introducida es superior a la fecha del fin
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="date_job_end">Indique la fecha de fin del trabajo</label>
+                                <input type="date" class="form-control check-end-date" name="date_job_end"
+                                    min="1900-01-01">
+                                <div class="invalid-feedback">
+                                    La fecha introducida es anterior a la fecha del inicio
+                                </div>
+                            </div>
+                            <div class="form-group custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="current_job">
+                                <label class="custom-control-label" for="current_job">Trabajo actual</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="job">Puesto o cargo ocupados</label>
+                            <input type="text" class="form-control" name="job">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md">
+                            <label for="first_name">Nombre del empleador</label>
+                            <input type="text" class="form-control" name="employer_name">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="last_name">Ciudad del empleador</label>
+                            <input type="text" class="form-control" name="employer_city">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="last_name">País del empleador</label>
+                            <input type="text" class="form-control" name="employer_country">
+                        </div>
+                    </div>
+                </fieldset>
+                <legend>EDUCACIÓN Y FORMACIÓN</legend>
+                <fieldset>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="date_education_start">Indique la fecha de inicio del estudio</label>
+                            <input type="date" class="form-control check-start-date" name="date_education_start"
+                                min="1900-01-01">
+                            <div class="invalid-feedback">
+                                La fecha introducida es superior a la fecha del fin
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="date_education_end">Indique la fecha de fin del estudio</label>
+                                <input type="date" class="form-control check-end-date" name="date_education_end"
+                                    min="1900-01-01">
+                                <div class="invalid-feedback">
+                                    La fecha introducida es anterior a la fecha del inicio
+                                </div>
+                            </div>
+                            <div class="form-group custom-control custom-checkbox">
+                                <input class="custom-control-input" type="checkbox" id="current_education">
+                                <label class="custom-control-label" for="current_education">Estudio actual</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="title">Título de la cualificación obtenida</label>
+                            <input type="text" class="form-control" name="title">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-row col">
+                            <div class="form-group col-md-12">
+                                <label for="school_name">Nombre de la organización que impartió su educación</label>
+                                <input type="text" class="form-control" name="school_name">
+                            </div>
+                            <div class="form-group col-md">
+                                <label for="school_city">Localidad de la organización</label>
+                                <input type="text" class="form-control" name="school_city">
+                            </div>
+                            <div class="form-group col-md">
+                                <label for="school_country">País de la organización</label>
+                                <input type="text" class="form-control" name="school_country">
+                            </div>
+                        </div>
+                        <div class="form-row col">
+                            <div class="form-group col-md">
+                                <label for="acquired_skills">Principales materias cursadas y competencias profesionales
+                                    adquiridas</label>
+                                <textarea class="form-control" rows="4" name="acquired_skills"></textarea>
+                            </div>
                         </div>
                     </div>
                 </fieldset>
@@ -161,8 +259,11 @@
                         <textarea class="form-control" rows="5" name="other_habilities"></textarea>
                     </div>
                 </fieldset>
-                <button type="submit" class="btn btn-outline-dark">Generar currículum</button>
-                <button type="reset" class="btn btn-outline-*">Limpiar formulario</button>
+                
+                <fieldset>
+                    <button type="submit" class="btn btn-outline-dark">Generar currículum</button>
+                    <button type="reset" class="btn btn-outline-*">Limpiar formulario</button>                    
+                </fieldset>
             </form>
         </article>
     </section>
