@@ -63,23 +63,23 @@ function obtainData( position ) {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
 
-    var URL = `https://nominatim.openstreetmap.org/reverse?format=xml&lat=${latitude}&lon=${longitude}&accept-language=<browser language string>`;
+    var URL = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${latitude}&lon=${longitude}&accept-language=<browser language string>`;
 
-    $.ajax( { url: URL, method: "GET", dataType: "XML", success: function( result ) {
+    $.ajax( { url: URL, method: "GET", dataType: "json", success: function( result ) {
         $( result ).find( "addressparts" ).each( function() {
             if ( $( this ).find( "road" ).length > 0 ) {
                 $( this ).find( "road" ).each( function() {
-                    $( "input[name ='home']" ).val( $( this ).text() );
+                    $( "input[name = 'home']" ).val( $( this ).text() );
                 } );
             }
             $( this ).find( "city" ).each( function() {
-                 $( "input[name ='city']" ).val( $( this ).text() );
+                 $( "input[name = 'city']" ).val( $( this ).text() );
             } );
             $( this ).find( "country" ).each( function() {
-                $( "input[name ='country']" ).val( $( this ).text() );
+                $( "input[name = 'country']" ).val( $( this ).text() );
             } );
             $( this ).find( "postcode" ).each( function() {
-                $( "input[name ='zip']" ).val( $( this ).text() );
+                $( "input[name = 'zip']" ).val( $( this ).text() );
             } );
         } );
         }
