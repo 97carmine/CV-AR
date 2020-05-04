@@ -63,25 +63,34 @@ function obtainData( position ) {
     var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
 
-    var URL = `https://nominatim.openstreetmap.org/reverse?format=xml&lat=${latitude}&lon=${longitude}&accept-language=<browser language string>`;
+    var URL = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${latitude}&lon=${longitude}&accept-language=<browser language string>`;
 
-    $.ajax( { url: URL, method: "GET", dataType: "XML", success: function( result ) {
-        $( result ).find( "addressparts" ).each( function() {
-            if ( $( this ).find( "road" ).length > 0 ) {
-                $( this ).find( "road" ).each( function() {
-                    $( "input[name ='home']" ).val( $( this ).text() );
-                } );
+    $.ajax( { url: URL, method: "GET", dataType: "json", success: function( file ) {
+        if ( $( file.address ).find( "road" ).length > 0 ) {
+            $( "input[name='home']" ).val( file.address.road );
+        } else {
+            if ( detectLanguaje() === "es-ES" ) {
+                $( ".text_error" ).text(
+                    "Ha habido un error al obtener la información de la calle." );
+            } else {
+                $( ".text_error" ).text(
+                    "There was an error obtaining the street information." );
             }
-            $( this ).find( "city" ).each( function() {
-                 $( "input[name ='city']" ).val( $( this ).text() );
-            } );
-            $( this ).find( "country" ).each( function() {
-                $( "input[name ='country']" ).val( $( this ).text() );
-            } );
-            $( this ).find( "postcode" ).each( function() {
-                $( "input[name ='zip']" ).val( $( this ).text() );
-            } );
-        } );
+            $( ".alert" ).show();
+        }
+        $( "input[name = 'city']" ).val( file.address.city );
+        $( "input[name = 'country']" ).val( file.address.country );
+        $( "input[name = 'zip']" ).val( file.address.postcode );
+        }, error: function( error ) {
+            console.log( error.responseText );
+            if ( detectLanguaje() === "es-ES" ) {
+                $( ".text_error" ).text(
+                    "Ha habido un error al obtener la información de OpenStreetMaps." );
+            } else {
+                $( ".text_error" ).text(
+                    "There was an error getting the information from OpenStreetMaps." );
+            }
+            $( ".alert" ).show();
         }
     } );
 }
