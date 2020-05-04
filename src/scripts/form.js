@@ -1,12 +1,14 @@
 import { getLocation } from "../components/setGeolocalization.js";
-import { obtainNum } from "../components/obtainNumDesign.js";
 import { compareDates } from "../components/compareDates.js";
 
-if ( obtainNum() >= 1 && obtainNum() <= 3 ) {
-    $( "input[name = 'design']" ).val( obtainNum() );
-} else {
-    location.href = "templates.html";
+if ( $( "input[name = 'design']" ).val() < 1 ||
+    $( "input[name = 'design']" ).val() > 3 ) {
+    location.href = "templates.php";
 }
+
+$( "input[name='home']" ).change( function() {
+    $( this ).removeClass( "is-invalid" );
+} );
 
 $( "#start-geolocalization" ).click( function() {
     getLocation();
