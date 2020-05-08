@@ -127,7 +127,7 @@
                 <fieldset>
                     <div class="form-row">
                         <div class="form-group col-md-3">
-                            <label for="date_job_start"><?=_("Enter the work start date")?></label>
+                            <label for="date_job_start"><?=_("Enter the job start date")?></label>
                             <input type="date" class="form-control check-start-date" name="date_job_start"
                                 min="1900-01-01">
                             <div class="invalid-feedback">
@@ -136,7 +136,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="date_job_end"><?=_("Indicate the end date of the work")?></label>
+                                <label for="date_job_end"><?=_("Indicate the end date of the jobs")?></label>
                                 <input type="date" class="form-control check-end-date" name="date_job_end"
                                     min="1900-01-01">
                                 <div class="invalid-feedback">

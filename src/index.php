@@ -49,9 +49,9 @@
         <article class="jumbotron jumbotron-fluid">
             <div class="container text-center">
                 <h1><?=_("HELLO")?></h1>
-                <p><?=_("Welcome to the world's first augmented reality resume builder.")?></p>
+                <p><?=_("Welcome to the world's first augmented reality resume builder")?></p>
                 <hr>
-                <p><?=_("Designed by Axel Gabriel Calle Granda and Adrián Rodríguez Ballesteros as a final degree project in the Jose Ramón Otero cooperative.")?></p>
+                <p><?=_("Designed by Axel Gabriel Calle Granda and Adrián Rodríguez Ballesteros as a final degree project in the Jose Ramón Otero cooperative")?></p>
             </div>
         </article>
         <div class="container">
