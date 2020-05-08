@@ -1,26 +1,26 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE php>
+<php lang="<?php echo (substr($_SERVER["HTTP_ACCEPT_LANGUAGE"],0,2))?>">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Formulario</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../img/favicon/manifest.json">
+    <title><?=_("Form")?></title>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -30,38 +30,38 @@
 
 <body>
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">CV-AR</a>
+        <a class="navbar-brand" href="index.php">CV-AR</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-                <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                <a href="templates.html" class="nav-item nav-link active">Plantillas</a>
-                <a href="about.html" class="nav-item nav-link active">Acerca de</a>
+                <a href="index.php" class="nav-item nav-link active"><?=_("Start")?></a>
+                <a href="templates.php" class="nav-item nav-link active"><?=_("Templates")?></a>
+                <a href="about.php" class="nav-item nav-link active"><?=_("About")?></a>
             </div>
         </div>
     </nav>
     <section class="container">
         <article class="text-center">
-            <h1 class="p-4">FORMULARIO</h1>
-            <p class="p-3">Rellena las opciones del formulario, las que poseen un asterísco son obligatorias</p>
+            <h1 class="p-4"><?=_("FORM")?></h1>
+            <p class="p-3"><?=_("Fill in the options on the form, those with an asterisk are mandatory")?></p>
             <div class="alert alert-danger" style="display: none;">
                 <span class="text_error"></span>
             </div>
 
             <form class="text-left" action="#" method="post">
-                <input type="hidden" name="design" max="3" required>
-                <legend>DATOS PERSONALES</legend>
+                <input type="hidden" name="design" max="3" value="<?php echo $_GET["design"] ?>" required>
+                <legend><?=_("PERSONAL INFORMATION")?></legend>
                 <fieldset>
                     <div class="form-row">
                         <div class="form-group col-md">
-                            <label for="first_name">Nombre *</label>
+                            <label for="first_name"><?=_("First name")?> *</label>
                             <input type="text" class="form-control" name="first_name" required>
                         </div>
                         <div class="form-group col-md">
-                            <label for="last_name">Apellidos *</label>
+                            <label for="last_name"><?=_("Last name")?> *</label>
                             <input type="text" class="form-control" name="last_name" required>
                         </div>
                     </div>
@@ -78,34 +78,37 @@
                             id="start-geolocalization">aquí</span>.
                     </div>
                     <div class="form-group">
-                        <label for="home">Domicilio *</label>
+                        <label for="home"><?=_("Home")?> *</label>
                         <input type="text" class="form-control" name="home" required>
+                        <div class="invalid-feedback">
+                            <?=_("There was an error obtaining the street information")?>
+                        </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-6 col-md-12">
-                            <label for="city">Ciudad *</label>
+                            <label for="city"><?=_("City")?> *</label>
                             <input type="text" class="form-control" name="city" required>
                         </div>
                         <div class="form-group col-lg-4 col-md-8">
-                            <label for="country">País *</label>
+                            <label for="country"><?=_("Country")?> *</label>
                             <input type="text" class="form-control" name="country" required>
                         </div>
                         <div class="form-group col-lg-2 col-md-4">
-                            <label for="zip">Código postal *</label>
-                            <input type="text" class="form-control" name="zip" required>
+                            <label for="zip"><?=_("Postal Code")?> *</label>
+                            <input type="text" class="form-control" name="postal_code" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md">
-                            <label for="number_phone">Teléfono: *</label>
+                            <label for="number_phone"><?=_("Phone")?>: *</label>
                             <div class="form-row">
                                 <div class="col-6 col-lg-4">
                                     <select class="custom-select" name="type_phone">
-                                        <option disabled selected>Tipo</option>
-                                        <option value="mobile_phone_number">Móvil</option>
-                                        <option value="house_phone_number">Casa</option>
-                                        <option value="main_phone_number">Principal</option>
-                                        <option value="other_number_phone">Otro</option>
+                                        <option disabled selected><?=_("Type")?></option>
+                                        <option value="mobile_phone_number"><?=_("Mobile")?></option>
+                                        <option value="house_phone_number"><?=_("House")?></option>
+                                        <option value="main_phone_number"><?=_("Main")?></option>
+                                        <option value="other_number_phone"><?=_("Other")?></option>
                                     </select>
                                 </div>
                                 <div class="col">
@@ -115,124 +118,122 @@
                             </div>
                         </div>
                         <div class="form-group col-md">
-                            <label for="email">Correo electrónico *</label>
+                            <label for="email"><?=_("Email")?> *</label>
                             <input type="email" class="form-control" id="email" required>
                         </div>
                     </div>
                 </fieldset>
-                <legend>EXPERIENCIA PROFESIONAL</legend>
+                <legend><?=_("PROFESSIONAL EXPERIENCE")?></legend>
                 <fieldset>
                     <div class="form-row">
                         <div class="form-group col-md-3">
-                            <label for="date_job_start">Indique la fecha de inicio del trabajo</label>
+                            <label for="date_job_start"><?=_("Enter the job start date")?></label>
                             <input type="date" class="form-control check-start-date" name="date_job_start"
                                 min="1900-01-01">
                             <div class="invalid-feedback">
-                                La fecha introducida es superior a la fecha del fin
+                                <?=_("The date entered is higher than the end date")?>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="date_job_end">Indique la fecha de fin del trabajo</label>
+                                <label for="date_job_end"><?=_("Indicate the end date of the jobs")?></label>
                                 <input type="date" class="form-control check-end-date" name="date_job_end"
                                     min="1900-01-01">
                                 <div class="invalid-feedback">
-                                    La fecha introducida es anterior a la fecha del inicio
+                                    <?=_("The date entered is before the start date")?>
                                 </div>
                             </div>
                             <div class="form-group custom-control custom-checkbox">
                                 <input class="custom-control-input" type="checkbox" id="current_job">
-                                <label class="custom-control-label" for="current_job">Trabajo actual</label>
+                                <label class="custom-control-label" for="current_job"><?=_("Current job")?></label>
                             </div>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="job">Puesto o cargo ocupados</label>
+                            <label for="job"><?=_("Position or position occupied")?></label>
                             <input type="text" class="form-control" name="job">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md">
-                            <label for="first_name">Nombre del empleador</label>
+                            <label for="first_name"><?=_("Name of employer")?></label>
                             <input type="text" class="form-control" name="employer_name">
                         </div>
                         <div class="form-group col-md-3">
-                            <label for="last_name">Ciudad del empleador</label>
+                            <label for="last_name"><?=_("Employer City")?></label>
                             <input type="text" class="form-control" name="employer_city">
                         </div>
                         <div class="form-group col-md-3">
-                            <label for="last_name">País del empleador</label>
+                            <label for="last_name"><?=_("Employer Country")?></label>
                             <input type="text" class="form-control" name="employer_country">
                         </div>
                     </div>
                 </fieldset>
-                <legend>EDUCACIÓN Y FORMACIÓN</legend>
+                <legend><?=_("EDUCATION AND FORMATION")?></legend>
                 <fieldset>
                     <div class="form-row">
                         <div class="form-group col-md-3">
-                            <label for="date_education_start">Indique la fecha de inicio del estudio</label>
+                            <label for="date_education_start"><?=_("Indicate the start date of the study")?></label>
                             <input type="date" class="form-control check-start-date" name="date_education_start"
                                 min="1900-01-01">
                             <div class="invalid-feedback">
-                                La fecha introducida es superior a la fecha del fin
+                                <?=_("The date entered is higher than the end date")?>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="form-group">
-                                <label for="date_education_end">Indique la fecha de fin del estudio</label>
+                                <label for="date_education_end"><?=_("Indicate the end date of the study")?></label>
                                 <input type="date" class="form-control check-end-date" name="date_education_end"
                                     min="1900-01-01">
                                 <div class="invalid-feedback">
-                                    La fecha introducida es anterior a la fecha del inicio
+                                    <?=_("The date entered is before the start date")?>
                                 </div>
                             </div>
                             <div class="form-group custom-control custom-checkbox">
                                 <input class="custom-control-input" type="checkbox" id="current_education">
-                                <label class="custom-control-label" for="current_education">Estudio actual</label>
+                                <label class="custom-control-label" for="current_education"><?=_("Current study")?></label>
                             </div>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="title">Título de la cualificación obtenida</label>
+                            <label for="title"><?=_("Title of qualification awarded")?></label>
                             <input type="text" class="form-control" name="title">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-row col">
                             <div class="form-group col-md-12">
-                                <label for="school_name">Nombre de la organización que impartió su educación</label>
+                                <label for="school_name"><?=_("Name of the organization that provided your education")?></label>
                                 <input type="text" class="form-control" name="school_name">
                             </div>
                             <div class="form-group col-md">
-                                <label for="school_city">Localidad de la organización</label>
+                                <label for="school_city"><?=_("Organization location")?></label>
                                 <input type="text" class="form-control" name="school_city">
                             </div>
                             <div class="form-group col-md">
-                                <label for="school_country">País de la organización</label>
+                                <label for="school_country"><?=_("Organization country")?></label>
                                 <input type="text" class="form-control" name="school_country">
                             </div>
                         </div>
                         <div class="form-row col">
                             <div class="form-group col-md">
-                                <label for="acquired_skills">Principales materias cursadas y competencias profesionales
-                                    adquiridas</label>
+                                <label for="acquired_skills"><?=_("Main subjects taken and professional skills acquired")?></label>
                                 <textarea class="form-control" rows="4" name="acquired_skills"></textarea>
                             </div>
                         </div>
                     </div>
                 </fieldset>
-                <legend>CAMPOS ADICIONALES</legend>
+                <legend><?=_("ADDITIONAL FIELDS")?></legend>
                 <fieldset>
                     <div class="form-row">
                         <div class="form-group col-md">
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input" name="picture">
-                                <label class="custom-file-label" for="picture" data-browse="Buscar">Adjunta una
-                                    foto</label>
+                                <label class="custom-file-label" for="picture" data-browse="<?=_("Search")?>"><?=_("Attach a photo")?></label>
                             </div>
                         </div>
                         <div class="form-group col-md">
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <label class="input-group-text" for="drive_license">Permiso de conducir</label>
+                                    <label class="input-group-text" for="drive_license"><?=_("Driving license")?></label>
                                 </div>
                                 <select class="custom-select" name="drive_license">
                                     <option selected></option>
@@ -255,14 +256,14 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="other_habilities">Otras habilidades</label>
-                        <textarea class="form-control" rows="5" name="other_habilities"></textarea>
+                        <label for="other_skills"><?=_("Other skills")?></label>
+                        <textarea class="form-control" rows="5" name="other_skills"></textarea>
                     </div>
                 </fieldset>
                 
                 <fieldset>
-                    <button type="submit" class="btn btn-outline-dark">Generar currículum</button>
-                    <button type="reset" class="btn btn-outline-*">Limpiar formulario</button>                    
+                    <button type="submit" class="btn btn-outline-dark"><?=_("Generate resume")?></button>
+                    <button type="reset" class="btn btn-outline-* "><?=_("Clean form")?></button>                    
                 </fieldset>
             </form>
         </article>
@@ -279,4 +280,4 @@
 <script type="module" src="../scripts/form.js">
 </script>
 
-</html>
+</php>

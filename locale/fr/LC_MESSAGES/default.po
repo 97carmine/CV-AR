@@ -1,0 +1,301 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2020-05-08 12:27+0200\n"
+"PO-Revision-Date: 2020-05-08 12:28+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+
+#: src/about.php:7 src/about.php:42 src/form.php:42 src/index.php:44
+#: src/templates.php:42
+msgid "About"
+msgstr "À propos de"
+
+#: src/about.php:40 src/form.php:40 src/index.php:9 src/index.php:42
+#: src/templates.php:40
+msgid "Start"
+msgstr "Début"
+
+#: src/about.php:41 src/form.php:41 src/index.php:43 src/templates.php:7
+#: src/templates.php:41
+msgid "Templates"
+msgstr "Modèles"
+
+#: src/about.php:48
+msgid "TEAM"
+msgstr "ÉQUIPE"
+
+#: src/about.php:51
+msgid "OUR HISTORY"
+msgstr "NOTRE HOSTOIRE"
+
+#: src/about.php:54
+msgid "INVOLVE"
+msgstr "IMPLIQUER"
+
+#: src/form.php:7
+msgid "Form"
+msgstr "Forme"
+
+#: src/form.php:48
+msgid "FORM"
+msgstr "FORME"
+
+#: src/form.php:49
+msgid "Fill in the options on the form, those with an asterisk are mandatory"
+msgstr ""
+"Remplissez les options du formulaire, celles avec un astérisque sont "
+"obligatoires"
+
+#: src/form.php:56
+msgid "PERSONAL INFORMATION"
+msgstr "INFORMATIONS PERSONNELLES"
+
+#: src/form.php:60
+msgid "First name"
+msgstr "Prénom"
+
+#: src/form.php:64
+msgid "Last name"
+msgstr "Nom de famille"
+
+#: src/form.php:81
+msgid "Home"
+msgstr "Maison"
+
+#: src/form.php:84
+msgid "There was an error obtaining the street information"
+msgstr ""
+"Une erreur s'est produite lors de l'obtention des informations sur la rue"
+
+#: src/form.php:89
+msgid "City"
+msgstr "Ville"
+
+#: src/form.php:93
+msgid "Country"
+msgstr "Pays"
+
+#: src/form.php:97
+msgid "Postal Code"
+msgstr "Code postal"
+
+#: src/form.php:103
+msgid "Phone"
+msgstr "Téléphone"
+
+#: src/form.php:107
+msgid "Type"
+msgstr "Type"
+
+#: src/form.php:108
+msgid "Mobile"
+msgstr "Mobile"
+
+#: src/form.php:109
+msgid "House"
+msgstr "Maison"
+
+#: src/form.php:110
+msgid "Main"
+msgstr "Principal"
+
+#: src/form.php:111
+msgid "Other"
+msgstr "Autre"
+
+#: src/form.php:121
+msgid "Email"
+msgstr "Email"
+
+#: src/form.php:126
+msgid "PROFESSIONAL EXPERIENCE"
+msgstr "EXPÉRIENCE PROFESSIONNELLE"
+
+#: src/form.php:130
+msgid "Enter the job start date"
+msgstr "Entrez la date de début du travail"
+
+#: src/form.php:134 src/form.php:179
+msgid "The date entered is higher than the end date"
+msgstr "La date saisie est supérieure à la date de fin"
+
+#: src/form.php:139
+msgid "Indicate the end date of the jobs"
+msgstr "Indiquez la date de fin des travaux"
+
+#: src/form.php:143 src/form.php:188
+msgid "The date entered is before the start date"
+msgstr "La date saisie est antérieure à la date de début"
+
+#: src/form.php:148
+msgid "Current job"
+msgstr "Travail actuel"
+
+#: src/form.php:152
+msgid "Position or position occupied"
+msgstr "Poste ou poste occupé"
+
+#: src/form.php:158
+msgid "Name of employer"
+msgstr "Nom de l'Employeur"
+
+#: src/form.php:162
+msgid "Employer City"
+msgstr "Ville de l'employeur"
+
+#: src/form.php:166
+msgid "Employer Country"
+msgstr "Pays employeur"
+
+#: src/form.php:171
+msgid "EDUCATION AND FORMATION"
+msgstr "L'ÉDUCATION ET LA FORMATION"
+
+#: src/form.php:175
+msgid "Indicate the start date of the study"
+msgstr "Indiquez la date de début de l'étude"
+
+#: src/form.php:184
+msgid "Indicate the end date of the study"
+msgstr "Indiquez la date de fin de l'étude"
+
+#: src/form.php:193
+msgid "Current study"
+msgstr "Étude actuelle"
+
+#: src/form.php:197
+msgid "Title of qualification awarded"
+msgstr "Titre du diplôme délivré"
+
+#: src/form.php:204
+msgid "Name of the organization that provided your education"
+msgstr "Nom de l'organisation qui a dispensé vos études"
+
+#: src/form.php:208
+msgid "Organization location"
+msgstr "Emplacement de l'organisation"
+
+#: src/form.php:212
+msgid "Organization country"
+msgstr "Pays de l'organisation"
+
+#: src/form.php:218
+msgid "Main subjects taken and professional skills acquired"
+msgstr "Principales matières suivies et compétences professionnelles acquises"
+
+#: src/form.php:224
+msgid "ADDITIONAL FIELDS"
+msgstr "CHAMPS SUPPLÉMENTAIRES"
+
+#: src/form.php:230
+msgid "Search"
+msgstr "Chercher"
+
+#: src/form.php:230
+msgid "Attach a photo"
+msgstr "Joindre une photo"
+
+#: src/form.php:236
+msgid "Driving license"
+msgstr "Permis de conduire"
+
+#: src/form.php:259
+msgid "Other skills"
+msgstr "Autres compétences"
+
+#: src/form.php:265
+msgid "Generate resume"
+msgstr "Générer un CV"
+
+#: src/form.php:266
+msgid "Clean form"
+msgstr "Forme propre"
+
+#: src/index.php:51
+msgid "HELLO"
+msgstr "BONJOUR"
+
+#: src/index.php:52
+msgid "Welcome to the world's first augmented reality resume builder"
+msgstr ""
+"Bienvenue dans le premier constructeur de CV en réalité augmentée au monde"
+
+#: src/index.php:54
+msgid ""
+"Designed by Axel Gabriel Calle Granda and Adrián Rodríguez Ballesteros as a "
+"final degree project in the Jose Ramón Otero cooperative"
+msgstr ""
+"Conçu par Axel Gabriel Calle Granda et Adrián Rodríguez Ballesteros comme "
+"projet de diplôme final dans la coopérative Jose Ramón Otero"
+
+#: src/templates.php:48
+msgid "TEMPLATES"
+msgstr "MODÈLES"
+
+#: src/templates.php:49
+msgid "Choose from three designs, the one that best suits you"
+msgstr "Choisissez parmi trois modèles, celui qui vous convient le mieux"
+
+#: src/templates.php:52 src/templates.php:54 src/templates.php:73
+#: src/templates.php:97 src/templates.php:99 src/templates.php:118
+#: src/templates.php:142 src/templates.php:144 src/templates.php:163
+msgid "Design"
+msgstr "Conception"
+
+#: src/templates.php:66 src/templates.php:111 src/templates.php:156
+msgid "Access form"
+msgstr "Accès au formulaire"
+
+#: src/templates.php:67 src/templates.php:112 src/templates.php:157
+msgid "See example"
+msgstr "Voir l'exemple"
+
+#: src/templates.php:80 src/templates.php:125 src/templates.php:170
+msgid ""
+"First make sure that the web server works with HTTPS as it is a requirement "
+"to access the camera from a web browser"
+msgstr ""
+"Assurez-vous d'abord que le serveur Web fonctionne avec HTTPS car il est "
+"nécessaire d'accéder à la caméra à partir d'un navigateur Web"
+
+#: src/templates.php:87 src/templates.php:132 src/templates.php:177
+msgid "Now with the other device, scan the following mark"
+msgstr "Maintenant avec l'autre appareil, scannez la marque suivante"
+
+#~ msgid "You need HTTPS to access geolocation"
+#~ msgstr "Necesita HTTPS para acceder a la geolocalización"
+
+#, fuzzy
+#~| msgid "Geolocation is not supported by this browser."
+#~ msgid "Geolocation is not supported by this browser"
+#~ msgstr "La geolocalización no está soportada por este navegador"
+
+#~ msgid "User denied the request for Geolocation"
+#~ msgstr "Ha denegado la consulta para la geolocalización"
+
+#~ msgid "Location information is unavailable"
+#~ msgstr "La información de ubicación no está disponible"
+
+#~ msgid "The request to get user location timed out"
+#~ msgstr ""
+#~ "Se agotó el tiempo de espera de la solicitud para obtener la ubicación"
+
+#~ msgid "An unknown error occurred"
+#~ msgstr "Un error desconocido ocurrió"
+
+#~ msgid "There was an error getting the information from OpenStreetMaps"
+#~ msgstr "Ha habido un error al obtener la información de OpenStreetMaps"
+
+#~ msgid "If you want your position to be geolocated, click"
+#~ msgstr "Si quieres que se geolocalice tu posición, haz click"
