@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-05-04 16:55+0200\n"
-"PO-Revision-Date: 2020-05-04 16:55+0200\n"
+"POT-Creation-Date: 2020-05-08 12:27+0200\n"
+"PO-Revision-Date: 2020-05-08 12:27+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: es_ES\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -75,7 +75,7 @@ msgstr "Domicilio"
 
 #: src/form.php:84
 msgid "There was an error obtaining the street information"
-msgstr "Se produjo un error al obtener la información de la calle."
+msgstr "Se produjo un error al obtener la información de la calle"
 
 #: src/form.php:89
 msgid "City"
@@ -122,7 +122,7 @@ msgid "PROFESSIONAL EXPERIENCE"
 msgstr "EXPERIENCIA PROFESIONAL"
 
 #: src/form.php:130
-msgid "Enter the work start date"
+msgid "Enter the job start date"
 msgstr "Indique la fecha de inicio del trabajo"
 
 #: src/form.php:134 src/form.php:179
@@ -130,7 +130,7 @@ msgid "The date entered is higher than the end date"
 msgstr "La fecha introducida es superior a la fecha del fin"
 
 #: src/form.php:139
-msgid "Indicate the end date of the work"
+msgid "Indicate the end date of the jobs"
 msgstr "Indique la fecha de fin del trabajo"
 
 #: src/form.php:143 src/form.php:188
@@ -226,18 +226,17 @@ msgid "HELLO"
 msgstr "HOLA"
 
 #: src/index.php:52
-msgid "Welcome to the world's first augmented reality resume builder."
+msgid "Welcome to the world's first augmented reality resume builder"
 msgstr ""
-"Bienvenido al primer generador de currículums en realidad aumentada del "
-"mundo."
+"Bienvenido al primer generador de currículums en realidad aumentada del mundo"
 
 #: src/index.php:54
 msgid ""
 "Designed by Axel Gabriel Calle Granda and Adrián Rodríguez Ballesteros as a "
-"final degree project in the Jose Ramón Otero cooperative."
+"final degree project in the Jose Ramón Otero cooperative"
 msgstr ""
 "Diseñado por Axel Gabriel Calle Granda y Adrián Rodríguez Ballestero como "
-"proyecto de fin de grado para la cooperativa Jose Ramón Otero."
+"proyecto de fin de grado para la cooperativa José Ramón Otero"
 
 #: src/templates.php:48
 msgid "TEMPLATES"
