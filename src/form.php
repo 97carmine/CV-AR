@@ -51,7 +51,7 @@
                 <span class="text_error"></span>
             </div>
 
-            <form class="text-left" action="#" method="post">
+            <form class="text-left" action="php/generator.php" method="post">
                 <input type="hidden" name="design" max="3" value="<?php echo $_GET["design"] ?>" required>
                 <legend><?=_("PERSONAL INFORMATION")?></legend>
                 <fieldset>
@@ -119,7 +119,7 @@
                         </div>
                         <div class="form-group col-md">
                             <label for="email"><?=_("Email")?> *</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <input type="email" class="form-control" id="email" name="email" required>
                         </div>
                     </div>
                 </fieldset>
@@ -144,7 +144,7 @@
                                 </div>
                             </div>
                             <div class="form-group custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" id="current_job">
+                                <input class="custom-control-input" type="checkbox" id="current_job" name="current_job">
                                 <label class="custom-control-label" for="current_job"><?=_("Current job")?></label>
                             </div>
                         </div>
@@ -189,7 +189,7 @@
                                 </div>
                             </div>
                             <div class="form-group custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" id="current_education">
+                                <input class="custom-control-input" type="checkbox" id="current_education" name="current_education">
                                 <label class="custom-control-label" for="current_education"><?=_("Current study")?></label>
                             </div>
                         </div>
