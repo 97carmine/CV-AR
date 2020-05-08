@@ -235,13 +235,12 @@
                                 <div class="input-group-prepend">
                                     <label class="input-group-text" for="drive_license"><?=_("Driving license")?></label>
                                 </div>
-                                <select class="custom-select" name="drive_license">
-                                    <option selected></option>
+                                <select multiple class="custom-select" name="drive_license[]">
+                                    <option value="Ninguno">Ninguno</option>
                                     <option value="AM_drive_license">AM</option>
                                     <option value="A1_drive_license">A1</option>
                                     <option value="A_drive_license">A</option>
                                     <option value="B_drive_license">B</option>
-                                    <option value="B_drive_license">A + B</option>
                                     <option value="B_+_E_drive_license">B + E</option>
                                     <option value="C1_drive_license">C1</option>
                                     <option value="C1_+_E_drive_license">C1 + E</option>
