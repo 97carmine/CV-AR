@@ -25,7 +25,7 @@
     $school_city = $_POST["school_city"];
     $school_country = $_POST["school_country"];
     $acquired_skills = $_POST["acquired_skills"];
-    $drive_license = $_POST["drive_license"];
+    @$drive_license = $_POST["drive_license"];
     $other_skills = $_POST["other_skills"];
 
     $bugs = "";
@@ -33,7 +33,7 @@
     $path = "";
 
     if (is_uploaded_file ($_FILES['picture']['tmp_name'])){
-        $folder = "../img/users/";
+        $folder = "../src/img/users/";
         $name_file = $_FILES['picture']['name'];
         $file_upload = true;
         $path = $folder.$name_file;
@@ -115,8 +115,14 @@
         print("sin estudios<br>");
     }
     
-    foreach ($drive_license as $license)
-    print ($license."<br>");
+    @$num_licenses = count($drive_license);
+
+    if($num_licenses != 0){
+        foreach ($drive_license as $license)
+        print ($license."<br>");
+    }else{
+        print "Sin carnet";
+    }
 
     if(!(empty($other_skills))){
         print ($other_skills);

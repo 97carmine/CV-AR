@@ -236,8 +236,7 @@
                                 <div class="input-group-prepend">
                                     <label class="input-group-text" for="drive_license"><?=_("Driving license")?></label>
                                 </div>
-                                <select multiple class="custom-select" name="drive_license[]">
-                                    <option value="Ninguno">Ninguno</option>
+                                <select multiple class="custom-select" name="drive_license[]" size="1">
                                     <option value="AM_drive_license">AM</option>
                                     <option value="A1_drive_license">A1</option>
                                     <option value="A_drive_license">A</option>
