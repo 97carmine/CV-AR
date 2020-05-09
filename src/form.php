@@ -51,7 +51,7 @@
                 <span class="text_error"></span>
             </div>
 
-            <form class="text-left" action="php/generator.php" method="post" enctype="multipart/form-data">
+            <form class="text-left" action="../resources/generator.php" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="design" max="3" value="<?php echo $_GET["design"] ?>" required>
                 <input type="hidden" name="maximun_file_size" value="1048576" required>
                 <legend><?=_("PERSONAL INFORMATION")?></legend>
@@ -120,7 +120,7 @@
                         </div>
                         <div class="form-group col-md">
                             <label for="email"><?=_("Email")?> *</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
+                            <input type="email" class="form-control" name="email" required>
                         </div>
                     </div>
                 </fieldset>
