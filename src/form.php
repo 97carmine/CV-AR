@@ -51,8 +51,9 @@
                 <span class="text_error"></span>
             </div>
 
-            <form class="text-left" action="#" method="post">
+            <form class="text-left" action="../resources/generator.php" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="design" max="3" value="<?php echo $_GET["design"] ?>" required>
+                <input type="hidden" name="maximun_file_size" value="1048576" required>
                 <legend><?=_("PERSONAL INFORMATION")?></legend>
                 <fieldset>
                     <div class="form-row">
@@ -119,7 +120,7 @@
                         </div>
                         <div class="form-group col-md">
                             <label for="email"><?=_("Email")?> *</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <input type="email" class="form-control" name="email" required>
                         </div>
                     </div>
                 </fieldset>
@@ -144,7 +145,7 @@
                                 </div>
                             </div>
                             <div class="form-group custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" id="current_job">
+                                <input class="custom-control-input" type="checkbox" id="current_job" name="current_job">
                                 <label class="custom-control-label" for="current_job"><?=_("Current job")?></label>
                             </div>
                         </div>
@@ -189,7 +190,7 @@
                                 </div>
                             </div>
                             <div class="form-group custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" id="current_education">
+                                <input class="custom-control-input" type="checkbox" id="current_education" name="current_education">
                                 <label class="custom-control-label" for="current_education"><?=_("Current study")?></label>
                             </div>
                         </div>
@@ -235,13 +236,11 @@
                                 <div class="input-group-prepend">
                                     <label class="input-group-text" for="drive_license"><?=_("Driving license")?></label>
                                 </div>
-                                <select class="custom-select" name="drive_license">
-                                    <option selected></option>
+                                <select multiple class="custom-select" name="drive_license[]" size="1">
                                     <option value="AM_drive_license">AM</option>
                                     <option value="A1_drive_license">A1</option>
                                     <option value="A_drive_license">A</option>
                                     <option value="B_drive_license">B</option>
-                                    <option value="B_drive_license">A + B</option>
                                     <option value="B_+_E_drive_license">B + E</option>
                                     <option value="C1_drive_license">C1</option>
                                     <option value="C1_+_E_drive_license">C1 + E</option>
