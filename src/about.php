@@ -1,5 +1,5 @@
-<!DOCTYPE php>
-<php lang="<?php echo (substr($_SERVER["HTTP_ACCEPT_LANGUAGE"],0,2))?>">
+<!DOCTYPE html>
+<html lang="<?php echo (substr($_SERVER["HTTP_ACCEPT_LANGUAGE"],0,2))?>">
 
 <head>
     <meta charset="UTF-8">
@@ -66,4 +66,4 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 
-</php>
+</html>
