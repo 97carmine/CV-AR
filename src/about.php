@@ -49,8 +49,7 @@
             <p>Somos un grupo de alumnos formado por Axel Gabriel Calle Granda y Adrián Rodríguez Balleteros que estudia
                 un grado superior de <span class="font-italic">Desarrollo de aplicaciones web</span>.</p>
             <h1><?=_("OUR HISTORY")?></h1>
-            <p>Para la elección de este proyecto, observamos que las formas de representarse a uno mismo apenas ha
-                variado, por ese motivo decidimos crear esta herramienta que complementa al courrículum tradicional.</p>
+            <p><?=_("For the choice of this project, we observe that the ways of representing oneself have hardly changed, for this reason we decided to create this tool that complements the traditional curriculum.")?></p>
             <h1><?=_("INVOLVE")?></h1>
             <p>Puedes crear una incidencia <a href="https://github.com/97carmine/CV-AR/issues/new"
                     target="_blank">aquí</a>, puedes proponer ideas sobre como mejorar.</p>
