@@ -51,8 +51,9 @@
                 <span class="text_error"></span>
             </div>
 
-            <form class="text-left" action="php/generator.php" method="post">
+            <form class="text-left" action="php/generator.php" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="design" max="3" value="<?php echo $_GET["design"] ?>" required>
+                <input type="hidden" name="maximun_file_size" value="1048576" required>
                 <legend><?=_("PERSONAL INFORMATION")?></legend>
                 <fieldset>
                     <div class="form-row">

@@ -25,9 +25,42 @@
     $school_city = $_POST['school_city'];
     $school_country = $_POST['school_country'];
     $acquired_skills = $_POST['acquired_skills'];
-    $picture = $_POST['picture'];
     $drive_license = $_POST['drive_license'];
     $other_skills = $_POST['other_skills'];
+
+    $bugs = "";
+    $file_upload = false;
+    $path = "";
+
+    if (is_uploaded_file ($_FILES['picture']['tmp_name'])){
+        $folder = "../img/users/";
+        $name_file = $_FILES['picture']['name'];
+        $file_upload = true;
+        $path = $folder.$name_file;
+        if (is_file($path)){
+            $name_file = time()."_".$name_file;
+        }
+        $path = $folder.$name_file;
+    }else if($_FILES['picture']['error'] == UPLOAD_ERR_FORM_SIZE){
+        $maximun_file_size = $_POST['maximun_file_size'];
+        $bugs = $bugs."No se puede subir una imagen tan pesada, el maximo es ".$maximun_file_size." bytes<br>";
+    }else if($_FILES['picture']['name'] == ""){
+        $name_file = '';
+    }else{
+        $bugs = $bugs."No se pudo subir la imagen.<br>";
+    }
+
+    if($bugs == ""){
+        if($file_upload)
+            move_uploaded_file ($_FILES['picture']['tmp_name'], $path);
+        if($file_upload){
+            print "<img src='".$path."'>";
+        }else{
+            print "no hay foto";
+        }
+    }else{
+        print "No se a podido realizar la inserccion por: <br>".$bugs;
+    }
 
     switch ($design) {
         case "1":
@@ -81,15 +114,11 @@
     }else{
         print("sin estudios<br>");
     }
-
-    
     
     foreach ($drive_license as $license)
     print ($license."<br>");
 
-    print ($picture."<br>");
-
     if(!(empty($other_skills))){
-        print ($picture);
+        print ($other_skills);
     }
 ?>
