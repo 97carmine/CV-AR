@@ -119,7 +119,7 @@
                         </div>
                         <div class="form-group col-md">
                             <label for="email"><?=_("Email")?> *</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <input type="email" class="form-control" name="email" required>
                         </div>
                     </div>
                 </fieldset>
