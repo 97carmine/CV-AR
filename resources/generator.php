@@ -86,7 +86,7 @@
                 print "<a-entity id='phone' text='value:".$type_phone.": ".$number_phone."; width: 2; color:  #4CC3D9' position='1.43 3 0'></a-entity>";
                 print "<a-entity id='email' text='value:".$email."; width: 2; color:  #4CC3D9' position='1.43 2.85 0'></a-entity>";
                 
-                print "<a-entity id='studies' text='value: Estudios:; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.77 2.45 0'></a-entity>";
+                print "<a-entity id='studies' text='value: "._("Studies").":; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.77 2.45 0'></a-entity>";
                 print "<a-entity id='date_start1' text='value: ".$date_education_start."; width: 2; color: #4CC3D9' position='0.04 2.25 0'></a-entity>";
 
                 if($current_education == "on"){
@@ -97,7 +97,7 @@
                 }
                 print "<a-entity id='skills1' text='value: -".$acquired_skills.".; width: 2; color: #4CC3D9' position='0.65 2.10 0'></a-entity>";
                 if(!(empty($job))){
-                    print "<a-entity id='works' text='value: Esperiencia Laboral:; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.77 1.8 0'></a-entity>";
+                    print "<a-entity id='works' text='value: "._("Work experience").":; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.77 1.8 0'></a-entity>";
                     print "<a-entity id='date_start2' text='value: ".$date_job_start."; width: 2; color: #4CC3D9' position='0.04 1.60 0'></a-entity>";
                     if($current_job == "on"){
                         print "<a-entity id='experience' text='value: "._("Working from ").$job._(" in ").$employer_name._(" of ").$employer_city._(" in ").$employer_country.".; width: 2; color: #4CC3D9' position='0.6 1.55 0'></a-entity>";
@@ -107,29 +107,29 @@
                     }
 
                     if($have_license){
-                        print "<a-entity id='licenses' text='value: Carnet:; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.77 1.2 0'></a-entity>";
-                        print "<a-entity id='licenses_drive' text='value: ".$licenses."; width: 2; color: #4CC3D9' position='0.6 1.2 0'></a-entity>";
+                        print "<a-entity id='licenses' text='value: "._("Licenses").":; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.77 1.2 0'></a-entity>";
+                        print "<a-entity id='licenses_drive' text='value: ".$licenses."; width: 2; color: #4CC3D9' position='0.7 1.2 0'></a-entity>";
                         if(!(empty($other_skills))){
-                            print "<a-entity id='other_skills' text='value: Otras habilidades:; width: 3.5; tabSize: 6; color: #EF2D5E' position='0.77 1 0'></a-entity>";
+                            print "<a-entity id='other_skills' text='value: "._("Other skills").":; width: 3.5; tabSize: 6; color: #EF2D5E' position='0.77 1 0'></a-entity>";
                             print "<a-entity id='skills2' text='value: ".$other_skills."; width: 2; color: #4CC3D9' position='0.04 0.8 0'></a-entity>";
                         }
                     }else{
                         if(!(empty($other_skills))){
-                            print "<a-entity id='other_skills' text='value: Otras habilidades:; width: 3.5; tabSize: 6; color: #EF2D5E' position='0.77 1.2 0'></a-entity>";
+                            print "<a-entity id='other_skills' text='value: "._("Other skills").":; width: 3.5; tabSize: 6; color: #EF2D5E' position='0.77 1.2 0'></a-entity>";
                             print "<a-entity id='skills2' text='value: ".$other_skills."; width: 2; color: #4CC3D9' position='0.04 1 0'></a-entity>";
                         }
                     }
                 }else{
                     if($have_license){
-                        print "<a-entity id='licenses' text='value: Carnet:; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.77 1.8 0'></a-entity>";
-                        print "<a-entity id='licenses_drive' text='value: ".$licenses."; width: 2; color: #4CC3D9' position='0.6 1.8 0'></a-entity>";
+                        print "<a-entity id='licenses' text='value: "._("Licenses").":; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.77 1.8 0'></a-entity>";
+                        print "<a-entity id='licenses_drive' text='value: ".$licenses."; width: 2; color: #4CC3D9' position='0.7 1.8 0'></a-entity>";
                         if(!(empty($other_skills))){
-                            print "<a-entity id='other_skills' text='value: Otras habilidades:; width: 3.5; tabSize: 6; color: #EF2D5E' position='0.77 1.6 0'></a-entity>";
+                            print "<a-entity id='other_skills' text='value: "._("Other skills").":; width: 3.5; tabSize: 6; color: #EF2D5E' position='0.77 1.6 0'></a-entity>";
                             print "<a-entity id='skills2' text='value: ".$other_skills."; width: 2; color: #4CC3D9' position='0.04 1.4 0'></a-entity>";
                         }
                     }else{
                         if(!(empty($other_skills))){
-                            print "<a-entity id='other_skills' text='value: Otras habilidades:; width: 3.5; tabSize: 6; color: #EF2D5E' position='0.77 1.8 0'></a-entity>";
+                            print "<a-entity id='other_skills' text='value: "._("Other skills").":; width: 3.5; tabSize: 6; color: #EF2D5E' position='0.77 1.8 0'></a-entity>";
                             print "<a-entity id='skills2' text='value: ".$other_skills."; width: 2; color: #4CC3D9' position='0.04 1.6 0'></a-entity>";
                         }
                     }

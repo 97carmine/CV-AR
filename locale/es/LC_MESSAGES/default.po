@@ -16,6 +16,37 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 
+msgid "Studies"
+msgstr "Estudios"
+
+msgid "Studying "
+msgstr "Estudiando "
+
+msgid " in "
+msgstr " en "
+
+msgid " of "
+msgstr " de "
+
+msgid "Work experience"
+msgstr "Esperiencia Laboral"
+
+msgid "Working from "
+msgstr "Trabajando de "
+
+msgid "Licenses"
+msgstr "Carnets"
+
+msgid "You can't upload such a heavy image, the maximum size is "
+msgstr "No puedes subir una imagen tan pesada, el tamaño maximo es "
+
+msgid "Could not upload image"
+msgstr "No se pudo subir la imagen"
+
+#: 
+msgid "The creation could not be carried out due to:"
+msgstr "La creación no se pudo llevar a cabo debido a:"
+
 #: src/about.php:7 src/about.php:42 src/form.php:42 src/index.php:44
 #: src/templates.php:42
 msgid "About"
