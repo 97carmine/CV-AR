@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-05-08 12:27+0200\n"
-"PO-Revision-Date: 2020-05-08 12:28+0200\n"
+"POT-Creation-Date: 2020-05-09 22:42+0200\n"
+"PO-Revision-Date: 2020-05-09 22:42+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -15,6 +15,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: *.js\n"
 
 #: src/about.php:7 src/about.php:42 src/form.php:42 src/index.php:44
 #: src/templates.php:42
@@ -39,7 +40,17 @@ msgstr "ÉQUIPE"
 msgid "OUR HISTORY"
 msgstr "NOTRE HOSTOIRE"
 
-#: src/about.php:54
+#: src/about.php:52
+msgid ""
+"For the choice of this project, we observe that the ways of representing "
+"oneself have hardly changed, for this reason we decided to create this tool "
+"that complements the traditional curriculum."
+msgstr ""
+"Pour le choix de ce projet, nous observons que les façons de se représenter "
+"n'ont guère changé, c'est pourquoi nous avons décidé de créer cet outil qui "
+"complète le cursus traditionnel."
+
+#: src/about.php:53
 msgid "INVOLVE"
 msgstr "IMPLIQUER"
 
@@ -57,168 +68,168 @@ msgstr ""
 "Remplissez les options du formulaire, celles avec un astérisque sont "
 "obligatoires"
 
-#: src/form.php:56
+#: src/form.php:57
 msgid "PERSONAL INFORMATION"
 msgstr "INFORMATIONS PERSONNELLES"
 
-#: src/form.php:60
+#: src/form.php:61
 msgid "First name"
 msgstr "Prénom"
 
-#: src/form.php:64
+#: src/form.php:65
 msgid "Last name"
 msgstr "Nom de famille"
 
-#: src/form.php:81
+#: src/form.php:82
 msgid "Home"
 msgstr "Maison"
 
-#: src/form.php:84
+#: src/form.php:85
 msgid "There was an error obtaining the street information"
 msgstr ""
 "Une erreur s'est produite lors de l'obtention des informations sur la rue"
 
-#: src/form.php:89
+#: src/form.php:90
 msgid "City"
 msgstr "Ville"
 
-#: src/form.php:93
+#: src/form.php:94
 msgid "Country"
 msgstr "Pays"
 
-#: src/form.php:97
+#: src/form.php:98
 msgid "Postal Code"
 msgstr "Code postal"
 
-#: src/form.php:103
+#: src/form.php:104
 msgid "Phone"
 msgstr "Téléphone"
 
-#: src/form.php:107
+#: src/form.php:108
 msgid "Type"
 msgstr "Type"
 
-#: src/form.php:108
+#: src/form.php:109
 msgid "Mobile"
 msgstr "Mobile"
 
-#: src/form.php:109
+#: src/form.php:110
 msgid "House"
 msgstr "Maison"
 
-#: src/form.php:110
+#: src/form.php:111
 msgid "Main"
 msgstr "Principal"
 
-#: src/form.php:111
+#: src/form.php:112
 msgid "Other"
 msgstr "Autre"
 
-#: src/form.php:121
+#: src/form.php:122
 msgid "Email"
 msgstr "Email"
 
-#: src/form.php:126
+#: src/form.php:127
 msgid "PROFESSIONAL EXPERIENCE"
 msgstr "EXPÉRIENCE PROFESSIONNELLE"
 
-#: src/form.php:130
+#: src/form.php:131
 msgid "Enter the job start date"
 msgstr "Entrez la date de début du travail"
 
-#: src/form.php:134 src/form.php:179
+#: src/form.php:135 src/form.php:180
 msgid "The date entered is higher than the end date"
 msgstr "La date saisie est supérieure à la date de fin"
 
-#: src/form.php:139
+#: src/form.php:140
 msgid "Indicate the end date of the jobs"
 msgstr "Indiquez la date de fin des travaux"
 
-#: src/form.php:143 src/form.php:188
+#: src/form.php:144 src/form.php:189
 msgid "The date entered is before the start date"
 msgstr "La date saisie est antérieure à la date de début"
 
-#: src/form.php:148
+#: src/form.php:149
 msgid "Current job"
 msgstr "Travail actuel"
 
-#: src/form.php:152
+#: src/form.php:153
 msgid "Position or position occupied"
 msgstr "Poste ou poste occupé"
 
-#: src/form.php:158
+#: src/form.php:159
 msgid "Name of employer"
 msgstr "Nom de l'Employeur"
 
-#: src/form.php:162
+#: src/form.php:163
 msgid "Employer City"
 msgstr "Ville de l'employeur"
 
-#: src/form.php:166
+#: src/form.php:167
 msgid "Employer Country"
 msgstr "Pays employeur"
 
-#: src/form.php:171
+#: src/form.php:172
 msgid "EDUCATION AND FORMATION"
 msgstr "L'ÉDUCATION ET LA FORMATION"
 
-#: src/form.php:175
+#: src/form.php:176
 msgid "Indicate the start date of the study"
 msgstr "Indiquez la date de début de l'étude"
 
-#: src/form.php:184
+#: src/form.php:185
 msgid "Indicate the end date of the study"
 msgstr "Indiquez la date de fin de l'étude"
 
-#: src/form.php:193
+#: src/form.php:194
 msgid "Current study"
 msgstr "Étude actuelle"
 
-#: src/form.php:197
+#: src/form.php:198
 msgid "Title of qualification awarded"
 msgstr "Titre du diplôme délivré"
 
-#: src/form.php:204
+#: src/form.php:205
 msgid "Name of the organization that provided your education"
 msgstr "Nom de l'organisation qui a dispensé vos études"
 
-#: src/form.php:208
+#: src/form.php:209
 msgid "Organization location"
 msgstr "Emplacement de l'organisation"
 
-#: src/form.php:212
+#: src/form.php:213
 msgid "Organization country"
 msgstr "Pays de l'organisation"
 
-#: src/form.php:218
+#: src/form.php:219
 msgid "Main subjects taken and professional skills acquired"
 msgstr "Principales matières suivies et compétences professionnelles acquises"
 
-#: src/form.php:224
+#: src/form.php:225
 msgid "ADDITIONAL FIELDS"
 msgstr "CHAMPS SUPPLÉMENTAIRES"
 
-#: src/form.php:230
+#: src/form.php:231
 msgid "Search"
 msgstr "Chercher"
 
-#: src/form.php:230
+#: src/form.php:231
 msgid "Attach a photo"
 msgstr "Joindre une photo"
 
-#: src/form.php:236
+#: src/form.php:237
 msgid "Driving license"
 msgstr "Permis de conduire"
 
-#: src/form.php:259
+#: src/form.php:258
 msgid "Other skills"
 msgstr "Autres compétences"
 
-#: src/form.php:265
+#: src/form.php:264
 msgid "Generate resume"
 msgstr "Générer un CV"
 
-#: src/form.php:266
+#: src/form.php:265
 msgid "Clean form"
 msgstr "Forme propre"
 
@@ -272,30 +283,3 @@ msgstr ""
 #: src/templates.php:87 src/templates.php:132 src/templates.php:177
 msgid "Now with the other device, scan the following mark"
 msgstr "Maintenant avec l'autre appareil, scannez la marque suivante"
-
-#~ msgid "You need HTTPS to access geolocation"
-#~ msgstr "Necesita HTTPS para acceder a la geolocalización"
-
-#, fuzzy
-#~| msgid "Geolocation is not supported by this browser."
-#~ msgid "Geolocation is not supported by this browser"
-#~ msgstr "La geolocalización no está soportada por este navegador"
-
-#~ msgid "User denied the request for Geolocation"
-#~ msgstr "Ha denegado la consulta para la geolocalización"
-
-#~ msgid "Location information is unavailable"
-#~ msgstr "La información de ubicación no está disponible"
-
-#~ msgid "The request to get user location timed out"
-#~ msgstr ""
-#~ "Se agotó el tiempo de espera de la solicitud para obtener la ubicación"
-
-#~ msgid "An unknown error occurred"
-#~ msgstr "Un error desconocido ocurrió"
-
-#~ msgid "There was an error getting the information from OpenStreetMaps"
-#~ msgstr "Ha habido un error al obtener la información de OpenStreetMaps"
-
-#~ msgid "If you want your position to be geolocated, click"
-#~ msgstr "Si quieres que se geolocalice tu posición, haz click"

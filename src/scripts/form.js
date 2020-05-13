@@ -1,4 +1,7 @@
 import { compareDates } from "../components/compareDates.js";
+import localization, { i18n } from "../components/localization.js";
+
+localization();
 
 if ( $( "input[name = 'design']" ).val() < 1 ||
     $( "input[name = 'design']" ).val() > 3 ) {
@@ -61,13 +64,13 @@ function checkEndDate( startDate, endDate ) {
 function getLocation() {
     if ( navigator.geolocation ) {
         if ( window.location.protocol === "http:" ) {
-            $( ".text_error" ).text( "You need HTTPS to access geolocation" );
+            $( ".text_error" ).text( i18n.__( "You need HTTPS to access geolocation" ) );
             $( ".alert" ).show();
         } else {
             navigator.geolocation.getCurrentPosition(  obtainData, getError );
         }
     } else {
-        $( ".text_error" ).text( "Geolocation is not supported by this browser" );
+        $( ".text_error" ).text( i18n.__( "Geolocation is not supported by this browser" ) );
         $( ".alert" ).show();
     }
 }
@@ -75,16 +78,16 @@ function getLocation() {
 function getError( error ) {
     switch ( error.code ) {
         case error.PERMISSION_DENIED:
-            $( ".text_error" ).text( "User denied the request for Geolocation" );
+            $( ".text_error" ).text( i18n.__( "User denied the request for Geolocation" ) );
             break;
         case error.POSITION_UNAVAILABLE:
-            $( ".text_error" ).text( "Location information is unavailable" );
+            $( ".text_error" ).text( i18n.__( "Location information is unavailable" ) );
             break;
         case error.TIMEOUT:
-            $( ".text_error" ).text( "The request to get user location timed out" );
+            $( ".text_error" ).text( i18n.__( "The request to get user location timed out" ) );
             break;
         case error.UNKNOWN_ERROR:
-            $( ".text_error" ).text( "An unknown error occurred" );
+            $( ".text_error" ).text( i18n.__( "An unknown error occurred" ) );
             break;
     }
     $( ".alert" ).show();
@@ -107,8 +110,7 @@ function obtainData( position ) {
         $( "input[name = 'postal_code']" ).val( file.address.postcode );
         }, error: function( error ) {
             console.log( error.responseText );
-                $( ".text_error" ).text(
-                    "There was an error getting the information from OpenStreetMaps" );
+            $( ".text_error" ).text( i18n.__( "There was an error getting the information from OpenStreetMaps" ) );
             $( ".alert" ).show();
         }
     } );

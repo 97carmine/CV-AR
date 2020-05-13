@@ -1,0 +1,13 @@
+{
+    "": {
+        "language": "es",
+        "plural-forms": "nplurals=2; plural=n>1;"
+    },
+    "You need HTTPS to access geolocation": "Necesita HTTPS para acceder a la geolocalización",
+    "Geolocation is not supported by this browser": "La geolocalización no está soportada por este navegador",
+    "User denied the request for Geolocation": "Ha denegado la consulta para la geolocalización",
+    "Location information is unavailable": "La información de ubicación no está disponible",
+    "The request to get user location timed out": "Se agotó el tiempo de espera de la solicitud para obtener la ubicación",
+    "An unknown error occurred": "Ocurrió un error desconocido",
+    "There was an error getting the information from OpenStreetMaps": "Ha habido un error al obtener la información de OpenStreetMaps"
+}
