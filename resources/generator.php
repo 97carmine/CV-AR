@@ -122,7 +122,7 @@
                 }else{
                     if($have_license){
                         print "<a-entity id='licenses' text='value: Carnet:; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.77 1.8 0'></a-entity>";
-                        print "<a-entity id='licenses_drive' text='value: ".$licenses."; width: 2; color: #4CC3D9' position='0.6 1.8 0></a-entity>";
+                        print "<a-entity id='licenses_drive' text='value: ".$licenses."; width: 2; color: #4CC3D9' position='0.6 1.8 0'></a-entity>";
                         if(!(empty($other_skills))){
                             print "<a-entity id='other_skills' text='value: Otras habilidades:; width: 3.5; tabSize: 6; color: #EF2D5E' position='0.77 1.6 0'></a-entity>";
                             print "<a-entity id='skills2' text='value: ".$other_skills."; width: 2; color: #4CC3D9' position='0.04 1.4 0'></a-entity>";
