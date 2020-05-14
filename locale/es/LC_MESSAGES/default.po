@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-05-08 12:27+0200\n"
-"PO-Revision-Date: 2020-05-13 20:58+0200\n"
+"POT-Creation-Date: 2020-05-14 14:05+0200\n"
+"PO-Revision-Date: 2020-05-14 14:05+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -16,35 +16,58 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 
-msgid "Studies"
-msgstr "Estudios"
-
-msgid "Studying "
-msgstr "Estudiando "
-
-msgid " in "
-msgstr " en "
-
-msgid " of "
-msgstr " de "
-
-msgid "Work experience"
-msgstr "Esperiencia Laboral"
-
-msgid "Working from "
-msgstr "Trabajando de "
-
-msgid "Licenses"
-msgstr "Carnets"
-
+#: resources/generator.php:60
 msgid "You can't upload such a heavy image, the maximum size is "
 msgstr "No puedes subir una imagen tan pesada, el tamaño maximo es "
 
+#: resources/generator.php:64
 msgid "Could not upload image"
 msgstr "No se pudo subir la imagen"
 
+#: resources/generator.php:68
 msgid "The creation could not be carried out due to:"
 msgstr "La creación no se pudo llevar a cabo debido a:"
+
+#: resources/generator.php:89 src/examples/example_1(completo).php:27
+msgid "Studies"
+msgstr "Estudios"
+
+#: resources/generator.php:93
+msgid "Studying "
+msgstr "Estudiando "
+
+#: resources/generator.php:93 resources/generator.php:96
+#: resources/generator.php:103 resources/generator.php:106
+#: src/examples/example_1(completo).php:35
+#: src/examples/example_1(completo).php:47
+msgid " in "
+msgstr " en "
+
+#: resources/generator.php:93 resources/generator.php:96
+#: resources/generator.php:103 resources/generator.php:106
+#: src/examples/example_1(completo).php:35
+#: src/examples/example_1(completo).php:47
+msgid " of "
+msgstr " de "
+
+#: resources/generator.php:100 src/examples/example_1(completo).php:39
+msgid "Work experience"
+msgstr "Esperiencia Laboral"
+
+#: resources/generator.php:103
+msgid "Working from "
+msgstr "Trabajando de "
+
+#: resources/generator.php:110 resources/generator.php:124
+#: src/examples/example_1(completo).php:49
+msgid "Licenses"
+msgstr "Carnets"
+
+#: resources/generator.php:113 resources/generator.php:118
+#: resources/generator.php:127 resources/generator.php:132
+#: src/examples/example_1(completo).php:55 src/form.php:258
+msgid "Other skills"
+msgstr "Otras habilidades"
 
 #: src/about.php:7 src/about.php:42 src/form.php:42 src/index.php:44
 #: src/templates.php:42
@@ -73,6 +96,28 @@ msgstr "NUESTRA HISTORIA"
 msgid "INVOLVE"
 msgstr "INVOLUCRARSE"
 
+#: src/examples/example_1(completo).php:19
+#: src/examples/example_1(completo).php:35
+#: src/examples/example_1(completo).php:47
+msgid "Spain"
+msgstr "España"
+
+#: src/examples/example_1(completo).php:21 src/form.php:109
+msgid "Mobile"
+msgstr "Móvil"
+
+#: src/examples/example_1(completo).php:37
+msgid "Programming in server and client environment"
+msgstr "Programación en entorno servidor y cliente"
+
+#: src/examples/example_1(completo).php:47
+msgid "Scholar"
+msgstr "Becario"
+
+#: src/examples/example_1(completo).php:57
+msgid "English medium level"
+msgstr "Inglés nivel medio"
+
 #: src/form.php:7
 msgid "Form"
 msgstr "Formulario"
@@ -87,167 +132,159 @@ msgstr ""
 "Complete las opciones en el formulario, aquellos con un asterisco son "
 "obligatorios"
 
-#: src/form.php:56
+#: src/form.php:57
 msgid "PERSONAL INFORMATION"
 msgstr "INFORMACIÓN PERSONAL"
 
-#: src/form.php:60
+#: src/form.php:61
 msgid "First name"
 msgstr "Nombre"
 
-#: src/form.php:64
+#: src/form.php:65
 msgid "Last name"
 msgstr "Apellidos"
 
-#: src/form.php:81
+#: src/form.php:82
 msgid "Home"
 msgstr "Domicilio"
 
-#: src/form.php:84
+#: src/form.php:85
 msgid "There was an error obtaining the street information"
 msgstr "Se produjo un error al obtener la información de la calle"
 
-#: src/form.php:89
+#: src/form.php:90
 msgid "City"
 msgstr "Ciudad"
 
-#: src/form.php:93
+#: src/form.php:94
 msgid "Country"
 msgstr "País"
 
-#: src/form.php:97
+#: src/form.php:98
 msgid "Postal Code"
 msgstr "Código postal"
 
-#: src/form.php:103
+#: src/form.php:104
 msgid "Phone"
 msgstr "Teléfono"
 
-#: src/form.php:107
+#: src/form.php:108
 msgid "Type"
 msgstr "Tipo"
 
-#: src/form.php:108
-msgid "Mobile"
-msgstr "Móvil"
-
-#: src/form.php:109
+#: src/form.php:110
 msgid "House"
 msgstr "Casa"
 
-#: src/form.php:110
+#: src/form.php:111
 msgid "Main"
 msgstr "Principal"
 
-#: src/form.php:111
+#: src/form.php:112
 msgid "Other"
 msgstr "Otro"
 
-#: src/form.php:121
+#: src/form.php:122
 msgid "Email"
 msgstr "Correo electrónico"
 
-#: src/form.php:126
+#: src/form.php:127
 msgid "PROFESSIONAL EXPERIENCE"
 msgstr "EXPERIENCIA PROFESIONAL"
 
-#: src/form.php:130
+#: src/form.php:131
 msgid "Enter the job start date"
 msgstr "Indique la fecha de inicio del trabajo"
 
-#: src/form.php:134 src/form.php:179
+#: src/form.php:135 src/form.php:180
 msgid "The date entered is higher than the end date"
 msgstr "La fecha introducida es superior a la fecha del fin"
 
-#: src/form.php:139
+#: src/form.php:140
 msgid "Indicate the end date of the jobs"
 msgstr "Indique la fecha de fin del trabajo"
 
-#: src/form.php:143 src/form.php:188
+#: src/form.php:144 src/form.php:189
 msgid "The date entered is before the start date"
 msgstr "La fecha introducida es anterior a la fecha del inicio"
 
-#: src/form.php:148
+#: src/form.php:149
 msgid "Current job"
 msgstr "Trabajo actual"
 
-#: src/form.php:152
+#: src/form.php:153
 msgid "Position or position occupied"
 msgstr "Puesto o cargo ocupados"
 
-#: src/form.php:158
+#: src/form.php:159
 msgid "Name of employer"
 msgstr "Nombre del empleador"
 
-#: src/form.php:162
+#: src/form.php:163
 msgid "Employer City"
 msgstr "Ciudad del empleador"
 
-#: src/form.php:166
+#: src/form.php:167
 msgid "Employer Country"
 msgstr "País del empleador"
 
-#: src/form.php:171
+#: src/form.php:172
 msgid "EDUCATION AND FORMATION"
 msgstr "EDUCACIÓN Y FORMACIÓN"
 
-#: src/form.php:175
+#: src/form.php:176
 msgid "Indicate the start date of the study"
 msgstr "Indique la fecha de inicio del estudio"
 
-#: src/form.php:184
+#: src/form.php:185
 msgid "Indicate the end date of the study"
 msgstr "Indique la fecha de fin del estudio"
 
-#: src/form.php:193
+#: src/form.php:194
 msgid "Current study"
 msgstr "Estudio actual"
 
-#: src/form.php:197
+#: src/form.php:198
 msgid "Title of qualification awarded"
 msgstr "Título de la cualificación obtenida"
 
-#: src/form.php:204
+#: src/form.php:205
 msgid "Name of the organization that provided your education"
 msgstr "Nombre de la organización que impartió su educación"
 
-#: src/form.php:208
+#: src/form.php:209
 msgid "Organization location"
 msgstr "Localidad de la organización"
 
-#: src/form.php:212
+#: src/form.php:213
 msgid "Organization country"
 msgstr "País de la organización"
 
-#: src/form.php:218
+#: src/form.php:219
 msgid "Main subjects taken and professional skills acquired"
 msgstr "Principales materias cursadas y competencias profesionales adquiridas"
 
-#: src/form.php:224
+#: src/form.php:225
 msgid "ADDITIONAL FIELDS"
 msgstr "CAMPOS ADICIONALES"
 
-#: src/form.php:230
+#: src/form.php:231
 msgid "Search"
 msgstr "Buscar"
 
-#: src/form.php:230
+#: src/form.php:231
 msgid "Attach a photo"
 msgstr "Adjunta una foto"
 
-#: src/form.php:236
+#: src/form.php:237
 msgid "Driving license"
 msgstr "Permiso de conducir"
 
-#: src/form.php:259
-msgid "Other skills"
-msgstr "Otras habilidades"
-
-#: src/form.php:265
+#: src/form.php:264
 msgid "Generate resume"
 msgstr "Generar fomulario"
 
-#: src/form.php:266
+#: src/form.php:265
 msgid "Clean form"
 msgstr "Limpiar formulario"
 
