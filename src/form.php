@@ -105,10 +105,10 @@
                                 <div class="col-6 col-lg-4">
                                     <select class="custom-select" name="type_phone">
                                         <option disabled selected><?=_("Type")?></option>
-                                        <option value="mobile_phone_number"><?=_("Mobile")?></option>
-                                        <option value="house_phone_number"><?=_("House")?></option>
-                                        <option value="main_phone_number"><?=_("Main")?></option>
-                                        <option value="other_number_phone"><?=_("Other")?></option>
+                                        <option value="mobile_phone"><?=_("Mobile")?></option>
+                                        <option value="house_phone"><?=_("House")?></option>
+                                        <option value="main_phone"><?=_("Main")?></option>
+                                        <option value="other_number"><?=_("Other")?></option>
                                     </select>
                                 </div>
                                 <div class="col">
@@ -232,19 +232,19 @@
                                     <label class="input-group-text" for="drive_license"><?=_("Driving license")?></label>
                                 </div>
                                 <select multiple class="custom-select" name="drive_license[]" size="1">
-                                    <option value="AM_drive_license">AM</option>
-                                    <option value="A1_drive_license">A1</option>
-                                    <option value="A_drive_license">A</option>
-                                    <option value="B_drive_license">B</option>
-                                    <option value="B_+_E_drive_license">B + E</option>
-                                    <option value="C1_drive_license">C1</option>
-                                    <option value="C1_+_E_drive_license">C1 + E</option>
-                                    <option value="C_drive_license">C</option>
-                                    <option value="C_+_E">C + E</option>
-                                    <option value="D1_drive_license">D1</option>
-                                    <option value="D1_+_E">D1 + E</option>
-                                    <option value="D_drive_license">D</option>
-                                    <option value="D_+_E">D + E</option>
+                                <option value="AM">AM</option>
+                                <option value="A1">A1</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="B_+_E_">B + E</option>
+                                <option value="C1">C1</option>
+                                <option value="C1_+_E">C1 + E</option>
+                                <option value="C">C</option>
+                                <option value="C_+_E">C + E</option>
+                                <option value="D1">D1</option>
+                                <option value="D1_+_E">D1 + E</option>
+                                <option value="D">D</option>
+                                <option value="D_+_E">D + E</option>
                                 </select>
                             </div>
                         </div>
