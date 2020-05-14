@@ -124,12 +124,11 @@
                     </div>
                 </fieldset>
                 <legend><?=_("PROFESSIONAL EXPERIENCE")?></legend>
-                <fieldset>
+                <fieldset class="check-fieldset">
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="date_job_start"><?=_("Enter the job start date")?></label>
-                            <input type="date" class="form-control check-start-date" name="date_job_start"
-                                min="1900-01-01">
+                            <input type="date" class="form-control" name="date_job_start" min="1900-01-01">
                             <div class="invalid-feedback">
                                 <?=_("The date entered is higher than the end date")?>
                             </div>
@@ -137,8 +136,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label for="date_job_end"><?=_("Indicate the end date of the jobs")?></label>
-                                <input type="date" class="form-control check-end-date" name="date_job_end"
-                                    min="1900-01-01">
+                                <input type="date" class="form-control" name="date_job_end" min="1900-01-01">
                                 <div class="invalid-feedback">
                                     <?=_("The date entered is before the start date")?>
                                 </div>
@@ -169,12 +167,11 @@
                     </div>
                 </fieldset>
                 <legend><?=_("EDUCATION AND FORMATION")?></legend>
-                <fieldset>
+                <fieldset class="check-fieldset">
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="date_education_start"><?=_("Indicate the start date of the study")?></label>
-                            <input type="date" class="form-control check-start-date" name="date_education_start"
-                                min="1900-01-01">
+                            <input type="date" class="form-control" name="date_education_start" min="1900-01-01">
                             <div class="invalid-feedback">
                                 <?=_("The date entered is higher than the end date")?>
                             </div>
@@ -182,8 +179,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label for="date_education_end"><?=_("Indicate the end date of the study")?></label>
-                                <input type="date" class="form-control check-end-date" name="date_education_end"
-                                    min="1900-01-01">
+                                <input type="date" class="form-control" name="date_education_end" min="1900-01-01">
                                 <div class="invalid-feedback">
                                     <?=_("The date entered is before the start date")?>
                                 </div>
