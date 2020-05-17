@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-05-17 15:30+0200\n"
-"PO-Revision-Date: 2020-05-17 15:30+0200\n"
+"POT-Creation-Date: 2020-05-17 15:54+0200\n"
+"PO-Revision-Date: 2020-05-17 15:54+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -290,55 +290,3 @@ msgstr ""
 #: src/templates.php:86 src/templates.php:131 src/templates.php:176
 msgid "Now with the other device, scan the following mark"
 msgstr "Ahora con otro dispositivo, escanee la siguiente marca"
-
-#~ msgid "Enter the job start date"
-#~ msgstr "Indique la fecha de inicio del trabajo"
-
-#~ msgid "The date entered is higher than the end date"
-#~ msgstr "La fecha introducida es superior a la fecha del fin"
-
-#~ msgid "Indicate the end date of the jobs"
-#~ msgstr "Indique la fecha de fin del trabajo"
-
-#~ msgid "The date entered is before the start date"
-#~ msgstr "La fecha introducida es anterior a la fecha del inicio"
-
-#~ msgid "Current job"
-#~ msgstr "Trabajo actual"
-
-#~ msgid "Position or position occupied"
-#~ msgstr "Puesto o cargo ocupados"
-
-#~ msgid "Name of employer"
-#~ msgstr "Nombre del empleador"
-
-#~ msgid "Employer City"
-#~ msgstr "Ciudad del empleador"
-
-#~ msgid "Employer Country"
-#~ msgstr "País del empleador"
-
-#~ msgid "Indicate the start date of the study"
-#~ msgstr "Indique la fecha de inicio del estudio"
-
-#~ msgid "Indicate the end date of the study"
-#~ msgstr "Indique la fecha de fin del estudio"
-
-#~ msgid "Current study"
-#~ msgstr "Estudio actual"
-
-#~ msgid "Title of qualification awarded"
-#~ msgstr "Título de la cualificación obtenida"
-
-#~ msgid "Name of the organization that provided your education"
-#~ msgstr "Nombre de la organización que impartió su educación"
-
-#~ msgid "Organization location"
-#~ msgstr "Localidad de la organización"
-
-#~ msgid "Organization country"
-#~ msgstr "País de la organización"
-
-#~ msgid "Main subjects taken and professional skills acquired"
-#~ msgstr ""
-#~ "Principales materias cursadas y competencias profesionales adquiridas"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-05-17 15:30+0200\n"
-"PO-Revision-Date: 2020-05-17 15:30+0200\n"
+"POT-Creation-Date: 2020-05-17 15:54+0200\n"
+"PO-Revision-Date: 2020-05-17 15:54+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -291,55 +291,3 @@ msgstr ""
 #: src/templates.php:86 src/templates.php:131 src/templates.php:176
 msgid "Now with the other device, scan the following mark"
 msgstr "Maintenant avec l'autre appareil, scannez la marque suivante"
-
-#~ msgid "Enter the job start date"
-#~ msgstr "Entrez la date de début du travail"
-
-#~ msgid "The date entered is higher than the end date"
-#~ msgstr "La date saisie est supérieure à la date de fin"
-
-#~ msgid "Indicate the end date of the jobs"
-#~ msgstr "Indiquez la date de fin des travaux"
-
-#~ msgid "The date entered is before the start date"
-#~ msgstr "La date saisie est antérieure à la date de début"
-
-#~ msgid "Current job"
-#~ msgstr "Travail actuel"
-
-#~ msgid "Position or position occupied"
-#~ msgstr "Poste ou poste occupé"
-
-#~ msgid "Name of employer"
-#~ msgstr "Nom de l'Employeur"
-
-#~ msgid "Employer City"
-#~ msgstr "Ville de l'employeur"
-
-#~ msgid "Employer Country"
-#~ msgstr "Pays employeur"
-
-#~ msgid "Indicate the start date of the study"
-#~ msgstr "Indiquez la date de début de l'étude"
-
-#~ msgid "Indicate the end date of the study"
-#~ msgstr "Indiquez la date de fin de l'étude"
-
-#~ msgid "Current study"
-#~ msgstr "Étude actuelle"
-
-#~ msgid "Title of qualification awarded"
-#~ msgstr "Titre du diplôme délivré"
-
-#~ msgid "Name of the organization that provided your education"
-#~ msgstr "Nom de l'organisation qui a dispensé vos études"
-
-#~ msgid "Organization location"
-#~ msgstr "Emplacement de l'organisation"
-
-#~ msgid "Organization country"
-#~ msgstr "Pays de l'organisation"
-
-#~ msgid "Main subjects taken and professional skills acquired"
-#~ msgstr ""
-#~ "Principales matières suivies et compétences professionnelles acquises"
