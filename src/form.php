@@ -1,4 +1,4 @@
-<!DOCTYPE php>
+<!DOCTYPE html>
 <html lang="<?php echo (substr($_SERVER["HTTP_ACCEPT_LANGUAGE"],0,2))?>">
 
 <head>
@@ -45,40 +45,43 @@
     <section class="container">
         <article class="text-center">
             <h1 class="p-4"><?=_("FORM")?></h1>
-            <p class="p-3"><?=_("Fill in the options on the form, those with an asterisk are mandatory")?></p>
+            <p class="p-3"><?=_("Fill in the options on the form, those with an exclamation are mandatory")?></p>
             <div class="alert alert-danger" style="display: none;">
                 <span class="text_error"></span>
             </div>
 
             <form class="text-left" action="../resources/generator.php" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="design" max="3" value="<?php echo $_GET["design"] ?>" required>
+                <input type="hidden" name="countProExp">
+                <input type="hidden" name="countEdu">
                 <input type="hidden" name="maximun_file_size" value="1048576" required>
                 <legend><?=_("PERSONAL INFORMATION")?></legend>
                 <fieldset>
                     <div class="form-row">
                         <div class="form-group col-md">
-                            <label for="first_name"><?=_("First name")?> *</label>
+                            <label for="first_name">
+                                <?=_("First name")?>
+                                <img src="img/svg/exclamation.svg" alt="<?=_("Exclamation")?>">
+                            </label>
                             <input type="text" class="form-control" name="first_name" required>
                         </div>
                         <div class="form-group col-md">
-                            <label for="last_name"><?=_("Last name")?> *</label>
+                            <label for="last_name">
+                                <?=_("Last name")?>
+                                <img src="img/svg/exclamation.svg" alt="<?=_("Exclamation")?>">
+                            </label>
                             <input type="text" class="form-control" name="last_name" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <svg class="bi bi-info-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M8 15A7 7 0 108 1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z"
-                                clip-rule="evenodd" />
-                            <path
-                                d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z" />
-                            <circle cx="8" cy="4.5" r="1" />
-                        </svg>
-                        Si quieres que se geolocalice tu posición, haz click <span
-                            id="start-geolocalization">aquí</span>.
+                        <img src="img/svg/info-circle.svg" alt="<?=_("Information circle")?>" id="start-geolocalization">
+                        <?=_("Click on the icon to geolocate your position")?>
                     </div>
                     <div class="form-group">
-                        <label for="home"><?=_("Home")?> *</label>
+                        <label for="home">
+                            <?=_("Home")?>
+                            <img src="img/svg/exclamation.svg" alt="<?=_("Exclamation")?>">
+                        </label>
                         <input type="text" class="form-control" name="home" required>
                         <div class="invalid-feedback">
                             <?=_("There was an error obtaining the street information")?>
@@ -86,21 +89,33 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-6 col-md-12">
-                            <label for="city"><?=_("City")?> *</label>
+                            <label for="city">
+                                <?=_("City")?>
+                                <img src="img/svg/exclamation.svg" alt="<?=_("Exclamation")?>">
+                            </label>
                             <input type="text" class="form-control" name="city" required>
                         </div>
                         <div class="form-group col-lg-4 col-md-8">
-                            <label for="country"><?=_("Country")?> *</label>
+                            <label for="country">
+                                <?=_("Country")?>
+                                <img src="img/svg/exclamation.svg" alt="<?=_("Exclamation")?>">
+                            </label>
                             <input type="text" class="form-control" name="country" required>
                         </div>
                         <div class="form-group col-lg-2 col-md-4">
-                            <label for="zip"><?=_("Postal Code")?> *</label>
+                            <label for="zip">
+                                <?=_("Postal Code")?>
+                                <img src="img/svg/exclamation.svg" alt="<?=_("Exclamation")?>">
+                            </label>
                             <input type="text" class="form-control" name="postal_code" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md">
-                            <label for="number_phone"><?=_("Phone")?>: *</label>
+                            <label for="number_phone">
+                                <?=_("Phone")?>:
+                                <img src="img/svg/exclamation.svg" alt="<?=_("Exclamation")?>">
+                            </label>
                             <div class="form-row">
                                 <div class="col-6 col-lg-4">
                                     <select class="custom-select" name="type_phone">
@@ -118,103 +133,34 @@
                             </div>
                         </div>
                         <div class="form-group col-md">
-                            <label for="email"><?=_("Email")?> *</label>
+                            <label for="email">
+                                <?=_("Email")?>
+                                <img src="img/svg/exclamation.svg" alt="<?=_("Exclamation")?>">
+                            </label>
                             <input type="email" class="form-control" name="email" required>
                         </div>
                     </div>
                 </fieldset>
                 <legend><?=_("PROFESSIONAL EXPERIENCE")?></legend>
                 <fieldset class="check-fieldset">
-                    <div class="form-row">
-                        <div class="form-group col-md-3">
-                            <label for="date_job_start"><?=_("Enter the job start date")?></label>
-                            <input type="date" class="form-control" name="date_job_start" min="1900-01-01">
-                            <div class="invalid-feedback">
-                                <?=_("The date entered is higher than the end date")?>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label for="date_job_end"><?=_("Indicate the end date of the jobs")?></label>
-                                <input type="date" class="form-control" name="date_job_end" min="1900-01-01">
-                                <div class="invalid-feedback">
-                                    <?=_("The date entered is before the start date")?>
-                                </div>
-                            </div>
-                            <div class="form-group custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" id="current_job" name="current_job">
-                                <label class="custom-control-label" for="current_job"><?=_("Current job")?></label>
-                            </div>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="job"><?=_("Position or position occupied")?></label>
-                            <input type="text" class="form-control" name="job">
-                        </div>
+                    <div class="form-group add-fields">
+                        <img src="img/svg/plus.svg" alt="<?=_("Plus")?>">
+                        <?=_("Click on the icon to add a field")?>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md">
-                            <label for="first_name"><?=_("Name of employer")?></label>
-                            <input type="text" class="form-control" name="employer_name">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="last_name"><?=_("Employer City")?></label>
-                            <input type="text" class="form-control" name="employer_city">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="last_name"><?=_("Employer Country")?></label>
-                            <input type="text" class="form-control" name="employer_country">
-                        </div>
+                    <div class="form-group del-fields" style="display: none;">
+                        <img src="img/svg/x.svg" alt="<?=_("X")?>">
+                        <?=_("Click on the icon to delete the last field")?>
                     </div>
                 </fieldset>
                 <legend><?=_("EDUCATION AND FORMATION")?></legend>
                 <fieldset class="check-fieldset">
-                    <div class="form-row">
-                        <div class="form-group col-md-3">
-                            <label for="date_education_start"><?=_("Indicate the start date of the study")?></label>
-                            <input type="date" class="form-control" name="date_education_start" min="1900-01-01">
-                            <div class="invalid-feedback">
-                                <?=_("The date entered is higher than the end date")?>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label for="date_education_end"><?=_("Indicate the end date of the study")?></label>
-                                <input type="date" class="form-control" name="date_education_end" min="1900-01-01">
-                                <div class="invalid-feedback">
-                                    <?=_("The date entered is before the start date")?>
-                                </div>
-                            </div>
-                            <div class="form-group custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" id="current_education" name="current_education">
-                                <label class="custom-control-label" for="current_education"><?=_("Current study")?></label>
-                            </div>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="title"><?=_("Title of qualification awarded")?></label>
-                            <input type="text" class="form-control" name="title">
-                        </div>
+                    <div class="form-group add-fields">
+                    <img src="img/svg/plus.svg" alt="<?=_("Plus")?>">
+                        <?=_("Click on the icon to add a field")?>
                     </div>
-                    <div class="form-row">
-                        <div class="form-row col">
-                            <div class="form-group col-md-12">
-                                <label for="school_name"><?=_("Name of the organization that provided your education")?></label>
-                                <input type="text" class="form-control" name="school_name">
-                            </div>
-                            <div class="form-group col-md">
-                                <label for="school_city"><?=_("Organization location")?></label>
-                                <input type="text" class="form-control" name="school_city">
-                            </div>
-                            <div class="form-group col-md">
-                                <label for="school_country"><?=_("Organization country")?></label>
-                                <input type="text" class="form-control" name="school_country">
-                            </div>
-                        </div>
-                        <div class="form-row col">
-                            <div class="form-group col-md">
-                                <label for="acquired_skills"><?=_("Main subjects taken and professional skills acquired")?></label>
-                                <textarea class="form-control" rows="4" name="acquired_skills"></textarea>
-                            </div>
-                        </div>
+                    <div class="form-group del-fields" style="display: none;">
+                    <img src="img/svg/x.svg" alt="<?=_("X")?>">
+                        <?=_("Click on the icon to delete the last field")?>
                     </div>
                 </fieldset>
                 <legend><?=_("ADDITIONAL FIELDS")?></legend>
@@ -254,10 +200,11 @@
                         <textarea class="form-control" rows="5" name="other_skills"></textarea>
                     </div>
                 </fieldset>
-                
                 <fieldset>
-                    <button type="submit" class="btn btn-outline-dark"><?=_("Generate resume")?></button>
-                    <button type="reset" class="btn btn-outline-* "><?=_("Clean form")?></button>                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-outline-dark"><?=_("Generate resume")?></button>
+                        <button type="reset" class="btn btn-outline-*"><?=_("Clean form")?></button>
+                    </div>                   
                 </fieldset>
             </form>
         </article>
