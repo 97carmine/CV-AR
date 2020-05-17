@@ -1,4 +1,4 @@
-<!DOCTYPE php>
+<!DOCTYPE html>
 <html lang="<?php echo (substr($_SERVER["HTTP_ACCEPT_LANGUAGE"],0,2))?>">
 
 <head>
@@ -52,6 +52,8 @@
 
             <form class="text-left" action="../resources/generator.php" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="design" max="3" value="<?php echo $_GET["design"] ?>" required>
+                <input type="hidden" name="countProExp">
+                <input type="hidden" name="countEdu">
                 <input type="hidden" name="maximun_file_size" value="1048576" required>
                 <legend><?=_("PERSONAL INFORMATION")?></legend>
                 <fieldset>
@@ -67,15 +69,14 @@
                     </div>
                     <div class="form-group">
                         <svg class="bi bi-info-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
-                            xmlns="http://www.w3.org/2000/svg">
+                            xmlns="http://www.w3.org/2000/svg" id="start-geolocalization">
                             <path fill-rule="evenodd" d="M8 15A7 7 0 108 1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z"
                                 clip-rule="evenodd" />
                             <path
                                 d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z" />
                             <circle cx="8" cy="4.5" r="1" />
                         </svg>
-                        Si quieres que se geolocalice tu posición, haz click <span
-                            id="start-geolocalization">aquí</span>.
+                        <?=_("Click on the icon to geolocate your position")?>
                     </div>
                     <div class="form-group">
                         <label for="home"><?=_("Home")?> *</label>
@@ -125,96 +126,36 @@
                 </fieldset>
                 <legend><?=_("PROFESSIONAL EXPERIENCE")?></legend>
                 <fieldset class="check-fieldset">
-                    <div class="form-row">
-                        <div class="form-group col-md-3">
-                            <label for="date_job_start"><?=_("Enter the job start date")?></label>
-                            <input type="date" class="form-control" name="date_job_start" min="1900-01-01">
-                            <div class="invalid-feedback">
-                                <?=_("The date entered is higher than the end date")?>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label for="date_job_end"><?=_("Indicate the end date of the jobs")?></label>
-                                <input type="date" class="form-control" name="date_job_end" min="1900-01-01">
-                                <div class="invalid-feedback">
-                                    <?=_("The date entered is before the start date")?>
-                                </div>
-                            </div>
-                            <div class="form-group custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" id="current_job" name="current_job">
-                                <label class="custom-control-label" for="current_job"><?=_("Current job")?></label>
-                            </div>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="job"><?=_("Position or position occupied")?></label>
-                            <input type="text" class="form-control" name="job">
-                        </div>
+                    <div class="form-group add-fields">
+                        <svg class="bi bi-plus" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8 3.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H4a.5.5 0 010-1h3.5V4a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M7.5 8a.5.5 0 01.5-.5h4a.5.5 0 010 1H8.5V12a.5.5 0 01-1 0V8z" clip-rule="evenodd"/>
+                        </svg>
+                        <?=_("Click on the icon to add a field")?>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md">
-                            <label for="first_name"><?=_("Name of employer")?></label>
-                            <input type="text" class="form-control" name="employer_name">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="last_name"><?=_("Employer City")?></label>
-                            <input type="text" class="form-control" name="employer_city">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="last_name"><?=_("Employer Country")?></label>
-                            <input type="text" class="form-control" name="employer_country">
-                        </div>
+                    <div class="form-group del-fields" style="display: none;">
+                        <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <?=_("Click on the icon to delete the last field")?>
                     </div>
                 </fieldset>
                 <legend><?=_("EDUCATION AND FORMATION")?></legend>
                 <fieldset class="check-fieldset">
-                    <div class="form-row">
-                        <div class="form-group col-md-3">
-                            <label for="date_education_start"><?=_("Indicate the start date of the study")?></label>
-                            <input type="date" class="form-control" name="date_education_start" min="1900-01-01">
-                            <div class="invalid-feedback">
-                                <?=_("The date entered is higher than the end date")?>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <label for="date_education_end"><?=_("Indicate the end date of the study")?></label>
-                                <input type="date" class="form-control" name="date_education_end" min="1900-01-01">
-                                <div class="invalid-feedback">
-                                    <?=_("The date entered is before the start date")?>
-                                </div>
-                            </div>
-                            <div class="form-group custom-control custom-checkbox">
-                                <input class="custom-control-input" type="checkbox" id="current_education" name="current_education">
-                                <label class="custom-control-label" for="current_education"><?=_("Current study")?></label>
-                            </div>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="title"><?=_("Title of qualification awarded")?></label>
-                            <input type="text" class="form-control" name="title">
-                        </div>
+                    <div class="form-group add-fields">
+                        <svg class="bi bi-plus" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8 3.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H4a.5.5 0 010-1h3.5V4a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M7.5 8a.5.5 0 01.5-.5h4a.5.5 0 010 1H8.5V12a.5.5 0 01-1 0V8z" clip-rule="evenodd"/>
+                        </svg>
+                        <?=_("Click on the icon to add a field")?>
                     </div>
-                    <div class="form-row">
-                        <div class="form-row col">
-                            <div class="form-group col-md-12">
-                                <label for="school_name"><?=_("Name of the organization that provided your education")?></label>
-                                <input type="text" class="form-control" name="school_name">
-                            </div>
-                            <div class="form-group col-md">
-                                <label for="school_city"><?=_("Organization location")?></label>
-                                <input type="text" class="form-control" name="school_city">
-                            </div>
-                            <div class="form-group col-md">
-                                <label for="school_country"><?=_("Organization country")?></label>
-                                <input type="text" class="form-control" name="school_country">
-                            </div>
-                        </div>
-                        <div class="form-row col">
-                            <div class="form-group col-md">
-                                <label for="acquired_skills"><?=_("Main subjects taken and professional skills acquired")?></label>
-                                <textarea class="form-control" rows="4" name="acquired_skills"></textarea>
-                            </div>
-                        </div>
+                    <div class="form-group del-fields" style="display: none;">
+                        <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z" clip-rule="evenodd"/>
+                        </svg>
+                        <?=_("Click on the icon to delete the last field")?>
                     </div>
                 </fieldset>
                 <legend><?=_("ADDITIONAL FIELDS")?></legend>
@@ -254,10 +195,11 @@
                         <textarea class="form-control" rows="5" name="other_skills"></textarea>
                     </div>
                 </fieldset>
-                
                 <fieldset>
-                    <button type="submit" class="btn btn-outline-dark"><?=_("Generate resume")?></button>
-                    <button type="reset" class="btn btn-outline-* "><?=_("Clean form")?></button>                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-outline-dark"><?=_("Generate resume")?></button>
+                        <button type="reset" class="btn btn-outline-* "><?=_("Clean form")?></button>
+                    </div>                   
                 </fieldset>
             </form>
         </article>

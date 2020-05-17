@@ -25,9 +25,101 @@ $(document).ready(function () {
 			$(".check-fieldset").removeAttr("required");
 		});
 
-	$(".check-fieldset").change(function () {
-		let count = 0;
+	var countProExp = 1;
+	var countEdu = 1;
 
+	$(".add-fields > svg, .del-fields > svg").click(function () {
+		//prettier-ignore
+		let proExp = "<div class='form-group dynamic'><div class='form-group'><h5># " + countProExp + "</h5><hr></div>"
+		+ "<div class='form-row'>"
+		+ "<div class='form-group col-md-3'>"
+		+ "<label for='date_job_start_" + countProExp + "'>" + i18n.__("Enter the job start date") + "</label>"
+		+ "<input type='date' class='form-control' name='date_job_start_" + countProExp  + "' min='1900-01-01'>"
+		+ "<div class='invalid-feedback'>" + i18n.__("The date entered is higher than the end date") + "</div></div>"
+		+ "<div class='col-md-3'>"
+		+ "<div class='form-group'>"
+		+ "<label for='date_job_end_" + countProExp + "'>" + i18n.__("Indicate the end date of the jobs") + "</label>"
+		+ "<input type='date' class='form-control' name='date_job_end_" + countProExp + "' min='1900-01-01'>"
+		+ "<div class='invalid-feedback'>" + i18n.__("The date entered is before the start date") + "</div></div>"
+		+ "<div class='form-group custom-control custom-checkbox'>"
+		+ "<input class='custom-control-input' type='checkbox' id='current_job_" + countProExp + "' name='current_job_" + countProExp + "'>"
+		+ "<label class='custom-control-label' for='current_job_" + countProExp + "'>" + i18n.__("Current job") + "</label></div></div>"
+		+ "<div class='form-group col-md-6'>"
+		+ "<label for='job_" + countProExp + "'>" + i18n.__("Position or position occupied") + "</label>"
+		+ "<input type='text' class='form-control' name='job_" + countProExp + "'></div></div>"
+		+ "<div class='form-row'>"
+		+ "<div class='form-group col-md'>"
+		+ "<label for='employer_name_" + countProExp + "'>" + i18n.__("Name of employer") + "</label>"
+		+ "<input type='text' class='form-control' name='employer_name_" + countProExp + "'></div>"
+		+ "<div class='form-group col-md-3'>"
+		+ "<label for='employer_city_" + countProExp + "'>" + i18n.__("Employer City") + "</label>"
+		+ "<input type='text' class='form-control' name='employer_city_" + countProExp + "'></div>"
+		+ "<div class='form-group col-md-3'>"
+		+ "<label for='employer_country_" + countProExp + "'>" + i18n.__("Employer Country") + "</label>"
+		+ "<input type='text' class='form-control' name='employer_country_" + countProExp + "'></div></div></div>";
+
+		// prettier-ignore
+		let Edu = "<div class='form-group dynamic'><div class='form-group'><h5># " + countEdu + "</h5><hr></div>"
+		+ "<div class='form-row'>"
+		+ "<div class='form-group col-md-3'>"
+		+ "<label for='date_education_start_" + countEdu + "'>" + i18n.__("Indicate the start date of the study") + "</label>"
+		+ "<input type='date' class='form-control' name='date_education_start_" + countEdu + "' min='1900-01-01'>"
+		+ "<div class='invalid-feedback'>" + i18n.__('The date entered is higher than the end date') + "</div></div>"
+		+ "<div class='col-md-3'>"
+		+ "<div class='form-group'>"
+		+ "<label for='date_education_end_" + countEdu + "'>" + i18n.__("Indicate the end date of the study") + "</label>"
+		+ "<input type='date' class='form-control' name='date_education_end_" + countEdu + "' min='1900-01-01'>"
+		+ "<div class='invalid-feedback'>" + i18n.__("The date entered is before the start date") + "</div></div>"
+		+ "<div class='form-group custom-control custom-checkbox'>"
+		+ "<input class='custom-control-input' type='checkbox' id='current_education_" + countEdu + "' name='current_education_" + countEdu + "'>"
+		+ "<label class='custom-control-label' for='current_education_" + countEdu + "'>" + i18n.__("Current study") + "</label></div></div>"
+		+ "<div class='form-group col-md-6'>"
+		+ "<label for='title_" + countEdu + "'>" + i18n.__("Title of qualification awarded") + "</label>"
+		+ "<input type='text' class='form-control' name='title_" + countEdu + "'></div></div>"
+		+ "<div class='form-row'>"
+		+ "<div class='form-row col'>"
+		+ "<div class='form-group col-md-12'>"
+		+ "<label for='school_name_" + countEdu + "'>" + i18n.__("Name of the organization that provided your education") + "</label>"
+		+ "<input type='text' class='form-control' name='school_name_" + countEdu + "'></div>"
+		+ "<div class='form-group col-md'>"
+		+ "<label for='school_city_" + countEdu + "'>" + i18n.__("Organization location") + "</label>"
+		+ "<input type='text' class='form-control' name='school_city_" + countEdu + "'></div>"
+		+ "<div class='form-group col-md'>"
+		+ "<label for='school_country_" + countEdu + "'>" + i18n.__("Organization country") + "</label>"
+		+ "<input type='text' class='form-control' name='school_country_" + countEdu + "'></div></div>"
+		+ "<div class='form-row col'>"
+		+ "<div class='form-group col-md'>"
+		+ "<label for='acquired_skills_" + countEdu + "'>" + i18n.__("Main subjects taken and professional skills acquired") + "</label>"
+		+ "<textarea class='form-control' rows='4' name='acquired_skills_" + countEdu + "'></textarea></div></div></div></div>";
+
+		if ($(this).parent().parent().is($(".check-fieldset").first())) {
+			countProExp = elementsDynamic($(this).parent(), proExp, countProExp);
+			$("input[name = 'countProExp']").val(countProExp);
+		} else {
+			countEdu = elementsDynamic($(this).parent(), Edu, countEdu);
+			$("input[name = 'countEdu']").val(countEdu);
+		}
+
+		function elementsDynamic(element, data, count) {
+			if ($(element).hasClass("add-fields") === true) {
+				if (count === 1) {
+					$(element).parent().find($(".del-fields")).show();
+				}
+				$(data).appendTo($(element).parent());
+				count++;
+			} else {
+				if (count === 2) {
+					$(element).parent().find($(".del-fields")).hide();
+				}
+				$(element).parent().find("div.dynamic:last-child").remove();
+				count--;
+			}
+			return count;
+		}
+	});
+
+	$(".check-fieldset", this).on("change", "div.dynamic", function () {
+		let count = 0;
 		$("input:not([type='checkbox']), textarea", this).each(function (_i) {
 			if ($(this).val() !== "") {
 				count++;
