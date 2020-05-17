@@ -28,7 +28,7 @@ $(document).ready(function () {
 	var countProExp = 1;
 	var countEdu = 1;
 
-	$(".add-fields > svg, .del-fields > svg").click(function () {
+	$(".add-fields > img, .del-fields > img").click(function () {
 		//prettier-ignore
 		let proExp = "<div class='form-group dynamic'><div class='form-group'><h5># " + countProExp + "</h5><hr></div>"
 		+ "<div class='form-row'>"
@@ -128,12 +128,16 @@ $(document).ready(function () {
 
 		if (count !== 0 || $("input[type='checkbox']", this).is(":checked")) {
 			if ($("input:checkbox", this).is(":checked")) {
+				$("label:not(.custom-control-label)", this).append(
+					"<img src='img/svg/exclamation.svg' alt=" + i18n.__("Exclamation") + ">"
+				);
 				$("input[type='date']", this).last().val("");
 				$("input[type='date']", this).last().attr("readonly", true);
 			}
 			$("input:not([type='checkbox']), textarea", this).attr("required", true);
 		} else {
 			$("input[type='date']", this).last().removeAttr("readonly");
+			$("label > img", this).remove();
 			$("input:not([type='checkbox']), textarea", this).removeAttr("required");
 		}
 

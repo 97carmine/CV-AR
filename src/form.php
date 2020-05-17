@@ -45,7 +45,7 @@
     <section class="container">
         <article class="text-center">
             <h1 class="p-4"><?=_("FORM")?></h1>
-            <p class="p-3"><?=_("Fill in the options on the form, those with an asterisk are mandatory")?></p>
+            <p class="p-3"><?=_("Fill in the options on the form, those with an exclamation are mandatory")?></p>
             <div class="alert alert-danger" style="display: none;">
                 <span class="text_error"></span>
             </div>
@@ -59,27 +59,29 @@
                 <fieldset>
                     <div class="form-row">
                         <div class="form-group col-md">
-                            <label for="first_name"><?=_("First name")?> *</label>
+                            <label for="first_name">
+                                <?=_("First name")?>
+                                <img src="img/svg/exclamation.svg" alt="<?=_("Exclamation")?>">
+                            </label>
                             <input type="text" class="form-control" name="first_name" required>
                         </div>
                         <div class="form-group col-md">
-                            <label for="last_name"><?=_("Last name")?> *</label>
+                            <label for="last_name">
+                                <?=_("Last name")?>
+                                <img src="img/svg/exclamation.svg" alt="<?=_("Exclamation")?>">
+                            </label>
                             <input type="text" class="form-control" name="last_name" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <svg class="bi bi-info-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
-                            xmlns="http://www.w3.org/2000/svg" id="start-geolocalization">
-                            <path fill-rule="evenodd" d="M8 15A7 7 0 108 1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z"
-                                clip-rule="evenodd" />
-                            <path
-                                d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z" />
-                            <circle cx="8" cy="4.5" r="1" />
-                        </svg>
+                        <img src="img/svg/info-circle.svg" alt="<?=_("Information circle")?>" id="start-geolocalization">
                         <?=_("Click on the icon to geolocate your position")?>
                     </div>
                     <div class="form-group">
-                        <label for="home"><?=_("Home")?> *</label>
+                        <label for="home">
+                            <?=_("Home")?>
+                            <img src="img/svg/exclamation.svg" alt="<?=_("Exclamation")?>">
+                        </label>
                         <input type="text" class="form-control" name="home" required>
                         <div class="invalid-feedback">
                             <?=_("There was an error obtaining the street information")?>
@@ -87,21 +89,33 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-6 col-md-12">
-                            <label for="city"><?=_("City")?> *</label>
+                            <label for="city">
+                                <?=_("City")?>
+                                <img src="img/svg/exclamation.svg" alt="<?=_("Exclamation")?>">
+                            </label>
                             <input type="text" class="form-control" name="city" required>
                         </div>
                         <div class="form-group col-lg-4 col-md-8">
-                            <label for="country"><?=_("Country")?> *</label>
+                            <label for="country">
+                                <?=_("Country")?>
+                                <img src="img/svg/exclamation.svg" alt="<?=_("Exclamation")?>">
+                            </label>
                             <input type="text" class="form-control" name="country" required>
                         </div>
                         <div class="form-group col-lg-2 col-md-4">
-                            <label for="zip"><?=_("Postal Code")?> *</label>
+                            <label for="zip">
+                                <?=_("Postal Code")?>
+                                <img src="img/svg/exclamation.svg" alt="<?=_("Exclamation")?>">
+                            </label>
                             <input type="text" class="form-control" name="postal_code" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md">
-                            <label for="number_phone"><?=_("Phone")?>: *</label>
+                            <label for="number_phone">
+                                <?=_("Phone")?>:
+                                <img src="img/svg/exclamation.svg" alt="<?=_("Exclamation")?>">
+                            </label>
                             <div class="form-row">
                                 <div class="col-6 col-lg-4">
                                     <select class="custom-select" name="type_phone">
@@ -119,7 +133,10 @@
                             </div>
                         </div>
                         <div class="form-group col-md">
-                            <label for="email"><?=_("Email")?> *</label>
+                            <label for="email">
+                                <?=_("Email")?>
+                                <img src="img/svg/exclamation.svg" alt="<?=_("Exclamation")?>">
+                            </label>
                             <input type="email" class="form-control" name="email" required>
                         </div>
                     </div>
@@ -127,34 +144,22 @@
                 <legend><?=_("PROFESSIONAL EXPERIENCE")?></legend>
                 <fieldset class="check-fieldset">
                     <div class="form-group add-fields">
-                        <svg class="bi bi-plus" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M8 3.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H4a.5.5 0 010-1h3.5V4a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
-                            <path fill-rule="evenodd" d="M7.5 8a.5.5 0 01.5-.5h4a.5.5 0 010 1H8.5V12a.5.5 0 01-1 0V8z" clip-rule="evenodd"/>
-                        </svg>
+                        <img src="img/svg/plus.svg" alt="<?=_("Plus")?>">
                         <?=_("Click on the icon to add a field")?>
                     </div>
                     <div class="form-group del-fields" style="display: none;">
-                        <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z" clip-rule="evenodd"/>
-                            <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z" clip-rule="evenodd"/>
-                        </svg>
+                        <img src="img/svg/x.svg" alt="<?=_("X")?>">
                         <?=_("Click on the icon to delete the last field")?>
                     </div>
                 </fieldset>
                 <legend><?=_("EDUCATION AND FORMATION")?></legend>
                 <fieldset class="check-fieldset">
                     <div class="form-group add-fields">
-                        <svg class="bi bi-plus" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M8 3.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H4a.5.5 0 010-1h3.5V4a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
-                            <path fill-rule="evenodd" d="M7.5 8a.5.5 0 01.5-.5h4a.5.5 0 010 1H8.5V12a.5.5 0 01-1 0V8z" clip-rule="evenodd"/>
-                        </svg>
+                    <img src="img/svg/plus.svg" alt="<?=_("Plus")?>">
                         <?=_("Click on the icon to add a field")?>
                     </div>
                     <div class="form-group del-fields" style="display: none;">
-                        <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z" clip-rule="evenodd"/>
-                            <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z" clip-rule="evenodd"/>
-                        </svg>
+                    <img src="img/svg/x.svg" alt="<?=_("X")?>">
                         <?=_("Click on the icon to delete the last field")?>
                     </div>
                 </fieldset>
@@ -198,7 +203,7 @@
                 <fieldset>
                     <div class="form-group">
                         <button type="submit" class="btn btn-outline-dark"><?=_("Generate resume")?></button>
-                        <button type="reset" class="btn btn-outline-* "><?=_("Clean form")?></button>
+                        <button type="reset" class="btn btn-outline-*"><?=_("Clean form")?></button>
                     </div>                   
                 </fieldset>
             </form>
