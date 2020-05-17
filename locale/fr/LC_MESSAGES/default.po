@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-05-17 15:54+0200\n"
-"PO-Revision-Date: 2020-05-17 15:54+0200\n"
+"POT-Creation-Date: 2020-05-17 17:09+0200\n"
+"PO-Revision-Date: 2020-05-17 17:12+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -64,7 +64,7 @@ msgstr ""
 
 #: resources/generator.php:113 resources/generator.php:118
 #: resources/generator.php:127 resources/generator.php:132
-#: src/examples/example_1.php:55 src/form.php:194
+#: src/examples/example_1.php:55 src/form.php:199
 msgid "Other skills"
 msgstr "Autres compétences"
 
@@ -110,7 +110,7 @@ msgstr "IMPLIQUER"
 msgid "Spain"
 msgstr ""
 
-#: src/examples/example_1.php:21 src/form.php:109
+#: src/examples/example_1.php:21 src/form.php:123
 msgid "Mobile"
 msgstr "Mobile"
 
@@ -135,24 +135,34 @@ msgid "FORM"
 msgstr "FORME"
 
 #: src/form.php:48
-msgid "Fill in the options on the form, those with an asterisk are mandatory"
+msgid ""
+"Fill in the options on the form, those with an exclamation are mandatory"
 msgstr ""
-"Remplissez les options du formulaire, celles avec un astérisque sont "
+"Remplissez les options du formulaire, celles avec une exclamation sont "
 "obligatoires"
 
 #: src/form.php:58
 msgid "PERSONAL INFORMATION"
 msgstr "INFORMATIONS PERSONNELLES"
 
-#: src/form.php:62
+#: src/form.php:63
 msgid "First name"
 msgstr "Prénom"
 
-#: src/form.php:66
+#: src/form.php:64 src/form.php:71 src/form.php:83 src/form.php:94
+#: src/form.php:101 src/form.php:108 src/form.php:117 src/form.php:138
+msgid "Exclamation"
+msgstr "Exclamation"
+
+#: src/form.php:70
 msgid "Last name"
 msgstr "Nom de famille"
 
-#: src/form.php:79
+#: src/form.php:77
+msgid "Information circle"
+msgstr "Cercle d'information"
+
+#: src/form.php:78
 msgid "Click on the icon to geolocate your position"
 msgstr "Cliquez sur l'icône pour géolocaliser votre position"
 
@@ -160,84 +170,92 @@ msgstr "Cliquez sur l'icône pour géolocaliser votre position"
 msgid "Home"
 msgstr "Maison"
 
-#: src/form.php:85
+#: src/form.php:87
 msgid "There was an error obtaining the street information"
 msgstr ""
 "Une erreur s'est produite lors de l'obtention des informations sur la rue"
 
-#: src/form.php:90
+#: src/form.php:93
 msgid "City"
 msgstr "Ville"
 
-#: src/form.php:94
+#: src/form.php:100
 msgid "Country"
 msgstr "Pays"
 
-#: src/form.php:98
+#: src/form.php:107
 msgid "Postal Code"
 msgstr "Code postal"
 
-#: src/form.php:104
+#: src/form.php:116
 msgid "Phone"
 msgstr "Téléphone"
 
-#: src/form.php:108
+#: src/form.php:122
 msgid "Type"
 msgstr "Type"
 
-#: src/form.php:110
+#: src/form.php:124
 msgid "House"
 msgstr "Maison"
 
-#: src/form.php:111
+#: src/form.php:125
 msgid "Main"
 msgstr "Principal"
 
-#: src/form.php:112
+#: src/form.php:126
 msgid "Other"
 msgstr "Autre"
 
-#: src/form.php:122
+#: src/form.php:137
 msgid "Email"
 msgstr "Email"
 
-#: src/form.php:127
+#: src/form.php:144
 msgid "PROFESSIONAL EXPERIENCE"
 msgstr "EXPÉRIENCE PROFESSIONNELLE"
 
-#: src/form.php:134 src/form.php:151
+#: src/form.php:147 src/form.php:158
+msgid "Plus"
+msgstr ""
+
+#: src/form.php:148 src/form.php:159
 msgid "Click on the icon to add a field"
 msgstr "Cliquez sur l'icône pour ajouter un champ"
 
-#: src/form.php:141 src/form.php:158
+#: src/form.php:151 src/form.php:162
+msgid "X"
+msgstr ""
+
+#: src/form.php:152 src/form.php:163
 msgid "Click on the icon to delete the last field"
 msgstr "Cliquez sur l'icône pour supprimer le dernier champ"
 
-#: src/form.php:144
+#: src/form.php:155
 msgid "EDUCATION AND FORMATION"
 msgstr "L'ÉDUCATION ET LA FORMATION"
 
-#: src/form.php:161
+#: src/form.php:166
 msgid "ADDITIONAL FIELDS"
 msgstr "CHAMPS SUPPLÉMENTAIRES"
 
-#: src/form.php:167
+#: src/form.php:172
 msgid "Search"
 msgstr "Chercher"
 
-#: src/form.php:167
+#: src/form.php:172
 msgid "Attach a photo"
 msgstr "Joindre une photo"
 
-#: src/form.php:173
+#: src/form.php:178
 msgid "Driving license"
 msgstr "Permis de conduire"
 
-#: src/form.php:200
+#: src/form.php:205
 msgid "Generate resume"
 msgstr "Générer un CV"
 
-#: src/form.php:201
+#: src/form.php:206
 msgid "Clean form"
 msgstr "Forme propre"
 
