@@ -9,5 +9,22 @@
     "Location information is unavailable": "La información de ubicación no está disponible",
     "The request to get user location timed out": "Se agotó el tiempo de espera de la solicitud para obtener la ubicación",
     "An unknown error occurred": "Ocurrió un error desconocido",
-    "There was an error getting the information from OpenStreetMaps": "Ha habido un error al obtener la información de OpenStreetMaps"
+    "There was an error getting the information from OpenStreetMaps": "Ha habido un error al obtener la información de OpenStreetMaps",
+    "Enter the job start date": "Indique la fecha de inicio del trabajo",
+    "The date entered is higher than the end date": "La fecha introducida es superior a la fecha del fin",
+    "Indicate the end date of the jobs": "Indique la fecha de fin del trabajo",
+    "The date entered is before the start date": "La fecha introducida es anterior a la fecha del inicio",
+    "Current job": "Trabajo actual",
+    "Position or position occupied": "Puesto o cargo ocupados",
+    "Name of employer": "Nombre del empleador",
+    "Employer City": "Ciudad del empleador",
+    "Employer Country": "País del empleador",
+    "Indicate the start date of the study": "Indique la fecha de inicio del estudio",
+    "Indicate the end date of the study": "Indique la fecha de fin del estudio",
+    "Current study": "Estudio actual",
+    "Title of qualification awarded": "Título de la cualificación obtenida",
+    "Name of the organization that provided your education": "Nombre de la organización que impartió su educación",
+    "Organization location": "Localidad de la organización",
+    "Organization country": "País de la organización",
+    "Main subjects taken and professional skills acquired": "Principales materias cursadas y competencias profesionales adquiridas"
 }

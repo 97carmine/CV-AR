@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-05-09 22:42+0200\n"
-"PO-Revision-Date: 2020-05-09 22:42+0200\n"
+"POT-Creation-Date: 2020-05-17 15:30+0200\n"
+"PO-Revision-Date: 2020-05-17 15:30+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -17,30 +17,81 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 "X-Poedit-SearchPathExcluded-1: *.js\n"
 
-#: src/about.php:7 src/about.php:42 src/form.php:42 src/index.php:44
-#: src/templates.php:42
+#: resources/generator.php:60
+msgid "You can't upload such a heavy image, the maximum size is "
+msgstr ""
+
+#: resources/generator.php:64
+msgid "Could not upload image"
+msgstr ""
+
+#: resources/generator.php:68
+msgid "The creation could not be carried out due to:"
+msgstr ""
+
+#: resources/generator.php:89 src/examples/example_1.php:27
+msgid "Studies"
+msgstr ""
+
+#: resources/generator.php:93
+msgid "Studying "
+msgstr ""
+
+#: resources/generator.php:93 resources/generator.php:96
+#: resources/generator.php:103 resources/generator.php:106
+#: src/examples/example_1.php:35 src/examples/example_1.php:47
+msgid " in "
+msgstr ""
+
+#: resources/generator.php:93 resources/generator.php:96
+#: resources/generator.php:103 resources/generator.php:106
+#: src/examples/example_1.php:35 src/examples/example_1.php:47
+msgid " of "
+msgstr ""
+
+#: resources/generator.php:100 src/examples/example_1.php:39
+msgid "Work experience"
+msgstr ""
+
+#: resources/generator.php:103
+msgid "Working from "
+msgstr ""
+
+#: resources/generator.php:110 resources/generator.php:124
+#: src/examples/example_1.php:49
+msgid "Licenses"
+msgstr ""
+
+#: resources/generator.php:113 resources/generator.php:118
+#: resources/generator.php:127 resources/generator.php:132
+#: src/examples/example_1.php:55 src/form.php:194
+msgid "Other skills"
+msgstr "Autres compétences"
+
+#: src/about.php:7 src/about.php:41 src/form.php:41 src/index.php:43
+#: src/templates.php:41
 msgid "About"
 msgstr "À propos de"
 
-#: src/about.php:40 src/form.php:40 src/index.php:9 src/index.php:42
-#: src/templates.php:40
+#: src/about.php:39 src/form.php:39 src/index.php:9 src/index.php:41
+#: src/templates.php:39
 msgid "Start"
 msgstr "Début"
 
-#: src/about.php:41 src/form.php:41 src/index.php:43 src/templates.php:7
-#: src/templates.php:41
+#: src/about.php:40 src/form.php:40 src/index.php:42 src/templates.php:7
+#: src/templates.php:40
 msgid "Templates"
 msgstr "Modèles"
 
-#: src/about.php:48
+#: src/about.php:47
 msgid "TEAM"
 msgstr "ÉQUIPE"
 
-#: src/about.php:51
+#: src/about.php:50
 msgid "OUR HISTORY"
 msgstr "NOTRE HOSTOIRE"
 
-#: src/about.php:52
+#: src/about.php:51
 msgid ""
 "For the choice of this project, we observe that the ways of representing "
 "oneself have hardly changed, for this reason we decided to create this tool "
@@ -50,35 +101,60 @@ msgstr ""
 "n'ont guère changé, c'est pourquoi nous avons décidé de créer cet outil qui "
 "complète le cursus traditionnel."
 
-#: src/about.php:53
+#: src/about.php:52
 msgid "INVOLVE"
 msgstr "IMPLIQUER"
+
+#: src/examples/example_1.php:19 src/examples/example_1.php:35
+#: src/examples/example_1.php:47
+msgid "Spain"
+msgstr ""
+
+#: src/examples/example_1.php:21 src/form.php:109
+msgid "Mobile"
+msgstr "Mobile"
+
+#: src/examples/example_1.php:37
+msgid "Programming in server and client environment"
+msgstr ""
+
+#: src/examples/example_1.php:47
+msgid "Scholar"
+msgstr ""
+
+#: src/examples/example_1.php:57
+msgid "English medium level"
+msgstr ""
 
 #: src/form.php:7
 msgid "Form"
 msgstr "Forme"
 
-#: src/form.php:48
+#: src/form.php:47
 msgid "FORM"
 msgstr "FORME"
 
-#: src/form.php:49
+#: src/form.php:48
 msgid "Fill in the options on the form, those with an asterisk are mandatory"
 msgstr ""
 "Remplissez les options du formulaire, celles avec un astérisque sont "
 "obligatoires"
 
-#: src/form.php:57
+#: src/form.php:58
 msgid "PERSONAL INFORMATION"
 msgstr "INFORMATIONS PERSONNELLES"
 
-#: src/form.php:61
+#: src/form.php:62
 msgid "First name"
 msgstr "Prénom"
 
-#: src/form.php:65
+#: src/form.php:66
 msgid "Last name"
 msgstr "Nom de famille"
+
+#: src/form.php:79
+msgid "Click on the icon to geolocate your position"
+msgstr "Cliquez sur l'icône pour géolocaliser votre position"
 
 #: src/form.php:82
 msgid "Home"
@@ -109,10 +185,6 @@ msgstr "Téléphone"
 msgid "Type"
 msgstr "Type"
 
-#: src/form.php:109
-msgid "Mobile"
-msgstr "Mobile"
-
 #: src/form.php:110
 msgid "House"
 msgstr "Maison"
@@ -133,116 +205,52 @@ msgstr "Email"
 msgid "PROFESSIONAL EXPERIENCE"
 msgstr "EXPÉRIENCE PROFESSIONNELLE"
 
-#: src/form.php:131
-msgid "Enter the job start date"
-msgstr "Entrez la date de début du travail"
+#: src/form.php:134 src/form.php:151
+msgid "Click on the icon to add a field"
+msgstr "Cliquez sur l'icône pour ajouter un champ"
 
-#: src/form.php:135 src/form.php:180
-msgid "The date entered is higher than the end date"
-msgstr "La date saisie est supérieure à la date de fin"
+#: src/form.php:141 src/form.php:158
+msgid "Click on the icon to delete the last field"
+msgstr "Cliquez sur l'icône pour supprimer le dernier champ"
 
-#: src/form.php:140
-msgid "Indicate the end date of the jobs"
-msgstr "Indiquez la date de fin des travaux"
-
-#: src/form.php:144 src/form.php:189
-msgid "The date entered is before the start date"
-msgstr "La date saisie est antérieure à la date de début"
-
-#: src/form.php:149
-msgid "Current job"
-msgstr "Travail actuel"
-
-#: src/form.php:153
-msgid "Position or position occupied"
-msgstr "Poste ou poste occupé"
-
-#: src/form.php:159
-msgid "Name of employer"
-msgstr "Nom de l'Employeur"
-
-#: src/form.php:163
-msgid "Employer City"
-msgstr "Ville de l'employeur"
-
-#: src/form.php:167
-msgid "Employer Country"
-msgstr "Pays employeur"
-
-#: src/form.php:172
+#: src/form.php:144
 msgid "EDUCATION AND FORMATION"
 msgstr "L'ÉDUCATION ET LA FORMATION"
 
-#: src/form.php:176
-msgid "Indicate the start date of the study"
-msgstr "Indiquez la date de début de l'étude"
-
-#: src/form.php:185
-msgid "Indicate the end date of the study"
-msgstr "Indiquez la date de fin de l'étude"
-
-#: src/form.php:194
-msgid "Current study"
-msgstr "Étude actuelle"
-
-#: src/form.php:198
-msgid "Title of qualification awarded"
-msgstr "Titre du diplôme délivré"
-
-#: src/form.php:205
-msgid "Name of the organization that provided your education"
-msgstr "Nom de l'organisation qui a dispensé vos études"
-
-#: src/form.php:209
-msgid "Organization location"
-msgstr "Emplacement de l'organisation"
-
-#: src/form.php:213
-msgid "Organization country"
-msgstr "Pays de l'organisation"
-
-#: src/form.php:219
-msgid "Main subjects taken and professional skills acquired"
-msgstr "Principales matières suivies et compétences professionnelles acquises"
-
-#: src/form.php:225
+#: src/form.php:161
 msgid "ADDITIONAL FIELDS"
 msgstr "CHAMPS SUPPLÉMENTAIRES"
 
-#: src/form.php:231
+#: src/form.php:167
 msgid "Search"
 msgstr "Chercher"
 
-#: src/form.php:231
+#: src/form.php:167
 msgid "Attach a photo"
 msgstr "Joindre une photo"
 
-#: src/form.php:237
+#: src/form.php:173
 msgid "Driving license"
 msgstr "Permis de conduire"
 
-#: src/form.php:258
-msgid "Other skills"
-msgstr "Autres compétences"
-
-#: src/form.php:264
+#: src/form.php:200
 msgid "Generate resume"
 msgstr "Générer un CV"
 
-#: src/form.php:265
+#: src/form.php:201
 msgid "Clean form"
 msgstr "Forme propre"
 
-#: src/index.php:51
+#: src/index.php:50
 msgid "HELLO"
 msgstr "BONJOUR"
 
-#: src/index.php:52
+#: src/index.php:51
 msgid "Welcome to the world's first augmented reality resume builder"
 msgstr ""
 "Bienvenue dans le premier constructeur de CV en réalité augmentée au monde"
 
-#: src/index.php:54
+#: src/index.php:53
 msgid ""
 "Designed by Axel Gabriel Calle Granda and Adrián Rodríguez Ballesteros as a "
 "final degree project in the Jose Ramón Otero cooperative"
@@ -250,29 +258,29 @@ msgstr ""
 "Conçu par Axel Gabriel Calle Granda et Adrián Rodríguez Ballesteros comme "
 "projet de diplôme final dans la coopérative Jose Ramón Otero"
 
-#: src/templates.php:48
+#: src/templates.php:47
 msgid "TEMPLATES"
 msgstr "MODÈLES"
 
-#: src/templates.php:49
+#: src/templates.php:48
 msgid "Choose from three designs, the one that best suits you"
 msgstr "Choisissez parmi trois modèles, celui qui vous convient le mieux"
 
-#: src/templates.php:52 src/templates.php:54 src/templates.php:73
-#: src/templates.php:97 src/templates.php:99 src/templates.php:118
-#: src/templates.php:142 src/templates.php:144 src/templates.php:163
+#: src/templates.php:51 src/templates.php:53 src/templates.php:72
+#: src/templates.php:96 src/templates.php:98 src/templates.php:117
+#: src/templates.php:141 src/templates.php:143 src/templates.php:162
 msgid "Design"
 msgstr "Conception"
 
-#: src/templates.php:66 src/templates.php:111 src/templates.php:156
+#: src/templates.php:65 src/templates.php:110 src/templates.php:155
 msgid "Access form"
 msgstr "Accès au formulaire"
 
-#: src/templates.php:67 src/templates.php:112 src/templates.php:157
+#: src/templates.php:66 src/templates.php:111 src/templates.php:156
 msgid "See example"
 msgstr "Voir l'exemple"
 
-#: src/templates.php:80 src/templates.php:125 src/templates.php:170
+#: src/templates.php:79 src/templates.php:124 src/templates.php:169
 msgid ""
 "First make sure that the web server works with HTTPS as it is a requirement "
 "to access the camera from a web browser"
@@ -280,6 +288,58 @@ msgstr ""
 "Assurez-vous d'abord que le serveur Web fonctionne avec HTTPS car il est "
 "nécessaire d'accéder à la caméra à partir d'un navigateur Web"
 
-#: src/templates.php:87 src/templates.php:132 src/templates.php:177
+#: src/templates.php:86 src/templates.php:131 src/templates.php:176
 msgid "Now with the other device, scan the following mark"
 msgstr "Maintenant avec l'autre appareil, scannez la marque suivante"
+
+#~ msgid "Enter the job start date"
+#~ msgstr "Entrez la date de début du travail"
+
+#~ msgid "The date entered is higher than the end date"
+#~ msgstr "La date saisie est supérieure à la date de fin"
+
+#~ msgid "Indicate the end date of the jobs"
+#~ msgstr "Indiquez la date de fin des travaux"
+
+#~ msgid "The date entered is before the start date"
+#~ msgstr "La date saisie est antérieure à la date de début"
+
+#~ msgid "Current job"
+#~ msgstr "Travail actuel"
+
+#~ msgid "Position or position occupied"
+#~ msgstr "Poste ou poste occupé"
+
+#~ msgid "Name of employer"
+#~ msgstr "Nom de l'Employeur"
+
+#~ msgid "Employer City"
+#~ msgstr "Ville de l'employeur"
+
+#~ msgid "Employer Country"
+#~ msgstr "Pays employeur"
+
+#~ msgid "Indicate the start date of the study"
+#~ msgstr "Indiquez la date de début de l'étude"
+
+#~ msgid "Indicate the end date of the study"
+#~ msgstr "Indiquez la date de fin de l'étude"
+
+#~ msgid "Current study"
+#~ msgstr "Étude actuelle"
+
+#~ msgid "Title of qualification awarded"
+#~ msgstr "Titre du diplôme délivré"
+
+#~ msgid "Name of the organization that provided your education"
+#~ msgstr "Nom de l'organisation qui a dispensé vos études"
+
+#~ msgid "Organization location"
+#~ msgstr "Emplacement de l'organisation"
+
+#~ msgid "Organization country"
+#~ msgstr "Pays de l'organisation"
+
+#~ msgid "Main subjects taken and professional skills acquired"
+#~ msgstr ""
+#~ "Principales matières suivies et compétences professionnelles acquises"

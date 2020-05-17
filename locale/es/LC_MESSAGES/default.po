@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-05-14 16:43+0200\n"
-"PO-Revision-Date: 2020-05-14 16:49+0200\n"
+"POT-Creation-Date: 2020-05-17 15:30+0200\n"
+"PO-Revision-Date: 2020-05-17 15:30+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 2.2.1\n"
 "X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -64,7 +64,7 @@ msgstr "Carnets"
 
 #: resources/generator.php:113 resources/generator.php:118
 #: resources/generator.php:127 resources/generator.php:132
-#: src/examples/example_1.php:55 src/form.php:253
+#: src/examples/example_1.php:55 src/form.php:194
 msgid "Other skills"
 msgstr "Otras habilidades"
 
@@ -110,7 +110,7 @@ msgstr "INVOLUCRARSE"
 msgid "Spain"
 msgstr "España"
 
-#: src/examples/example_1.php:21 src/form.php:108
+#: src/examples/example_1.php:21 src/form.php:109
 msgid "Mobile"
 msgstr "Móvil"
 
@@ -140,159 +140,103 @@ msgstr ""
 "Complete las opciones en el formulario, aquellos con un asterisco son "
 "obligatorios"
 
-#: src/form.php:56
+#: src/form.php:58
 msgid "PERSONAL INFORMATION"
 msgstr "INFORMACIÓN PERSONAL"
 
-#: src/form.php:60
+#: src/form.php:62
 msgid "First name"
 msgstr "Nombre"
 
-#: src/form.php:64
+#: src/form.php:66
 msgid "Last name"
 msgstr "Apellidos"
 
-#: src/form.php:81
+#: src/form.php:79
+msgid "Click on the icon to geolocate your position"
+msgstr "Clic en el icono para eliminar el último campo"
+
+#: src/form.php:82
 msgid "Home"
 msgstr "Domicilio"
 
-#: src/form.php:84
+#: src/form.php:85
 msgid "There was an error obtaining the street information"
 msgstr "Se produjo un error al obtener la información de la calle"
 
-#: src/form.php:89
+#: src/form.php:90
 msgid "City"
 msgstr "Ciudad"
 
-#: src/form.php:93
+#: src/form.php:94
 msgid "Country"
 msgstr "País"
 
-#: src/form.php:97
+#: src/form.php:98
 msgid "Postal Code"
 msgstr "Código postal"
 
-#: src/form.php:103
+#: src/form.php:104
 msgid "Phone"
 msgstr "Teléfono"
 
-#: src/form.php:107
+#: src/form.php:108
 msgid "Type"
 msgstr "Tipo"
 
-#: src/form.php:109
+#: src/form.php:110
 msgid "House"
 msgstr "Casa"
 
-#: src/form.php:110
+#: src/form.php:111
 msgid "Main"
 msgstr "Principal"
 
-#: src/form.php:111
+#: src/form.php:112
 msgid "Other"
 msgstr "Otro"
 
-#: src/form.php:121
+#: src/form.php:122
 msgid "Email"
 msgstr "Correo electrónico"
 
-#: src/form.php:126
+#: src/form.php:127
 msgid "PROFESSIONAL EXPERIENCE"
 msgstr "EXPERIENCIA PROFESIONAL"
 
-#: src/form.php:130
-msgid "Enter the job start date"
-msgstr "Indique la fecha de inicio del trabajo"
+#: src/form.php:134 src/form.php:151
+msgid "Click on the icon to add a field"
+msgstr "Clic en el icono para añadir un campo"
 
-#: src/form.php:133 src/form.php:176
-msgid "The date entered is higher than the end date"
-msgstr "La fecha introducida es superior a la fecha del fin"
+#: src/form.php:141 src/form.php:158
+msgid "Click on the icon to delete the last field"
+msgstr "Clic en el icono para eliminar el último campo"
 
-#: src/form.php:138
-msgid "Indicate the end date of the jobs"
-msgstr "Indique la fecha de fin del trabajo"
-
-#: src/form.php:141 src/form.php:184
-msgid "The date entered is before the start date"
-msgstr "La fecha introducida es anterior a la fecha del inicio"
-
-#: src/form.php:146
-msgid "Current job"
-msgstr "Trabajo actual"
-
-#: src/form.php:150
-msgid "Position or position occupied"
-msgstr "Puesto o cargo ocupados"
-
-#: src/form.php:156
-msgid "Name of employer"
-msgstr "Nombre del empleador"
-
-#: src/form.php:160
-msgid "Employer City"
-msgstr "Ciudad del empleador"
-
-#: src/form.php:164
-msgid "Employer Country"
-msgstr "País del empleador"
-
-#: src/form.php:169
+#: src/form.php:144
 msgid "EDUCATION AND FORMATION"
 msgstr "EDUCACIÓN Y FORMACIÓN"
 
-#: src/form.php:173
-msgid "Indicate the start date of the study"
-msgstr "Indique la fecha de inicio del estudio"
-
-#: src/form.php:181
-msgid "Indicate the end date of the study"
-msgstr "Indique la fecha de fin del estudio"
-
-#: src/form.php:189
-msgid "Current study"
-msgstr "Estudio actual"
-
-#: src/form.php:193
-msgid "Title of qualification awarded"
-msgstr "Título de la cualificación obtenida"
-
-#: src/form.php:200
-msgid "Name of the organization that provided your education"
-msgstr "Nombre de la organización que impartió su educación"
-
-#: src/form.php:204
-msgid "Organization location"
-msgstr "Localidad de la organización"
-
-#: src/form.php:208
-msgid "Organization country"
-msgstr "País de la organización"
-
-#: src/form.php:214
-msgid "Main subjects taken and professional skills acquired"
-msgstr "Principales materias cursadas y competencias profesionales adquiridas"
-
-#: src/form.php:220
+#: src/form.php:161
 msgid "ADDITIONAL FIELDS"
 msgstr "CAMPOS ADICIONALES"
 
-#: src/form.php:226
+#: src/form.php:167
 msgid "Search"
 msgstr "Buscar"
 
-#: src/form.php:226
+#: src/form.php:167
 msgid "Attach a photo"
 msgstr "Adjunta una foto"
 
-#: src/form.php:232
+#: src/form.php:173
 msgid "Driving license"
 msgstr "Permiso de conducir"
 
-#: src/form.php:259
+#: src/form.php:200
 msgid "Generate resume"
 msgstr "Generar fomulario"
 
-#: src/form.php:260
+#: src/form.php:201
 msgid "Clean form"
 msgstr "Limpiar formulario"
 
@@ -346,3 +290,55 @@ msgstr ""
 #: src/templates.php:86 src/templates.php:131 src/templates.php:176
 msgid "Now with the other device, scan the following mark"
 msgstr "Ahora con otro dispositivo, escanee la siguiente marca"
+
+#~ msgid "Enter the job start date"
+#~ msgstr "Indique la fecha de inicio del trabajo"
+
+#~ msgid "The date entered is higher than the end date"
+#~ msgstr "La fecha introducida es superior a la fecha del fin"
+
+#~ msgid "Indicate the end date of the jobs"
+#~ msgstr "Indique la fecha de fin del trabajo"
+
+#~ msgid "The date entered is before the start date"
+#~ msgstr "La fecha introducida es anterior a la fecha del inicio"
+
+#~ msgid "Current job"
+#~ msgstr "Trabajo actual"
+
+#~ msgid "Position or position occupied"
+#~ msgstr "Puesto o cargo ocupados"
+
+#~ msgid "Name of employer"
+#~ msgstr "Nombre del empleador"
+
+#~ msgid "Employer City"
+#~ msgstr "Ciudad del empleador"
+
+#~ msgid "Employer Country"
+#~ msgstr "País del empleador"
+
+#~ msgid "Indicate the start date of the study"
+#~ msgstr "Indique la fecha de inicio del estudio"
+
+#~ msgid "Indicate the end date of the study"
+#~ msgstr "Indique la fecha de fin del estudio"
+
+#~ msgid "Current study"
+#~ msgstr "Estudio actual"
+
+#~ msgid "Title of qualification awarded"
+#~ msgstr "Título de la cualificación obtenida"
+
+#~ msgid "Name of the organization that provided your education"
+#~ msgstr "Nombre de la organización que impartió su educación"
+
+#~ msgid "Organization location"
+#~ msgstr "Localidad de la organización"
+
+#~ msgid "Organization country"
+#~ msgstr "País de la organización"
+
+#~ msgid "Main subjects taken and professional skills acquired"
+#~ msgstr ""
+#~ "Principales materias cursadas y competencias profesionales adquiridas"

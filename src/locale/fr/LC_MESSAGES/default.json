@@ -1,6 +1,6 @@
 {
     "": {
-        "language": "es",
+        "language": "fr",
         "plural-forms": "nplurals=2; plural=n>1;"
     },
     "You need HTTPS to access geolocation": "Vous avez besoin de HTTPS pour accéder à la géolocalisation",
@@ -9,5 +9,22 @@
     "Location information is unavailable": "Les informations de localisation ne sont pas disponibles",
     "The request to get user location timed out": "Délai d'expiration de la demande pour expiration de l'emplacement",
     "An unknown error occurred": "Une erreur inconnue s'est produite",
-    "There was an error getting the information from OpenStreetMaps": "Une erreur s'est produite lors de l'obtention des informations d'OpenStreetMaps"
+    "There was an error getting the information from OpenStreetMaps": "Une erreur s'est produite lors de l'obtention des informations d'OpenStreetMaps",
+    "Enter the job start date": "Entrez la date de début du travail",
+    "The date entered is higher than the end date": "La date saisie est supérieure à la date de fin",
+    "Indicate the end date of the jobs": "Indiquez la date de fin des travaux",
+    "The date entered is before the start date": "La date saisie est antérieure à la date de début",
+    "Current job": "Travail actuel",
+    "Position or position occupied": "Poste ou poste occupé",
+    "Name of employer": "Nom de l'Employeur",
+    "Employer City": "Ville de l'employeur",
+    "Employer Country": "Pays employeur",
+    "Indicate the start date of the study": "Indiquez la date de début de l'étude",
+    "Indicate the end date of the study": "Indiquez la date de fin de l'étude",
+    "Current study": "Étude actuelle",
+    "Title of qualification awarded": "Titre du diplôme délivré",
+    "Name of the organization that provided your education": "Nom de l'organisation qui a dispensé vos études",
+    "Organization location": "Emplacement de l'organisation",
+    "Organization country": "Pays de l'organisation",
+    "Main subjects taken and professional skills acquired": "Principales matières suivies et compétences professionnelles acquises"
 }
