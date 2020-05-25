@@ -202,7 +202,7 @@
                 </fieldset>
                 <fieldset>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-outline-dark"><?=_("Generate resume")?></button>
+                        <button type="submit" name="send" class="btn btn-outline-dark"><?=_("Generate resume")?></button>
                         <button type="reset" class="btn btn-outline-*"><?=_("Clean form")?></button>
                     </div>                   
                 </fieldset>
