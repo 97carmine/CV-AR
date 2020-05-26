@@ -15,7 +15,10 @@
     if (isset($_POST['download'])){
         @$resume1 = $_POST["resume1"];
         @$resume2 = $_POST["resume2"];
+        @$first_name = $_POST["first_name"];
         @$picture = $_POST["picture"];
+        @$picture_name = $_POST["picture_name"];
+        
 
         require '../src/libraries/simple_html_dom/simple_html_dom.php';
 
@@ -23,8 +26,8 @@
         $head = $html->find("head",0);
         $body = $html->find("body",0);
 
-        $resume1 = $resume1."2.php";
-        $fp = fopen($resume1, "a+");
+        $resume1 = $resume1."2";
+        $fp = fopen($resume1.".html", "a+");
         fputs($fp, "<html>\r\n<head>");
         foreach ($head->find("meta") as $meta) {
             fputs($fp, $meta."\r\n");
@@ -37,7 +40,13 @@
         fputs($fp, "</head>");
         fputs($fp, $body);
         fputs($fp, "</html>");
+        fclose($fp);
 
+        $zip = new ZipArchive();
+        $zip->open($resume1.'.zip', ZipArchive::CREATE);
+        $zip->addFile($resume1.".html","cv/CV_".$first_name.".html");
+        $zip->addFile($picture,"img/users/".$picture_name);
+        $zip->close();
     }
     if (isset($_POST['send'])){
         @$design = $_POST["design"];
@@ -231,8 +240,10 @@
                     print "<form action='generator.php' method='post'>";
                         print "<input type='hidden' name='resume1' value=".$folder_cv.$cv.">";
                         print "<input type='hidden' name='resume2' value=".$cv.">";
+                        print "<input type='hidden' name='first_name' value=".$first_name.">";
                         print "<input type='hidden' name='design' value=".$design.">";
                         print "<input type='hidden' name='picture' value=".$path1.">";
+                        print "<input type='hidden' name='picture_name' value=".$name_file.">";
                         print "<div class='col-12'>";
                         print "<button type='submit' name='download' class='btn btn-outline-dark m-5'>"._('Download')."</button>";
                         print "</div>";
