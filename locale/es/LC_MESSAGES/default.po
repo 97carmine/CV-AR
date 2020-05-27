@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-05-27 12:25+0200\n"
-"PO-Revision-Date: 2020-05-27 12:31+0200\n"
+"POT-Creation-Date: 2020-05-27 12:35+0200\n"
+"PO-Revision-Date: 2020-05-27 12:59+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -297,6 +297,18 @@ msgid ""
 msgstr ""
 "Primero asegúrate de que el servidor web funcione con HTTPS ya que es un "
 "requisito para acceder a la cámara desde un nevagador web"
+
+#: src/templates.php:84
+msgid "Access this "
+msgstr "Accede a esta "
+
+#: src/templates.php:84
+msgid "web page"
+msgstr "pagina web"
+
+#: src/templates.php:85
+msgid " from another camera device."
+msgstr " desde otro dispositivo con cámara."
 
 #: src/templates.php:86 src/templates.php:131 src/templates.php:176
 msgid "Now with the other device, scan the following mark"
