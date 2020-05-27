@@ -19,10 +19,9 @@
         @$picture = $_POST["picture"];
         @$picture_name = $_POST["picture_name"];
         
-
         require '../src/libraries/simple_html_dom/simple_html_dom.php';
 
-        $html = file_get_html("http://192.168.1.32/CV-AR/src/CVs/".$resume2.".php");
+        $html = file_get_html("../src/CVs/".$resume2.".php");
         $head = $html->find("head",0);
         $body = $html->find("body",0);
 
@@ -47,6 +46,8 @@
         $zip->addFile($resume1.".html","cv/CV_".$first_name.".html");
         $zip->addFile($picture,"img/users/".$picture_name);
         $zip->close();
+
+        print ""; 
     }
     if (isset($_POST['send'])){
         @$design = $_POST["design"];
@@ -124,7 +125,7 @@
 
             fputs($fp, "<html>\r\n<head>\r\n<script src='../libraries/aframe.min.js'></script>\r\n</head>\r\n<body>\r\n");
             fputs($fp, "<a-scene>\r\n");
-            fputs($fp, "<a-entity position='0 0.5 3.8'><a-camera></a-camera></a-entity>\r\n");
+            fputs($fp, "<a-entity position='0 0.5 2'><a-camera></a-camera></a-entity>\r\n");
 
             switch ($design) {
                 case "1":
