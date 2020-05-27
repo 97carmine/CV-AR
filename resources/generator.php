@@ -27,29 +27,35 @@
 
         $resume1 = $resume1."2";
         $fp = fopen($resume1.".html", "a+");
-        fputs($fp, "<html>\r\n<head>");
-        foreach ($head->find("meta") as $meta) {
-            fputs($fp, $meta."\r\n");
+        fputs($fp, "<html>\r\n<head>\r\n");
+        fputs($fp, "<script src='../libraries/aframe.min.js'></script>\r\n");
+        fputs($fp, "<script src='../libraries/aframe-ar.js'></script>\r\n");
+        fputs($fp, "</head>\r\n");
+        
+        $scene = $body->find("a-scene",0);
+        $entity = $scene->find("a-entity");
+
+        fputs($fp, "<body style='margin : 0px; overflow: hidden;'>\r\n");
+        fputs($fp, "<a-scene embedded arjs>\r\n");
+        fputs($fp, "<a-marker preset='hiro'>\r\n");
+        fputs($fp, "<a-entity position='0 0.5 5.8'><a-camera></a-camera></a-entity>\r\n");
+        fputs($fp, "<a-image id='photo' position='-0.4 3.15 0' src='../img/example_1/user_example_1.jpg' height='1.2' width='1.1' material='' visible=''></a-image>\r\n");
+        for($i=0;$i<count($entity);$i++){
+            fputs($fp, $entity[$i]."\r\n");
         }
-        fputs($fp, "<script src='../libraries/aframe.min.js'></script>");
-        fputs($fp, "<script src='../libraries/aframe-ar.js'></script>");
-        foreach ($head->find("style") as $style) {
-            fputs($fp, $style."\r\n");
-        }
-        fputs($fp, "</head>");
-        fputs($fp, $body);
-        fputs($fp, "</html>");
+        fputs($fp, "</a-marker>\r\n</a-scene>\r\n</body>\r\n</html>\r\n");
         fclose($fp);
 
         $zip = new ZipArchive();
-        $zip->open($resume1.'.zip', ZipArchive::CREATE);
+        $zip->open($resume1.".zip", ZipArchive::CREATE);
         $zip->addFile($resume1.".html","cv/CV_".$first_name.".html");
         $zip->addFile($picture,"img/users/".$picture_name);
         $zip->addFile("../src/libraries/aframe.min.js","libraries/aframe.min.js");
         $zip->addFile("../src/libraries/aframe-ar.js","libraries/aframe-ar.js");
         $zip->close();
 
-        print ""; 
+        print $picture." ".$picture_name."<br>";
+        print "<a href='".$resume1.".zip' download>curriculum.zip</a>";
     }
     if (isset($_POST['send'])){
         @$design = $_POST["design"];
