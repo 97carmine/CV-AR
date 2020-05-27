@@ -128,10 +128,6 @@ $(document).ready(function () {
 		});
 
 		if (count !== 0 || $("input[type='checkbox']").is(":checked")) {
-			if ($("input:checkbox").is(":checked")) {
-				$("input[type='date']", this).last().val("");
-				$("input[type='date']", this).last().attr("readonly", true);
-			}
 			if (!$("label > img", this).length) {
 				$("label:not(.custom-control-label)", this).append(
 					"<img src='img/svg/exclamation.svg' alt=" + i18n.__("Exclamation") + ">"
@@ -139,9 +135,15 @@ $(document).ready(function () {
 			}
 			$("input:not([type='checkbox']), textarea", this).attr("required", true);
 		} else {
-			$("input[type='date']", this).last().removeAttr("readonly");
 			$("label > img", this).remove();
 			$("input:not([type='checkbox']), textarea", this).removeAttr("required");
+		}
+
+		if ($("input:checkbox").is(":checked")) {
+			$("input[type='date']", this).last().val("");
+			$("input[type='date']", this).last().attr("readonly", true);
+		} else {
+			$("input[type='date']", this).last().removeAttr("readonly");
 		}
 
 		$("input[type='date']", this)
