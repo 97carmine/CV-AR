@@ -45,6 +45,8 @@
         $zip->open($resume1.'.zip', ZipArchive::CREATE);
         $zip->addFile($resume1.".html","cv/CV_".$first_name.".html");
         $zip->addFile($picture,"img/users/".$picture_name);
+        $zip->addFile("../src/libraries/aframe.min.js","libraries/aframe.min.js");
+        $zip->addFile("../src/libraries/aframe-ar.js","libraries/aframe-ar.js");
         $zip->close();
 
         print ""; 
