@@ -144,20 +144,20 @@
                         fputs($fp, "<a-entity id='studies' text='value: <?=_('Studies')?>:; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.77 2.45 0'></a-entity>\r\n");
                         fputs($fp, "<a-entity id='date_start1' text='value: ".$date_education_start."; width: 2; color: #4CC3D9' position='0.04 2.25 0'></a-entity>\r\n");
                         if($current_education == "on"){
-                            fputs($fp, "<a-entity id='title' text='value: <?=_('Studying ')?>".$title."<?=_('in')?>".$school_name."<?=_('of')?>".$school_city."<?=_('in')?>".$school_country.".; width: 2; color: #4CC3D9' position='0.6 2.25 0'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='title' text='value: <?=_('Studying ')?>".$title."<?=_(' in ')?>".$school_name."<?=_(' of ')?>".$school_city."<?=_(' in ')?>".$school_country.".; width: 2; color: #4CC3D9' position='0.6 2.25 0'></a-entity>\r\n");
                         }else{
                             fputs($fp, "<a-entity id='date_end1' text='value: ".$date_education_end."; width: 2; color: #4CC3D9' position='0.04 2.15 0'></a-entity>\r\n");
-                            fputs($fp, "<a-entity id='title' text='value: ".$title."<?=_('in')?>".$school_name."<?=_('of')?>".$school_city."<?=_('in')?>".$school_country.".; width: 2; color: #4CC3D9' position='0.6 2.25 0'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='title' text='value: ".$title."<?=_(' in ')?>".$school_name."<?=_(' of ')?>".$school_city."<?=_(' in ')?>".$school_country.".; width: 2; color: #4CC3D9' position='0.6 2.25 0'></a-entity>\r\n");
                         }
                         fputs($fp, "<a-entity id='skills1' text='value: ".$acquired_skills.".; width: 2; color: #4CC3D9' position='0.65 2.10 0'></a-entity>\r\n");
 
                         fputs($fp, "<a-entity id='works' text='value: <?=_('Work experience')?>:; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.77 1.8 0'></a-entity>\r\n");
                         fputs($fp, "<a-entity id='date_start2' text='value: ".$date_job_start."; width: 2; color: #4CC3D9' position='0.04 1.60 0'></a-entity>\r\n");
                         if($current_job == "on"){
-                            fputs($fp, "<a-entity id='experience' text='value: <?=_('Working from ')?>".$job."<?=_('in')?>".$employer_name."<?=_('of')?>".$employer_city."<?=_('in')?>".$employer_country.".; width: 2; color: #4CC3D9' position='0.6 1.55 0'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='experience' text='value: <?=_('Working from ')?>".$job."<?=_(' in ')?>".$employer_name."<?=_(' of ')?>".$employer_city."<?=_(' in ')?>".$employer_country.".; width: 2; color: #4CC3D9' position='0.6 1.55 0'></a-entity>\r\n");
                         }else{
                             fputs($fp, "<a-entity id='date_end2' text='value: ".$date_job_end."; width: 2; color: #4CC3D9' position='0.04 1.5 0'></a-entity>\r\n");
-                            fputs($fp, "<a-entity id='experience' text='value: ".$job."<?=_('in')?>".$employer_name."<?=_('of')?>".$employer_city."<?=_('in')?>".$employer_country.".; width: 2; color: #4CC3D9' position='0.6 1.55 0'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='experience' text='value: ".$job."<?=_(' in ')?>".$employer_name."<?=_(' of ')?>".$employer_city."<?=_(' in ')?>".$employer_country.".; width: 2; color: #4CC3D9' position='0.6 1.55 0'></a-entity>\r\n");
                         }
                         if($have_license){
                             fputs($fp, "<a-entity id='licenses' text='value: <?=_('Licenses')?>:; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.77 1.2 0'></a-entity>\r\n");
@@ -177,10 +177,10 @@
                         fputs($fp, "<a-entity id='date_start1' text='value: ".$date_education_start."; width: 2; color: #4CC3D9' position='0.04 2.25 0'></a-entity>\r\n");
 
                         if($current_education == "on"){
-                            fputs($fp, "<a-entity id='title' text='value: <?=_('Studying')?>".$title."<?=_('in')?>".$school_name."<?=_('of')?>".$school_city."<?=_('in')?>".$school_country.".; width: 2; color: #4CC3D9' position='0.6 2.25 0'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='title' text='value: <?=_('Studying ')?>".$title."<?=_(' in ')?>".$school_name."<?=_(' of ')?>".$school_city."<?=_(' in ')?>".$school_country.".; width: 2; color: #4CC3D9' position='0.6 2.25 0'></a-entity>\r\n");
                         }else{
                             fputs($fp, "<a-entity id='date_end1' text='value: ".$date_education_end."; width: 2; color: #4CC3D9' position='0.04 2.15 0'></a-entity>\r\n");
-                            fputs($fp, "<a-entity id='title' text='value: ".$title."<?=_('in')?>".$school_name."<?=_('of')?>".$school_city."<?=_('in')?>".$school_country.".; width: 2; color: #4CC3D9' position='0.6 2.25 0'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='title' text='value: ".$title."<?=_(' in ')?>".$school_name."<?=_(' of ')?>".$school_city."<?=_(' in ')?>".$school_country.".; width: 2; color: #4CC3D9' position='0.6 2.25 0'></a-entity>\r\n");
                         }
                         fputs($fp, "<a-entity id='skills1' text='value: ".$acquired_skills.".; width: 2; color: #4CC3D9' position='0.65 2.10 0'></a-entity>\r\n");
                         
@@ -201,10 +201,10 @@
                         fputs($fp, "<a-entity id='works' text='value: <?=_('Work experience')?>:; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.77 2.45 0'></a-entity>\r\n");
                         fputs($fp, "<a-entity id='date_start2' text='value: ".$date_job_start."; width: 2; color: #4CC3D9' position='0.04 2.25 0'></a-entity>\r\n");
                         if($current_job == "on"){
-                            fputs($fp, "<a-entity id='experience' text='value: <?=_('Working from ')?>".$job."<?=_('in')?>".$employer_name."<?=_('of')?>".$employer_city."<?=_('in')?>".$employer_country.".; width: 2; color: #4CC3D9' position='0.6 2.25 0'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='experience' text='value: <?=_('Working from ')?>".$job."<?=_(' in ')?>".$employer_name."<?=_(' of ')?>".$employer_city."<?=_(' in ')?>".$employer_country.".; width: 2; color: #4CC3D9' position='0.6 2.25 0'></a-entity>\r\n");
                         }else{
                             fputs($fp, "<a-entity id='date_end2' text='value: ".$date_job_end."; width: 2; color: #4CC3D9' position='0.04 2.15 0'></a-entity>\r\n");
-                            fputs($fp, "<a-entity id='experience' text='value: ".$job."<?=_('in')?>".$employer_name."<?=_('of')?>".$employer_city."<?=_('in')?>".$employer_country.".; width: 2; color: #4CC3D9' position='0.6 2.25 0'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='experience' text='value: ".$job."<?=_(' in ')?>".$employer_name."<?=_(' of ')?>".$employer_city."<?=_(' in ')?>".$employer_country.".; width: 2; color: #4CC3D9' position='0.6 2.25 0'></a-entity>\r\n");
                         }
                         if($have_license){
                             fputs($fp, "<a-entity id='licenses' text='value: <?=_('Licenses')?>:; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.77 1.8 0'></a-entity>\r\n");

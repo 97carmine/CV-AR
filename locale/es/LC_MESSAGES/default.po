@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-05-17 17:09+0200\n"
-"PO-Revision-Date: 2020-05-17 17:10+0200\n"
+"POT-Creation-Date: 2020-05-27 12:25+0200\n"
+"PO-Revision-Date: 2020-05-27 12:31+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.3.1\n"
 "X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -17,56 +17,25 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 "X-Poedit-SearchPathExcluded-1: *.js\n"
 
-#: resources/generator.php:60
+#: resources/generator.php:110
 msgid "You can't upload such a heavy image, the maximum size is "
 msgstr "No puedes subir una imagen tan pesada, el tamaño máximo es "
 
-#: resources/generator.php:64
+#: resources/generator.php:114
 msgid "Could not upload image"
-msgstr "No se pudo subir la imagen."
+msgstr "No se pudo subir la imagen"
 
-#: resources/generator.php:68
+#: resources/generator.php:118
 msgid "The creation could not be carried out due to:"
 msgstr "La creación no pudo llevarse a cabo debido a:"
 
-#: resources/generator.php:89 src/examples/example_1.php:27
-msgid "Studies"
-msgstr "Estudios"
+#: resources/generator.php:251
+msgid "Download"
+msgstr "Descargar"
 
-#: resources/generator.php:93
-msgid "Studying "
-msgstr "Estudiando"
-
-#: resources/generator.php:93 resources/generator.php:96
-#: resources/generator.php:103 resources/generator.php:106
-#: src/examples/example_1.php:35 src/examples/example_1.php:47
-msgid " in "
-msgstr " en "
-
-#: resources/generator.php:93 resources/generator.php:96
-#: resources/generator.php:103 resources/generator.php:106
-#: src/examples/example_1.php:35 src/examples/example_1.php:47
-msgid " of "
-msgstr " de "
-
-#: resources/generator.php:100 src/examples/example_1.php:39
-msgid "Work experience"
-msgstr "Experiencia laboral"
-
-#: resources/generator.php:103
-msgid "Working from "
-msgstr "Trabajando en"
-
-#: resources/generator.php:110 resources/generator.php:124
-#: src/examples/example_1.php:49
-msgid "Licenses"
-msgstr "Carnets"
-
-#: resources/generator.php:113 resources/generator.php:118
-#: resources/generator.php:127 resources/generator.php:132
-#: src/examples/example_1.php:55 src/form.php:199
-msgid "Other skills"
-msgstr "Otras habilidades"
+#: resources/generator.php:254
+msgid "Cancel"
+msgstr "Cancelar"
 
 #: src/about.php:7 src/about.php:41 src/form.php:41 src/index.php:43
 #: src/templates.php:41
@@ -114,13 +83,37 @@ msgstr "España"
 msgid "Mobile"
 msgstr "Móvil"
 
+#: src/examples/example_1.php:27
+msgid "Studies"
+msgstr "Estudios"
+
+#: src/examples/example_1.php:35 src/examples/example_1.php:47
+msgid " in "
+msgstr " en "
+
+#: src/examples/example_1.php:35 src/examples/example_1.php:47
+msgid " of "
+msgstr " de "
+
 #: src/examples/example_1.php:37
 msgid "Programming in server and client environment"
 msgstr "Programación en entorno cliente y servidor"
 
+#: src/examples/example_1.php:39
+msgid "Work experience"
+msgstr "Experiencia laboral"
+
 #: src/examples/example_1.php:47
 msgid "Scholar"
 msgstr "Becario"
+
+#: src/examples/example_1.php:49
+msgid "Licenses"
+msgstr "Carnets"
+
+#: src/examples/example_1.php:55 src/form.php:199
+msgid "Other skills"
+msgstr "Otras habilidades"
 
 #: src/examples/example_1.php:57
 msgid "English medium level"
@@ -307,4 +300,10 @@ msgstr ""
 
 #: src/templates.php:86 src/templates.php:131 src/templates.php:176
 msgid "Now with the other device, scan the following mark"
-msgstr "Ahora con otro dispositivo, escanee la siguiente marca"
+msgstr "Ahora con ese dispositivo, escanee la siguiente marca"
+
+#~ msgid "Studying "
+#~ msgstr "Estudiando "
+
+#~ msgid "Working from "
+#~ msgstr "Trabajando en "
