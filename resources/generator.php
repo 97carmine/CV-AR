@@ -237,7 +237,7 @@
             fputs($fp, "</body>\r\n</html>");
             fclose($fp);
 
-            print "<div class='row' style='height:75%;'>";
+            print "<div class='row' style='height:100%;'>";
                 print "<div class='col-md-2 py-5 my-5 d-flex align-items-center'>";
                     print "<div class='row'>";
                     print "<form action='generator.php' method='post'>";
