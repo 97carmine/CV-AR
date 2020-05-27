@@ -120,20 +120,23 @@ $(document).ready(function () {
 
 	$(".check-fieldset", this).on("change", "div.dynamic", function () {
 		let count = 0;
+
 		$("input:not([type='checkbox']), textarea", this).each(function (_i) {
 			if ($(this).val() !== "") {
 				count++;
 			}
 		});
 
-		if (count !== 0 || $("input[type='checkbox']", this).is(":checked")) {
-			if ($("input:checkbox", this).is(":checked")) {
+		if (count !== 0 || $("input[type='checkbox']").is(":checked")) {
+			if ($("input:checkbox").is(":checked")) {
 				$("input[type='date']", this).last().val("");
 				$("input[type='date']", this).last().attr("readonly", true);
 			}
-			$("label:not(.custom-control-label)", this).append(
-				"<img src='img/svg/exclamation.svg' alt=" + i18n.__("Exclamation") + ">"
-			);
+			if (!$("label > img", this).length) {
+				$("label:not(.custom-control-label)", this).append(
+					"<img src='img/svg/exclamation.svg' alt=" + i18n.__("Exclamation") + ">"
+				);
+			}
 			$("input:not([type='checkbox']), textarea", this).attr("required", true);
 		} else {
 			$("input[type='date']", this).last().removeAttr("readonly");
