@@ -146,40 +146,18 @@ $(document).ready(function () {
 			$("input[type='date']", this).last().removeAttr("readonly");
 		}
 
-		$("input[type='date']", this)
-			.first()
-			.change(function () {
-				checkStartDate($(this), $("input[type='date']", this).last());
-			});
-
-		$("input[type='date']", this)
-			.last()
-			.change(function () {
-				checkEndDate($("input[type='date']", this).first(), $(this));
-			});
-
-		function checkStartDate(startDate, endDate) {
-			if (
-				$(endDate).val() !== "" &&
-				$(startDate).val() !== "" &&
-				compareDates($(startDate).val(), $(endDate).val()) === false
-			) {
-				$(startDate).addClass("is-invalid");
-			} else {
-				$(startDate).removeClass("is-invalid");
-			}
-		}
-
-		function checkEndDate(startDate, endDate) {
-			if (
-				$(endDate).val() !== "" &&
-				$(startDate).val() !== "" &&
-				compareDates($(startDate).val(), $(endDate).val()) === false
-			) {
-				$(endDate).addClass("is-invalid");
-			} else {
-				$(endDate).removeClass("is-invalid");
-			}
+		if (
+			$("input[type='date']", this).first().val() !== "" &&
+			$("input[type='date']", this).last().val() !== "" &&
+			$("input[type='date']", this).last().val() !== undefined &&
+			$("input[type='date']", this).first().val() !== $("input[type='date']", this).last().val() &&
+			compareDates($("input[type='date']", this).first().val(), $("input[type='date']", this).last().val()) === false
+		) {
+			$("input[type='date']", this).first().addClass("is-invalid");
+			$("input[type='date']", this).last().addClass("is-invalid");
+		} else {
+			$("input[type='date']", this).first().removeClass("is-invalid");
+			$("input[type='date']", this).last().removeClass("is-invalid");
 		}
 	});
 
@@ -226,7 +204,7 @@ $(document).ready(function () {
 			method: "GET",
 			dataType: "json",
 			success: function (file) {
-				if ($(file.address).find("road").length > 0) {
+				if ($(file.address).find("road").length) {
 					$("input[name='home']").val(file.address.road);
 				} else {
 					$("input[name='home']").addClass("is-invalid");
