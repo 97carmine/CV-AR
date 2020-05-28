@@ -80,21 +80,36 @@
         @$type_phone = $_POST["type_phone"];
         @$number_phone = $_POST["number_phone"];
         @$email = $_POST["email"];
-        @$date_job_start = $_POST["date_job_start_1"];
-        @$date_job_end = $_POST["date_job_end_1"];
-        @$current_job = $_POST["current_job_1"];
-        @$job = $_POST["job_1"];
-        @$employer_name = $_POST["employer_name_1"];
-        @$employer_city = $_POST["employer_city_1"];
-        @$employer_country = $_POST["employer_country_1"];
-        @$date_education_start = $_POST["date_education_start_1"];
-        @$date_education_end = $_POST["date_education_end_1"];
-        @$current_education = $_POST["current_education_1"];
-        @$title = $_POST["title_1"];
-        @$school_name = $_POST["school_name_1"];
-        @$school_city = $_POST["school_city_1"];
-        @$school_country = $_POST["school_country_1"];
-        @$acquired_skills = $_POST["acquired_skills_1"];
+        @$date_job_start1 = $_POST["date_job_start_1"];
+        @$date_job_end1 = $_POST["date_job_end_1"];
+        @$current_job1 = $_POST["current_job_1"];
+        @$job1 = $_POST["job_1"];
+        @$employer_name1 = $_POST["employer_name_1"];
+        @$employer_city1 = $_POST["employer_city_1"];
+        @$employer_country1 = $_POST["employer_country_1"];
+        @$date_job_start2 = $_POST["date_job_start_2"];
+        @$date_job_end2 = $_POST["date_job_end_2"];
+        @$current_job2 = $_POST["current_job_2"];
+        @$job2 = $_POST["job_2"];
+        @$employer_name2 = $_POST["employer_name_2"];
+        @$employer_city2 = $_POST["employer_city_2"];
+        @$employer_country2 = $_POST["employer_country_2"];
+        @$date_education_start1 = $_POST["date_education_start_1"];
+        @$date_education_end1 = $_POST["date_education_end_1"];
+        @$current_education1 = $_POST["current_education_1"];
+        @$title1 = $_POST["title_1"];
+        @$school_name1 = $_POST["school_name_1"];
+        @$school_city1 = $_POST["school_city_1"];
+        @$school_country1 = $_POST["school_country_1"];
+        @$acquired_skills1 = $_POST["acquired_skills_1"];
+        @$date_education_start2 = $_POST["date_education_start_2"];
+        @$date_education_end2 = $_POST["date_education_end_2"];
+        @$current_education2 = $_POST["current_education_2"];
+        @$title2 = $_POST["title_2"];
+        @$school_name2 = $_POST["school_name_2"];
+        @$school_city2 = $_POST["school_city_2"];
+        @$school_country2 = $_POST["school_country_2"];
+        @$acquired_skills2 = $_POST["acquired_skills_2"];
         @$drive_license = $_POST["drive_license"];
         @$other_skills = $_POST["other_skills"];
     
@@ -159,6 +174,8 @@
                     fputs($fp, "<a-entity id='email' text='value:".$email."; width: 2; color:  #4CC3D9' position='1.43 2.85 0'></a-entity>\r\n");
 
                     if((!(empty($title)))&&(!(empty($job)))){
+                        
+                    }else if((!(empty($title)))&&(!(empty($job)))){
                         fputs($fp, "<a-entity id='studies' text='value: <?=_('Studies')?>:; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.77 2.45 0'></a-entity>\r\n");
                         fputs($fp, "<a-entity id='date_start1' text='value: ".$date_education_start."; width: 2; color: #4CC3D9' position='0.04 2.25 0'></a-entity>\r\n");
                         if($current_education == "on"){
