@@ -81,8 +81,8 @@
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <p>Accede a esta <a id="link_example_1" href="examples/example_1.html" target="_blank">página web</a>
-                                            desde otro dispositivo.</p>
+                                        <p><?=_("Access this ")?><a id="link_example_1" href="examples/example_1.php" target="_blank"><?=_("web page")?></a>
+                                        <?=_(" from another camera device.")?></p>
                                         <p><?=_("Now with the other device, scan the following mark")?>.</p>
                                         <img src="img/patterns/hiro.png" class="img-fluid"
                                             alt="Marca del ejemplo 1">
@@ -126,8 +126,8 @@
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <p>Accede a esta <a id="link_example_2" href="examples/example_2.html" target="_blank">página web</a>
-                                            desde otro dispositivo.</p>
+                                        <p><?=_("Access this ")?><a id="link_example_2" href="examples/example_2.html" target="_blank"><?=_("web page")?></a>
+                                            <?=_(" from another camera device.")?></p>
                                         <p><?=_("Now with the other device, scan the following mark")?>.</p>
                                         <img src="img/patterns/hiro.png" class="img-fluid"
                                             alt="Marca del ejemplo 2">
@@ -171,8 +171,8 @@
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <p>Accede a esta <a id="link_example_3" href="examples/example_3.html" target="_blank">página web</a>
-                                            desde otro dispositivo.</p>
+                                        <p><?=_("Access this ")?><a id="link_example_3" href="examples/example_3.html" target="_blank"><?=_("web page")?></a>
+                                            <?=_(" from another camera device.")?></p>
                                         <p><?=_("Now with the other device, scan the following mark")?>.</p>
                                         <img src="img/patterns/hiro.png" class="img-fluid"
                                             alt="Marca del ejemplo 3">
