@@ -48,14 +48,26 @@
 
         $zip = new ZipArchive();
         $zip->open($resume1.".zip", ZipArchive::CREATE);
-        $zip->addFile($resume1.".html","cv/CV_".$first_name.".html");
-        $zip->addFile($picture,"img/users/".$picture_name);
-        $zip->addFile("../src/libraries/aframe.min.js","libraries/aframe.min.js");
-        $zip->addFile("../src/libraries/aframe-ar.js","libraries/aframe-ar.js");
+        $zip->addFile($resume1.".html","cv/user/CV_".$first_name.".html");
+        $zip->addFile($picture,"cv/img/users/".$picture_name);
+        $zip->addFile("../src/libraries/aframe.min.js","cv/libraries/aframe.min.js");
+        $zip->addFile("../src/libraries/aframe-ar.js","cv/libraries/aframe-ar.js");
+        $zip->addFile("../src/img/patterns/hiro.png","hiro.png");
         $zip->close();
+        print "<div class='d-flex justify-content-center'>";
+            print "<div class='py-5 my-5' style='width: 70%;'>";
+                print "<h1 class='d-flex justify-content-center'>"._("Instructions for use")."</h1><br>";
+                print "<p>"._("Download the cv at the following link").": <a href='".$resume1.".zip' download>curriculum.zip</a></p><br>";
+                print "<p>"._("The downloaded zip will have a folder format like this").".</p>";
+                print "<img src='../src/img/instruction/zip_inicial.png'>";
+                print "<p>"._("Inside the cv folder you will find this folder format").".</p>";
+                print "<img src='../src/img/instruction/zip.png'>";
+                print "<p>"._("In user you have the file corresponding to your cv").".</p>";
+                print "<img src='../src/img/instruction/cv.png'>";
+                print "<p>"._("Open this in any search engine and scan the mark in the first folder with the camera").".</p>";
 
-        print $picture." ".$picture_name."<br>";
-        print "<a href='".$resume1.".zip' download>curriculum.zip</a>";
+            print "</div>";
+        print "</div>";
     }
     if (isset($_POST['send'])){
         @$design = $_POST["design"];

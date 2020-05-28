@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-05-27 12:35+0200\n"
-"PO-Revision-Date: 2020-05-27 12:59+0200\n"
+"POT-Creation-Date: 2020-05-28 13:54+0200\n"
+"PO-Revision-Date: 2020-05-28 13:54+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -17,25 +17,79 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 "X-Poedit-SearchPathExcluded-1: *.js\n"
 
-#: resources/generator.php:110
+#: resources/generator.php:59
+msgid "Instructions for use"
+msgstr "Instrucciones de uso"
+
+#: resources/generator.php:60
+msgid "Download the cv at the following link"
+msgstr "Descargue el cv en el siguiente enlace"
+
+#: resources/generator.php:61
+msgid "The downloaded zip will have a folder format like this"
+msgstr "El zip descargado tendrá un formato de carpetas como el siguiente"
+
+#: resources/generator.php:63
+msgid "Inside the cv folder you will find this folder format"
+msgstr "Dentro de la carpeta cv encontraras este formato de carpetas"
+
+#: resources/generator.php:65
+msgid "In user you have the file corresponding to your cv"
+msgstr "En user tienes el archivo correspondiente a tu cv"
+
+#: resources/generator.php:67
+msgid ""
+"Open this in any search engine and scan the mark in the first folder with "
+"the camera"
+msgstr ""
+"Ábrelo en cualquier buscador y escanea la marca en la primera carpeta con la "
+"camara."
+
+#: resources/generator.php:128
 msgid "You can't upload such a heavy image, the maximum size is "
 msgstr "No puedes subir una imagen tan pesada, el tamaño máximo es "
 
-#: resources/generator.php:114
+#: resources/generator.php:132
 msgid "Could not upload image"
 msgstr "No se pudo subir la imagen"
 
-#: resources/generator.php:118
+#: resources/generator.php:136
 msgid "The creation could not be carried out due to:"
 msgstr "La creación no pudo llevarse a cabo debido a:"
 
-#: resources/generator.php:251
+#: resources/generator.php:269
 msgid "Download"
 msgstr "Descargar"
 
-#: resources/generator.php:254
+#: resources/generator.php:272
 msgid "Cancel"
 msgstr "Cancelar"
+
+#: src/CVs/1590664379.php:14 src/examples/example_1.php:27
+msgid "Studies"
+msgstr "Estudios"
+
+#: src/CVs/1590664379.php:16
+msgid "Studying "
+msgstr "Estudiando "
+
+#: src/CVs/1590664379.php:16 src/examples/example_1.php:35
+#: src/examples/example_1.php:47
+msgid " in "
+msgstr " en "
+
+#: src/CVs/1590664379.php:16 src/examples/example_1.php:35
+#: src/examples/example_1.php:47
+msgid " of "
+msgstr " de "
+
+#: src/CVs/1590664379.php:18 src/examples/example_1.php:49
+msgid "Licenses"
+msgstr "Carnets"
+
+#: src/CVs/1590664379.php:20 src/examples/example_1.php:55 src/form.php:199
+msgid "Other skills"
+msgstr "Otras habilidades"
 
 #: src/about.php:7 src/about.php:41 src/form.php:41 src/index.php:43
 #: src/templates.php:41
@@ -83,18 +137,6 @@ msgstr "España"
 msgid "Mobile"
 msgstr "Móvil"
 
-#: src/examples/example_1.php:27
-msgid "Studies"
-msgstr "Estudios"
-
-#: src/examples/example_1.php:35 src/examples/example_1.php:47
-msgid " in "
-msgstr " en "
-
-#: src/examples/example_1.php:35 src/examples/example_1.php:47
-msgid " of "
-msgstr " de "
-
 #: src/examples/example_1.php:37
 msgid "Programming in server and client environment"
 msgstr "Programación en entorno cliente y servidor"
@@ -106,14 +148,6 @@ msgstr "Experiencia laboral"
 #: src/examples/example_1.php:47
 msgid "Scholar"
 msgstr "Becario"
-
-#: src/examples/example_1.php:49
-msgid "Licenses"
-msgstr "Carnets"
-
-#: src/examples/example_1.php:55 src/form.php:199
-msgid "Other skills"
-msgstr "Otras habilidades"
 
 #: src/examples/example_1.php:57
 msgid "English medium level"
@@ -298,24 +332,21 @@ msgstr ""
 "Primero asegúrate de que el servidor web funcione con HTTPS ya que es un "
 "requisito para acceder a la cámara desde un nevagador web"
 
-#: src/templates.php:84
+#: src/templates.php:84 src/templates.php:129 src/templates.php:174
 msgid "Access this "
 msgstr "Accede a esta "
 
-#: src/templates.php:84
+#: src/templates.php:84 src/templates.php:129 src/templates.php:174
 msgid "web page"
 msgstr "pagina web"
 
-#: src/templates.php:85
+#: src/templates.php:85 src/templates.php:130 src/templates.php:175
 msgid " from another camera device."
 msgstr " desde otro dispositivo con cámara."
 
 #: src/templates.php:86 src/templates.php:131 src/templates.php:176
 msgid "Now with the other device, scan the following mark"
 msgstr "Ahora con ese dispositivo, escanee la siguiente marca"
-
-#~ msgid "Studying "
-#~ msgstr "Estudiando "
 
 #~ msgid "Working from "
 #~ msgstr "Trabajando en "
