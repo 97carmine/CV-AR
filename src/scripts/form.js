@@ -64,7 +64,7 @@ $(document).ready(function () {
 		+ "<div class='form-group col-md-3'>"
 		+ "<label for='date_education_start_" + countEdu + "'>" + i18n.__("Indicate the start date of the study") + "</label>"
 		+ "<input type='date' class='form-control' name='date_education_start_" + countEdu + "' min='1900-01-01'>"
-		+ "<div class='invalid-feedback'>" + i18n.__('The date entered is higher than the end date') + "</div></div>"
+		+ "<div class='invalid-feedback'>" + i18n.__('The date entered is after the end date') + "</div></div>"
 		+ "<div class='col-md-3'>"
 		+ "<div class='form-group'>"
 		+ "<label for='date_education_end_" + countEdu + "'>" + i18n.__("Indicate the end date of the study") + "</label>"

@@ -11,7 +11,7 @@
     "An unknown error occurred": "Une erreur inconnue s'est produite",
     "There was an error getting the information from OpenStreetMaps": "Une erreur s'est produite lors de l'obtention des informations d'OpenStreetMaps",
     "Enter the job start date": "Entrez la date de début du travail",
-    "The date entered is higher than the end date": "La date saisie est supérieure à la date de fin",
+    "The date entered is after the end date": "La date saisie est postérieure à la date de fin",
     "Indicate the end date of the jobs": "Indiquez la date de fin des travaux",
     "The date entered is before the start date": "La date saisie est antérieure à la date de début",
     "Current job": "Travail actuel",
