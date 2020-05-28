@@ -64,7 +64,7 @@ $(document).ready(function () {
 		+ "<div class='form-group col-md-3'>"
 		+ "<label for='date_education_start_" + countEdu + "'>" + i18n.__("Indicate the start date of the study") + "</label>"
 		+ "<input type='date' class='form-control' name='date_education_start_" + countEdu + "' min='1900-01-01'>"
-		+ "<div class='invalid-feedback'>" + i18n.__('The date entered is higher than the end date') + "</div></div>"
+		+ "<div class='invalid-feedback'>" + i18n.__('The date entered is after the end date') + "</div></div>"
 		+ "<div class='col-md-3'>"
 		+ "<div class='form-group'>"
 		+ "<label for='date_education_end_" + countEdu + "'>" + i18n.__("Indicate the end date of the study") + "</label>"
@@ -120,61 +120,44 @@ $(document).ready(function () {
 
 	$(".check-fieldset", this).on("change", "div.dynamic", function () {
 		let count = 0;
+
 		$("input:not([type='checkbox']), textarea", this).each(function (_i) {
 			if ($(this).val() !== "") {
 				count++;
 			}
 		});
 
-		if (count !== 0 || $("input[type='checkbox']", this).is(":checked")) {
-			if ($("input:checkbox", this).is(":checked")) {
-				$("input[type='date']", this).last().val("");
-				$("input[type='date']", this).last().attr("readonly", true);
+		if (count !== 0 || $("input[type='checkbox']").is(":checked")) {
+			if (!$("label > img", this).length) {
+				$("label:not(.custom-control-label)", this).append(
+					"<img src='img/svg/exclamation.svg' alt=" + i18n.__("Exclamation") + ">"
+				);
 			}
-			$("label:not(.custom-control-label)", this).append(
-				"<img src='img/svg/exclamation.svg' alt=" + i18n.__("Exclamation") + ">"
-			);
 			$("input:not([type='checkbox']), textarea", this).attr("required", true);
 		} else {
-			$("input[type='date']", this).last().removeAttr("readonly");
 			$("label > img", this).remove();
 			$("input:not([type='checkbox']), textarea", this).removeAttr("required");
 		}
 
-		$("input[type='date']", this)
-			.first()
-			.change(function () {
-				checkStartDate($(this), $("input[type='date']", this).last());
-			});
-
-		$("input[type='date']", this)
-			.last()
-			.change(function () {
-				checkEndDate($("input[type='date']", this).first(), $(this));
-			});
-
-		function checkStartDate(startDate, endDate) {
-			if (
-				$(endDate).val() !== "" &&
-				$(startDate).val() !== "" &&
-				compareDates($(startDate).val(), $(endDate).val()) === false
-			) {
-				$(startDate).addClass("is-invalid");
-			} else {
-				$(startDate).removeClass("is-invalid");
-			}
+		if ($("input:checkbox").is(":checked")) {
+			$("input[type='date']", this).last().val("");
+			$("input[type='date']", this).last().attr("readonly", true);
+		} else {
+			$("input[type='date']", this).last().removeAttr("readonly");
 		}
 
-		function checkEndDate(startDate, endDate) {
-			if (
-				$(endDate).val() !== "" &&
-				$(startDate).val() !== "" &&
-				compareDates($(startDate).val(), $(endDate).val()) === false
-			) {
-				$(endDate).addClass("is-invalid");
-			} else {
-				$(endDate).removeClass("is-invalid");
-			}
+		if (
+			$("input[type='date']", this).first().val() !== "" &&
+			$("input[type='date']", this).last().val() !== "" &&
+			$("input[type='date']", this).last().val() !== undefined &&
+			$("input[type='date']", this).first().val() !== $("input[type='date']", this).last().val() &&
+			compareDates($("input[type='date']", this).first().val(), $("input[type='date']", this).last().val()) === false
+		) {
+			$("input[type='date']", this).first().addClass("is-invalid");
+			$("input[type='date']", this).last().addClass("is-invalid");
+		} else {
+			$("input[type='date']", this).first().removeClass("is-invalid");
+			$("input[type='date']", this).last().removeClass("is-invalid");
 		}
 	});
 
@@ -221,7 +204,7 @@ $(document).ready(function () {
 			method: "GET",
 			dataType: "json",
 			success: function (file) {
-				if ($(file.address).find("road").length > 0) {
+				if ($(file.address).find("road").length) {
 					$("input[name='home']").val(file.address.road);
 				} else {
 					$("input[name='home']").addClass("is-invalid");
