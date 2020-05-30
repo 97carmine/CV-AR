@@ -4,6 +4,8 @@
 </head>
 <body>
 <?PHP
+session_start();
+if(isset($_SESSION['login'])){
     if (isset($_POST['cancel'])){
         @$resume = $_POST["resume1"];
         @$design = $_POST["design"];
@@ -12,21 +14,20 @@
         unlink($picture);
         header("Location:../src/form.php?design=".$design);
     }
-    if (isset($_POST['download'])){
+    if (isset($_POST['generate'])){
         @$resume1 = $_POST["resume1"];
         @$resume2 = $_POST["resume2"];
-        @$first_name = $_POST["first_name"];
         @$picture = $_POST["picture"];
-        @$picture_name = $_POST["picture_name"];
         
         require '../src/libraries/simple_html_dom/simple_html_dom.php';
 
         $html = file_get_html("../src/CVs/".$resume2.".php");
         $head = $html->find("head",0);
         $body = $html->find("body",0);
-
-        $resume1 = $resume1."2";
-        $fp = fopen($resume1.".html", "a+");
+        
+        $resume11 = $resume1."2";
+        $resume2 = $resume2."2";
+        $fp = fopen($resume11.".html", "a+");
         fputs($fp, "<html>\r\n<head>\r\n");
         fputs($fp, "<script src='../libraries/aframe.min.js'></script>\r\n");
         fputs($fp, "<script src='../libraries/aframe-ar.js'></script>\r\n");
@@ -45,29 +46,15 @@
         }
         fputs($fp, "</a-marker>\r\n</a-scene>\r\n</body>\r\n</html>\r\n");
         fclose($fp);
-
-        $zip = new ZipArchive();
-        $zip->open($resume1.".zip", ZipArchive::CREATE);
-        $zip->addFile($resume1.".html","cv/user/CV_".$first_name.".html");
-        $zip->addFile($picture,"cv/img/users/".$picture_name);
-        $zip->addFile("../src/libraries/aframe.min.js","cv/libraries/aframe.min.js");
-        $zip->addFile("../src/libraries/aframe-ar.js","cv/libraries/aframe-ar.js");
-        $zip->addFile("../src/img/patterns/hiro.png","hiro.png");
-        $zip->close();
-        print "<div class='d-flex justify-content-center'>";
-            print "<div class='py-5 my-5' style='width: 70%;'>";
-                print "<h1 class='d-flex justify-content-center'>"._("Instructions for use")."</h1><br>";
-                print "<p>"._("Download the cv at the following link").": <a href='".$resume1.".zip' download>curriculum.zip</a></p><br>";
-                print "<p>"._("The downloaded zip will have a folder format like this").".</p>";
-                print "<img src='../src/img/instruction/zip_inicial.png'>";
-                print "<p>"._("Inside the cv folder you will find this folder format").".</p>";
-                print "<img src='../src/img/instruction/zip.png'>";
-                print "<p>"._("In user you have the file corresponding to your cv").".</p>";
-                print "<img src='../src/img/instruction/cv.png'>";
-                print "<p>"._("Open this in any search engine and scan the mark in the first folder with the camera").".</p>";
-
-            print "</div>";
-        print "</div>";
+        
+        $conexion = mysqli_connect ("localhost", "root", "") or die ("No se puede conectar con el servidor");
+        mysqli_select_db ($conexion,"cv-ar") or die ("No se puede seleccionar la base de datos");
+        
+        $consulta = mysqli_query ($conexion, "INSERT INTO curriculums(usuario, cv) VALUES ('".$_SESSION['login']."','CVs/".$resume2.".html')") or die ("Fallo en la consulta de usuarios 2");
+        mysqli_close($conexion);
+        
+        header('Location:../src/register.php');
+        unlink($resume1.".php");
     }
     if (isset($_POST['send'])){
         @$design = $_POST["design"];
@@ -340,12 +327,10 @@
                     print "<form action='generator.php' method='post'>";
                         print "<input type='hidden' name='resume1' value=".$folder_cv.$cv.">";
                         print "<input type='hidden' name='resume2' value=".$cv.">";
-                        print "<input type='hidden' name='first_name' value=".$first_name.">";
                         print "<input type='hidden' name='design' value=".$design.">";
                         print "<input type='hidden' name='picture' value=".$path1.">";
-                        print "<input type='hidden' name='picture_name' value=".$name_file.">";
                         print "<div class='col-12'>";
-                        print "<button type='submit' name='download' class='btn btn-outline-dark m-5'>"._('Download')."</button>";
+                        print "<button type='submit' name='generate' class='btn btn-outline-dark m-5'>"._('Generate')."</button>";
                         print "</div>";
                         print "<div class='col-12'>";
                         print "<button type='submit' name='cancel' class='btn btn-outline-* m-5'>"._('Cancel')."</button>";
@@ -359,6 +344,9 @@
             print "</div>";
         }
     }
+}else{
+    header('Location:../src/index.php');
+}
 ?>
 </body>
 </html>

@@ -28,9 +28,12 @@
     <!-- CSS personalizados -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+    <?php
+    session_start();
+    if(!(isset($_SESSION['login']))){
+    ?>
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="#">CV-AR</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,38 +41,29 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-                <a href="#" class="nav-item nav-link active"><?=_("Start")?></a>
+                <a href="index.php" class="nav-item nav-link"><?=_("Start")?></a>
                 <a href="templates.php" class="nav-item nav-link"><?=_("Templates")?></a>
                 <a href="about.php" class="nav-item nav-link"><?=_("About")?></a>
                 <?php
-                session_start();
-                if(isset($_SESSION['login'])){
-                    print "<a href='register.php' class='nav-item nav-link'>".$_SESSION['login']."</a>";
-                }else{
-                    print "<a href='register.php' class='nav-item nav-link'>"._("iniciar seison")."</a>";
-                }
+                print "<a href='register.php' class='nav-item nav-link' active>"._("iniciar seison")." </a>";
                 ?>
             </div>
         </div>
     </nav>
-    <section>
-        <article class="jumbotron jumbotron-fluid">
-            <div class="container text-center">
-                <h1><?=_("HELLO")?></h1>
-                <p><?=_("Welcome to the world's first augmented reality resume builder")?></p>
-                <hr>
-                <p><?=_("Designed by Axel Gabriel Calle Granda and Adrián Rodríguez Ballesteros as a final degree project in the Jose Ramón Otero cooperative")?></p>
-            </div>
-        </article>
-        <div class="container">
-            <article>
-
-            </article>
-        </div>
-    </section>
+    <div class="mt-5 d-flex justify-content-center container-fluid">
+        <form action="../resources/account_creator.php" method="POST" align="center">
+            Usuario: <input type="text" name="login" value=""><br><br>
+            Contrasena: <input type='password' name='pswd1' value=''><br><br>
+            Repetir Contraseña: <input type='password' name='pswd2' value=''> <br><br>
+            Email: <input type='mail' name='mail' value=''><br><br>
+            <button type="submit" name="accept" class="btn btn-outline-dark"><?=_("accept")?></button>
+            <button type="submit" name="return" class="btn btn-outline-dark"><?=_("return")?></button>
+		</form>
+    </div>
+    <?php    
+    }else{
+        header('Location:index.php');
+    }
+    ?>
 </body>
-<script src="libraries/jquery-3.5.1.min.js"></script>
-<script src="libraries/bootstrap.min.js"></script>
-<script src="libraries/popper.min.js"></script>
-
 </html>

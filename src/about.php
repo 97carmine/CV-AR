@@ -39,6 +39,14 @@
                 <a href="index.php" class="nav-item nav-link"><?=_("Start")?></a>
                 <a href="templates.php" class="nav-item nav-link"><?=_("Templates")?></a>
                 <a href="#" class="nav-item nav-link active"><?=_("About")?></a>
+                <?php
+                session_start();
+                if(isset($_SESSION['login'])){
+                    print "<a href='register.php' class='nav-item nav-link'>".$_SESSION['login']."</a>";
+                }else{
+                    print "<a href='register.php' class='nav-item nav-link'>"._("iniciar seison")."</a>";
+                }
+                ?>
             </div>
         </div>
     </nav>
