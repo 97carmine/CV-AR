@@ -39,12 +39,12 @@
         
             <a-entity id="user" text="value: Elba Jinon; width: 4; tabSize: 6" position="1 4 0">
             </a-entity>
-            <a-image id="foto" position="-1.45 3.6 0" src="img/example_2/user2.jpg" height="1" width="0.8" material="" geometry="" visible="">
+            <a-image id="photo" position="-1.45 3.6 0" src="img/example_2/user2.jpg" height="1" width="0.8" material="" geometry="" visible="">
             </a-image>
-            <a-entity id="home1" text="value: Calle Mazarredo 24, 28005; width: 2" position="-0.86 3 0">
+            <a-entity id="home" text="value: Calle Mazarredo 24, 28005; width: 2" position="-0.86 3 0">
             </a-entity>
             <?php
-            print "<a-entity id='home2' text='value: Madrid, "._("Spain")."; width: 2' position='-0.86 2.85 0'>
+            print "<a-entity id='country' text='value: Madrid, "._("Spain")."; width: 2' position='-0.86 2.85 0'>
                     </a-entity>";
             print "<a-entity id='phone' text='value: "._("Mobile").": 689525986; width: 2' position='-0.86 2.7 0'>
                     </a-entity>";
