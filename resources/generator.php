@@ -341,24 +341,24 @@ if(isset($_SESSION['login'])){
 
                         fputs($fp, "<a-entity id='date_start2' text='value: ".$date_education_start2."; width: 2; color: black' position='0.47 3.13 0' rotation='0 0 49'></a-entity>\r\n");
                         if($current_education2 == "on"){
-                            fputs($fp, "<a-entity id='title2' text='value: <?=_('Studying ')?>".$title2."<?=_(' in ')?>".$school_name2."<?=_(' of ')?>".$school_city2."<?=_(' in ')?>".$school_country2.".; width: 2; color: #4CC3D9' position='0.6 1.85 0'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='title2' text='value: <?=_('Studying ')?>".$title2."<?=_(' in ')?>".$school_name2."<?=_(' of ')?>".$school_city2."<?=_(' in ')?>".$school_country2.".; width: 2; color: black' position='0.85 3.5 0' rotation='0 0 49'></a-entity>\r\n");
                         }else{
-                            fputs($fp, "<a-entity id='date_end2' text='value: ".$date_education_end2."; width: 2; color: #4CC3D9' position='0.04 1.8 0'></a-entity>\r\n");
-                            fputs($fp, "<a-entity id='title2' text='value: ".$title2."<?=_(' in ')?>".$school_name2."<?=_(' of ')?>".$school_city2."<?=_(' in ')?>".$school_country2.".; width: 2; color: #4CC3D9' position='0.6 1.85 0'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='date_end2' text='value: ".$date_education_end2."; width: 2; color: black' position='0.57 3.03 0' rotation='0 0 49'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='title2' text='value: ".$title2."<?=_(' in ')?>".$school_name2."<?=_(' of ')?>".$school_city2."<?=_(' in ')?>".$school_country2.".; width: 2; color: black' position='0.85 3.5 0' rotation='0 0 49'></a-entity>\r\n");
                         }
-                        fputs($fp, "<a-entity id='skills2' text='value: ".$acquired_skills2.".; width: 2; color: #4CC3D9' position='0.65 1.70 0'></a-entity>\r\n");
+                        fputs($fp, "<a-entity id='skills2' text='value: ".$acquired_skills2.".; width: 2; color: black' position='0.95 3.4 0' rotation='0 0 49'></a-entity>\r\n");
 
                         if($have_license){
-                            fputs($fp, "<a-entity id='licenses' text='value: <?=_('Licenses')?>:; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.77 1.4 0'></a-entity>\r\n");
-                            fputs($fp, "<a-entity id='licenses_drive' text='value: ".$licenses.".; width: 2; color: #4CC3D9' position='0.7 1.4 0'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='licenses' text='value: <?=_('Licenses')?>:; width: 3.5; tabSize: 6; color: black' position='2 1.2 0'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='licenses_drive' text='value: ".$licenses.".; width: 2; color: black' position='1.8 1.2 0'></a-entity>\r\n");
                             if(!(empty($other_skills))){
-                                fputs($fp, "<a-entity id='other_skills' text='value: <?=_('Other skills')?>:; width: 3.5; tabSize: 6; color: #EF2D5E' position='0.77 1.2 0'></a-entity>\r\n");
-                                fputs($fp, "<a-entity id='skills3' text='value: ".$other_skills."; width: 2; color: #4CC3D9' position='0.04 1 0'></a-entity>\r\n");
+                                fputs($fp, "<a-entity id='other_skills' text='value: <?=_('Other skills')?>:; width: 3.5; tabSize: 6; color: black' position='1.65 0.85 0'></a-entity>\r\n");
+                                fputs($fp, "<a-entity id='skills3' text='value: ".$other_skills."; width: 2; color: black' position='0.92 0.7 0'></a-entity>\r\n");
                             }
                         }else{
                             if(!(empty($other_skills))){
-                                fputs($fp, "<a-entity id='other_skills' text='value: <?=_('Other skills')?>:; width: 3.5; tabSize: 6; color: #EF2D5E' position='0.77 1.4 0'></a-entity>\r\n");
-                                fputs($fp, "<a-entity id='skills3' text='value: ".$other_skills."; width: 2; color: #4CC3D9' position='0.04 1.2 0'></a-entity>\r\n");
+                                fputs($fp, "<a-entity id='other_skills' text='value: <?=_('Other skills')?>:; width: 3.5; tabSize: 6; color: black' position='2 1.2 0'></a-entity>\r\n");
+                                fputs($fp, "<a-entity id='skills3' text='value: ".$other_skills."; width: 2; color: black' position='1.8 1.2 0'></a-entity>\r\n");
                             }
                         }
                     }else if((!(empty($job1)))&&(!(empty($job2)))){
