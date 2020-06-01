@@ -46,7 +46,7 @@
             <?php
             print "<a-entity id='home2' text='value: Madrid, "._("Spain")."; width: 2' position='-0.86 2.85 0'>
                     </a-entity>";
-            print "<a-entity id='phone' text='value: "._("Mobile").": 689525986; width: 2' position='-0.86 2.85 0'>
+            print "<a-entity id='phone' text='value: "._("Mobile").": 689525986; width: 2' position='-0.86 2.7 0'>
                     </a-entity>";
             ?>
             <a-entity id="email" text="value: correofalso@failmail.com; width: 2;" position="-0.86 2.55 0" id="email">

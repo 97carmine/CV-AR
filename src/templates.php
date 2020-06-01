@@ -133,7 +133,7 @@
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <p><?=_("Access this ")?><a id="link_example_2" href="examples/example_2.html" target="_blank"><?=_("web page")?></a>
+                                        <p><?=_("Access this ")?><a id="link_example_2" href="examples/example_2.php" target="_blank"><?=_("web page")?></a>
                                             <?=_(" from another camera device.")?></p>
                                         <p><?=_("Now with the other device, scan the following mark")?>.</p>
                                         <img src="img/patterns/hiro.png" class="img-fluid"
@@ -178,7 +178,7 @@
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <p><?=_("Access this ")?><a id="link_example_3" href="examples/example_3.html" target="_blank"><?=_("web page")?></a>
+                                        <p><?=_("Access this ")?><a id="link_example_3" href="examples/example_3.php" target="_blank"><?=_("web page")?></a>
                                             <?=_(" from another camera device.")?></p>
                                         <p><?=_("Now with the other device, scan the following mark")?>.</p>
                                         <img src="img/patterns/hiro.png" class="img-fluid"
@@ -294,7 +294,7 @@
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <p><?=_("Access this ")?><a id="link_example_2" href="examples/example_2.html" target="_blank"><?=_("web page")?></a>
+                                        <p><?=_("Access this ")?><a id="link_example_2" href="examples/example_2.php" target="_blank"><?=_("web page")?></a>
                                             <?=_(" from another camera device.")?></p>
                                         <p><?=_("Now with the other device, scan the following mark")?>.</p>
                                         <img src="img/patterns/hiro.png" class="img-fluid"
@@ -338,7 +338,7 @@
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <p><?=_("Access this ")?><a id="link_example_3" href="examples/example_3.html" target="_blank"><?=_("web page")?></a>
+                                        <p><?=_("Access this ")?><a id="link_example_3" href="examples/example_3.php" target="_blank"><?=_("web page")?></a>
                                             <?=_(" from another camera device.")?></p>
                                         <p><?=_("Now with the other device, scan the following mark")?>.</p>
                                         <img src="img/patterns/hiro.png" class="img-fluid"
