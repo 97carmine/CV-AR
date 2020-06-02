@@ -28,6 +28,10 @@
 </head>
 
 <body>
+    <?php
+    session_start();
+    if(isset($_SESSION['login'])){
+    ?>
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
         <a class="navbar-brand" href="index.php">CV-AR</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -36,9 +40,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
-                <a href="index.php" class="nav-item nav-link active"><?=_("Start")?></a>
-                <a href="templates.php" class="nav-item nav-link active"><?=_("Templates")?></a>
-                <a href="about.php" class="nav-item nav-link active"><?=_("About")?></a>
+                <a href="index.php" class="nav-item nav-link"><?=_("Start")?></a>
+                <a href="templates.php" class="nav-item nav-link"><?=_("Templates")?></a>
+                <a href="about.php" class="nav-item nav-link"><?=_("About")?></a>
+                <?php
+                print "<a href='register.php' class='nav-item nav-link'>".$_SESSION['login']."</a>";
+                ?>
             </div>
         </div>
     </nav>
@@ -209,6 +216,11 @@
             </form>
         </article>
     </section>
+    <?php
+    }else{
+        header("Location:index.php");;
+    }
+    ?>
 </body>
 <script src="libraries/jquery-3.5.1.min.js"></script>
 <script src="libraries/bootstrap.min.js"></script>
