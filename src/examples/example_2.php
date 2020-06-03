@@ -7,7 +7,7 @@
     <body style="margin : 0px; overflow: hidden;">
     
     <a-assets>
-        <img id="fondo" src="img/example_2/fondo.png">
+        <img id="fondo" src="../img/example_2/fondo.png">
     </a-assets>
     
     <a-scene embedded arjs>
