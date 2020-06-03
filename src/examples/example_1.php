@@ -9,6 +9,10 @@
                 <a-entity position="0 0.5 5.8">
                     <a-camera></a-camera>
                 </a-entity>
+                <a-entity>
+                    <a-plane position="0 2.1 -0.2" scale="15 15 1">
+                    </a-plane>
+                </a-entity>
                 <a-entity id="user" text="value: Misco Jones; width: 4; tabSize: 6; color:  #EF2D5E" position="2.4 3.65 0">
                 </a-entity>
                 <a-image id="photo" position="-0.4 3.15 0" src="../img/example_1/user_example_1.jpg" height="1.2" width="1.1" material="" visible="">

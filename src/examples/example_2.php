@@ -1,13 +1,12 @@
 <html>
     <head>
-       <meta charset="UTF-8">
-        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/AR.js/3.0.2/aframe/build/aframe-ar.js"></script>
+        <script src="../libraries/aframe.min.js"></script>
+        <script src="../libraries/aframe-ar.js"></script>
     </head>
     <body style="margin : 0px; overflow: hidden;">
     
     <a-assets>
-        <img id="fondo" src="img/example_2/fondo.png">
+        <img id="fondo" src="../img/example_2/fondo.png">
     </a-assets>
     
     <a-scene embedded arjs>
@@ -30,7 +29,7 @@
             <a-entity rotation="0 0 0" animation="property: rotation; to: 360 0 0; loop: true; dur: 5000"  scale="0.05 0.05 0.05" position="-0.35 3.1 0.75">
                 <a-sphere position="0 1 -3" scale="0.5 0.5 0.5"></a-sphere>
             </a-entity>
-            <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"  scale="0.05 0.05 0.05" position="-0.35 3. 0.8">
+            <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"  scale="0.05 0.05 0.05" position="-0.35 3 0.8">
                 <a-sphere position="0 1 -3" scale="0.5 0.5 0.5"></a-sphere>
             </a-entity>
             <a-entity rotation="0 0 0" animation="property: rotation; to: 0 0 360; loop: true; dur: 5000"  scale="0.1 0.1 0.1" position="-0.35 3.05 1.1">
@@ -39,7 +38,7 @@
         
             <a-entity id="user" text="value: Elba Jinon; width: 4; tabSize: 6" position="1 4 0">
             </a-entity>
-            <a-image id="photo" position="-1.45 3.6 0" src="img/example_2/user2.jpg" height="1" width="0.8" material="" geometry="" visible="">
+            <a-image id="photo" position="-1.45 3.6 0" src="../img/example_2/user2.jpg" height="1" width="0.8" material="" geometry="" visible="">
             </a-image>
             <a-entity id="home" text="value: Calle Mazarredo 24, 28005; width: 2" position="-0.86 3 0">
             </a-entity>
@@ -95,7 +94,7 @@
             print "<a-entity id='licenses' text='value: "._("Licenses").":; width: 3.5; tabSize: 6; color: black' position='2 1.2 0'>
             </a-entity>";
             ?>
-            <a-entity id="licenses_drive" text="value: B + E.; width: 2; color: black" position="1.8 1.2 0">
+            <a-entity id="licenses_drive" text="value: B + E.; width: 2; color: black" position="1.85 1.2 0">
             </a-entity>
             
             <?php
