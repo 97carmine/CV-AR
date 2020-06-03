@@ -11,7 +11,7 @@
     
     <a-scene embedded arjs>
         <a-marker preset="hiro">
-            <a-entity position="0 0.2 10.6">
+            <a-entity position="0 0.2 10.5">
                 <a-camera></a-camera>
             </a-entity>
             <a-entity>
