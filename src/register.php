@@ -45,7 +45,7 @@
                 <a href="templates.php" class="nav-item nav-link"><?=_("Templates")?></a>
                 <a href="about.php" class="nav-item nav-link"><?=_("About")?></a>
                 <?php
-                print "<a href='register.php' class='nav-item nav-link'>".$_SESSION['login']."</a>";
+                print "<a href='#' class='nav-item nav-link' active>".$_SESSION['login']."</a>";
                 ?>
             </div>
         </div>
