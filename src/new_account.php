@@ -45,7 +45,7 @@
                 <a href="templates.php" class="nav-item nav-link"><?=_("Templates")?></a>
                 <a href="about.php" class="nav-item nav-link"><?=_("About")?></a>
                 <?php
-                print "<a href='register.php' class='nav-item nav-link' active>"._("iniciar seison")." </a>";
+                print "<a href='#' class='nav-item nav-link' active>"._("iniciar seison")." </a>";
                 ?>
             </div>
         </div>
@@ -66,4 +66,7 @@
     }
     ?>
 </body>
+<script src="libraries/jquery-3.5.1.min.js"></script>
+<script src="libraries/bootstrap.min.js"></script>
+<script src="libraries/popper.min.js"></script>
 </html>

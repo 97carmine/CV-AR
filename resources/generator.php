@@ -39,7 +39,7 @@ if(isset($_SESSION['login'])){
         fputs($fp, "<body style='margin : 0px; overflow: hidden;'>\r\n");
         fputs($fp, "<a-scene embedded arjs>\r\n");
         fputs($fp, "<a-marker preset='hiro'>\r\n");
-        fputs($fp, "<a-entity position='0 0.5 5.8'><a-camera></a-camera></a-entity>\r\n");
+        fputs($fp, "<a-entity position='0 0.2 10.5'><a-camera></a-camera></a-entity>\r\n");
         fputs($fp, "<a-image id='photo' position='-0.4 3.15 0' src='../img/example_1/user_example_1.jpg' height='1.2' width='1.1' material='' visible=''></a-image>\r\n");
         for($i=0;$i<count($entity);$i++){
             fputs($fp, $entity[$i]."\r\n");
@@ -150,7 +150,7 @@ if(isset($_SESSION['login'])){
             switch ($design) {
                 case "1":
                     fputs($fp, "<a-scene>\r\n<a-entity position='0 0.5 2'><a-camera></a-camera></a-entity>\r\n");
-                    fputs($fp, "<a-entity><a-plane position='0 2.1 -0.2' scale='15 15 1'></a-plane></a-entity>");
+                    fputs($fp, "<a-entity><a-plane color='black' position='0 2.1 -0.2' scale='15 15 1'></a-plane></a-entity>");
                     if($file_upload){
                         fputs($fp, "<a-image id='photo' position='-0.4 3.15 0' src='".$path2."' height='1.2' width='1.1' material='' visible=''></a-image>\r\n");
                     }
