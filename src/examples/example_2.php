@@ -29,7 +29,7 @@
             <a-entity rotation="0 0 0" animation="property: rotation; to: 360 0 0; loop: true; dur: 5000"  scale="0.05 0.05 0.05" position="-0.35 3.1 0.75">
                 <a-sphere position="0 1 -3" scale="0.5 0.5 0.5"></a-sphere>
             </a-entity>
-            <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"  scale="0.05 0.05 0.05" position="-0.35 3. 0.8">
+            <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 5000"  scale="0.05 0.05 0.05" position="-0.35 3 0.8">
                 <a-sphere position="0 1 -3" scale="0.5 0.5 0.5"></a-sphere>
             </a-entity>
             <a-entity rotation="0 0 0" animation="property: rotation; to: 0 0 360; loop: true; dur: 5000"  scale="0.1 0.1 0.1" position="-0.35 3.05 1.1">
@@ -94,7 +94,7 @@
             print "<a-entity id='licenses' text='value: "._("Licenses").":; width: 3.5; tabSize: 6; color: black' position='2 1.2 0'>
             </a-entity>";
             ?>
-            <a-entity id="licenses_drive" text="value: B + E.; width: 2; color: black" position="1.8 1.2 0">
+            <a-entity id="licenses_drive" text="value: B + E.; width: 2; color: black" position="1.85 1.2 0">
             </a-entity>
             
             <?php

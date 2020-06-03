@@ -150,6 +150,7 @@ if(isset($_SESSION['login'])){
             switch ($design) {
                 case "1":
                     fputs($fp, "<a-scene>\r\n<a-entity position='0 0.5 2'><a-camera></a-camera></a-entity>\r\n");
+                    fputs($fp, "<a-entity><a-plane position='0 2.1 -0.2' scale='15 15 1'></a-plane></a-entity>");
                     if($file_upload){
                         fputs($fp, "<a-image id='photo' position='-0.4 3.15 0' src='".$path2."' height='1.2' width='1.1' material='' visible=''></a-image>\r\n");
                     }
@@ -313,7 +314,7 @@ if(isset($_SESSION['login'])){
                     fputs($fp, "<a-entity><a-plane material='src:#fondo;' position='0 2.1 -0.1' scale='4.05 4.5 1'></a-plane></a-entity>\r\n");
                     fputs($fp, "<a-entity><a-sphere material='color:blue;' scale='0.08 0.08 0.08' position='-0.35 3.05 0.8'></a-sphere></a-entity>\r\n
                                 <a-entity rotation='0 0 0' animation='property: rotation; to: 360 0 0; loop: true; dur: 5000'  scale='0.05 0.05 0.05' position='-0.35 3.1 0.75'><a-sphere position='0 1 -3' scale='0.5 0.5 0.5'></a-sphere></a-entity>\r\n
-                                <a-entity rotation='0 0 0' animation='property: rotation; to: 0 360 0; loop: true; dur: 5000'  scale='0.05 0.05 0.05' position='-0.35 3. 0.8'><a-sphere position='0 1 -3' scale='0.5 0.5 0.5'></a-sphere></a-entity>\r\n
+                                <a-entity rotation='0 0 0' animation='property: rotation; to: 0 360 0; loop: true; dur: 5000'  scale='0.05 0.05 0.05' position='-0.35 3 0.8'><a-sphere position='0 1 -3' scale='0.5 0.5 0.5'></a-sphere></a-entity>\r\n
                                 <a-entity rotation='0 0 0' animation='property: rotation; to: 0 0 360; loop: true; dur: 5000'  scale='0.1 0.1 0.1' position='-0.35 3.05 1.1'><a-sphere position='0 1 -3' scale='0.2 0.2 0.2'></a-sphere></a-entity>\r\n");
                     fputs($fp, "<a-entity><a-sphere material='color:blue;' scale='0.08 0.08 0.08' position='1 2.05 0.8'></a-sphere></a-entity>\r\n
                                 <a-entity rotation='0 0 0' animation='property: rotation; to: 360 0 0; loop: true; dur: 5000'  scale='0.05 0.05 0.05' position='1 2.05 0.75'><a-sphere position='0 1 -3' scale='0.5 0.5 0.5'></a-sphere></a-entity>\r\n
@@ -358,7 +359,7 @@ if(isset($_SESSION['login'])){
                         }else{
                             if(!(empty($other_skills))){
                                 fputs($fp, "<a-entity id='other_skills' text='value: <?=_('Other skills')?>:; width: 3.5; tabSize: 6; color: black' position='2 1.2 0'></a-entity>\r\n");
-                                fputs($fp, "<a-entity id='skills3' text='value: ".$other_skills."; width: 2; color: black' position='1.4 1.05 0'></a-entity>\r\n");
+                                fputs($fp, "<a-entity id='skills3' text='value: ".$other_skills."; width: 2; color: black' position='1.27 1.05 0'></a-entity>\r\n");
                             }
                         }
                     }else if((!(empty($job1)))&&(!(empty($job2)))){
@@ -389,7 +390,7 @@ if(isset($_SESSION['login'])){
                         }else{
                             if(!(empty($other_skills))){
                                 fputs($fp, "<a-entity id='other_skills' text='value: <?=_('Other skills')?>:; width: 3.5; tabSize: 6; color: black' position='2 1.2 0'></a-entity>\r\n");
-                                fputs($fp, "<a-entity id='skills3' text='value: ".$other_skills."; width: 2; color: black' position='1.4 1.05 0'></a-entity>\r\n");
+                                fputs($fp, "<a-entity id='skills3' text='value: ".$other_skills."; width: 2; color: black' position='1.27 1.05 0'></a-entity>\r\n");
                             }
                         }
                     }else if((!(empty($title1)))&&(!(empty($job1)))){
@@ -422,7 +423,7 @@ if(isset($_SESSION['login'])){
                         }else{
                             if(!(empty($other_skills))){
                                 fputs($fp, "<a-entity id='other_skills' text='value: <?=_('Other skills')?>:; width: 3.5; tabSize: 6; color: black' position='2 1.2 0'></a-entity>\r\n");
-                                fputs($fp, "<a-entity id='skills3' text='value: ".$other_skills."; width: 2; color: black' position='1.4 1.05 0'></a-entity>\r\n");
+                                fputs($fp, "<a-entity id='skills3' text='value: ".$other_skills."; width: 2; color: black' position='1.27 1.05 0'></a-entity>\r\n");
                             }
                         }
                     }else if(!(empty($title1))){
@@ -446,7 +447,7 @@ if(isset($_SESSION['login'])){
                         }else{
                             if(!(empty($other_skills))){
                                 fputs($fp, "<a-entity id='other_skills' text='value: <?=_('Other skills')?>:; width: 3.5; tabSize: 6; color: black' position='2 1.2 0'></a-entity>\r\n");
-                                fputs($fp, "<a-entity id='skills3' text='value: ".$other_skills."; width: 2; color: black' position='1.4 1.05 0'></a-entity>\r\n");
+                                fputs($fp, "<a-entity id='skills3' text='value: ".$other_skills."; width: 2; color: black' position='1.27 1.05 0'></a-entity>\r\n");
                             }
                         }
                     }else if(!(empty($job1))){
@@ -469,7 +470,7 @@ if(isset($_SESSION['login'])){
                         }else{
                             if(!(empty($other_skills))){
                                 fputs($fp, "<a-entity id='other_skills' text='value: <?=_('Other skills')?>:; width: 3.5; tabSize: 6; color: black' position='2 1.2 0'></a-entity>\r\n");
-                                fputs($fp, "<a-entity id='skills3' text='value: ".$other_skills."; width: 2; color: black' position='1.4 1.05 0'></a-entity>\r\n");
+                                fputs($fp, "<a-entity id='skills3' text='value: ".$other_skills."; width: 2; color: black' position='1.27 1.05 0'></a-entity>\r\n");
                             }
                         }
                     }else{
