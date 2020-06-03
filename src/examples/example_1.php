@@ -6,11 +6,11 @@
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
             <a-marker preset="hiro">
-                <a-entity position="0 0.5 5.8">
+                <a-entity position="0 0.2 10.5">
                     <a-camera></a-camera>
                 </a-entity>
                 <a-entity>
-                    <a-plane position="0 2.1 -0.2" scale="15 15 1">
+                    <a-plane color="black" position="0 2.1 -0.2" scale="15 15 1">
                     </a-plane>
                 </a-entity>
                 <a-entity id="user" text="value: Misco Jones; width: 4; tabSize: 6; color:  #EF2D5E" position="2.4 3.65 0">

@@ -66,4 +66,7 @@
     }
     ?>
 </body>
+<script src="libraries/jquery-3.5.1.min.js"></script>
+<script src="libraries/bootstrap.min.js"></script>
+<script src="libraries/popper.min.js"></script>
 </html>

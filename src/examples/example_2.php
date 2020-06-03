@@ -11,15 +11,15 @@
     
     <a-scene embedded arjs>
         <a-marker preset="hiro">
-            <a-entity position="0 0.5 11">
+            <a-entity position="0 0.2 10.5">
                 <a-camera></a-camera>
             </a-entity>
             <a-entity>
-                <a-plane position="0 2.1 -0.2" scale="15 15 1">
+                <a-plane position="0 2.1 -1" scale="15 15 1">
                 </a-plane>
             </a-entity>
             <a-entity>
-                <a-plane material="src:#fondo;" position="0 2.1 -0.1" scale="4.05 4.5 1">
+                <a-plane material="src:#fondo;" position="0 2.1 -0.5" scale="4.1 4.55 1">
                 </a-plane>
             </a-entity>
             
