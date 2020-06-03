@@ -1,8 +1,7 @@
 <html>
     <head>
-       <meta charset="UTF-8">
-        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/AR.js/3.0.2/aframe/build/aframe-ar.js"></script>
+        <script src="../libraries/aframe.min.js"></script>
+        <script src="../libraries/aframe-ar.js"></script>
     </head>
     <body style="margin : 0px; overflow: hidden;">
     
@@ -39,7 +38,7 @@
         
             <a-entity id="user" text="value: Elba Jinon; width: 4; tabSize: 6" position="1 4 0">
             </a-entity>
-            <a-image id="photo" position="-1.45 3.6 0" src="img/example_2/user2.jpg" height="1" width="0.8" material="" geometry="" visible="">
+            <a-image id="photo" position="-1.45 3.6 0" src="../img/example_2/user2.jpg" height="1" width="0.8" material="" geometry="" visible="">
             </a-image>
             <a-entity id="home" text="value: Calle Mazarredo 24, 28005; width: 2" position="-0.86 3 0">
             </a-entity>
