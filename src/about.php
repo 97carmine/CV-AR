@@ -44,7 +44,7 @@
                 if(isset($_SESSION['login'])){
                     print "<a href='register.php' class='nav-item nav-link'>".$_SESSION['login']."</a>";
                 }else{
-                    print "<a href='register.php' class='nav-item nav-link'>"._("iniciar seison")."</a>";
+                    print "<a href='register.php' class='nav-item nav-link'>"._("log in")."</a>";
                 }
                 ?>
             </div>

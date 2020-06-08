@@ -71,15 +71,15 @@
                         print "<a href='".$fila["cv"]."' class='mt-4'>CV_".$_SESSION['login'].$i."</a><br>";
                     }
                 }else{
-                    print "<p>Todabia no tienes ningun curriculum.</p>";
-                    print "<p>Escoje uno de nuestros diseños y createlo.</p>";
+                    print "<p>"._("You still don't have any resume").".</p>";
+                    print "<p>"._("Choose one of our designs and create it").".</p>";
                 }
             
                 mysqli_close($conexion);
                 ?>
                 </div>
                 <div class="col-md-7">
-                    <p class="my-4">Entrando en el enlace de tu curriculum escane con la camra la siguiente imagen.</p>
+                    <p class="my-4"><?=_("Entering the link of your CV, scan the following image with the camera.")?></p>
                     <img src="img/patterns/hiro.png" class="img-fluid">
                 </div>
             </div>
@@ -95,12 +95,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
-                    <a href="#" class="nav-item nav-link"><?=_("Start")?></a>
+                    <a href="index.php" class="nav-item nav-link"><?=_("Start")?></a>
                     <a href="templates.php" class="nav-item nav-link"><?=_("Templates")?></a>
                     <a href="about.php" class="nav-item nav-link"><?=_("About")?></a>
-                    <?php
-                    print "<a href='#' class='nav-item nav-link' active>"._("iniciar seison")." </a>";
-                    ?>
+                    <a href="#" class="nav-item nav-link" active><?=_("log in")?></a>
                 </div>
             </div>
         </nav>
@@ -110,13 +108,13 @@
             <div class="row d-flex justify-content-center" style="width:80%;">
                 <div class="col-9 d-flex justify-content-center">
                 <form action="../resources/account_creator.php" method="POST" align="center" style="width:80%;">
-                    Usuario: <input type="text" name="usuario" value="" required><br><br>
-                    Contrasena: <input type="password" name="pass" value="" required><br><br>
+                    <?=_('User')?>: <input type="text" name="usuario" value="" required><br><br>
+                    <?=_('password')?>: <input type="password" name="pass" value="" required><br><br>
                     <button type="submit" name="enter" class="btn btn-outline-dark"><?=_("Log in")?></button>
                     </form>
                 </div>
                 <div class="col-3">
-                    <p>Si no tienes cuenta:</p>
+                    <p><?=_("If you don't have any account")?></p>
                     <a class="btn btn-outline-dark" href="new_account.php"><?=_("log up")?></a>
                 </div>
             </div>

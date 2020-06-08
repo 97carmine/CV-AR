@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-05-28 13:54+0200\n"
-"PO-Revision-Date: 2020-05-28 13:54+0200\n"
+"POT-Creation-Date: 2020-06-08 20:31+0200\n"
+"PO-Revision-Date: 2020-06-08 20:44+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -17,104 +17,79 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 "X-Poedit-SearchPathExcluded-1: *.js\n"
 
-#: resources/generator.php:59
-msgid "Instructions for use"
-msgstr "Instrucciones de uso"
-
-#: resources/generator.php:60
-msgid "Download the cv at the following link"
-msgstr "Descargue el cv en el siguiente enlace"
-
-#: resources/generator.php:61
-msgid "The downloaded zip will have a folder format like this"
-msgstr "El zip descargado tendrá un formato de carpetas como el siguiente"
-
-#: resources/generator.php:63
-msgid "Inside the cv folder you will find this folder format"
-msgstr "Dentro de la carpeta cv encontraras este formato de carpetas"
-
-#: resources/generator.php:65
-msgid "In user you have the file corresponding to your cv"
-msgstr "En user tienes el archivo correspondiente a tu cv"
-
-#: resources/generator.php:67
-msgid ""
-"Open this in any search engine and scan the mark in the first folder with "
-"the camera"
-msgstr ""
-"Ábrelo en cualquier buscador y escanea la marca en la primera carpeta con la "
-"camara."
-
-#: resources/generator.php:128
+#: resources/generator.php:130
 msgid "You can't upload such a heavy image, the maximum size is "
 msgstr "No puedes subir una imagen tan pesada, el tamaño máximo es "
 
-#: resources/generator.php:132
+#: resources/generator.php:134
 msgid "Could not upload image"
 msgstr "No se pudo subir la imagen"
 
-#: resources/generator.php:136
+#: resources/generator.php:138
 msgid "The creation could not be carried out due to:"
 msgstr "La creación no pudo llevarse a cabo debido a:"
 
-#: resources/generator.php:269
-msgid "Download"
-msgstr "Descargar"
+#: resources/generator.php:406 src/examples/example_1.php:43
+#: src/examples/example_2.php:68 src/examples/example_3.php:39
+msgid "Work experience"
+msgstr "Experiencia laboral"
 
-#: resources/generator.php:272
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: src/CVs/1590664379.php:14 src/examples/example_1.php:27
-msgid "Studies"
-msgstr "Estudios"
-
-#: src/CVs/1590664379.php:16
-msgid "Studying "
-msgstr "Estudiando "
-
-#: src/CVs/1590664379.php:16 src/examples/example_1.php:35
-#: src/examples/example_1.php:47
-msgid " in "
-msgstr " en "
-
-#: src/CVs/1590664379.php:16 src/examples/example_1.php:35
-#: src/examples/example_1.php:47
-msgid " of "
-msgstr " de "
-
-#: src/CVs/1590664379.php:18 src/examples/example_1.php:49
+#: resources/generator.php:511 resources/generator.php:535
+#: resources/generator.php:562 resources/generator.php:580
+#: resources/generator.php:598 src/examples/example_1.php:53
+#: src/examples/example_2.php:94 src/examples/example_3.php:46
 msgid "Licenses"
 msgstr "Carnets"
 
-#: src/CVs/1590664379.php:20 src/examples/example_1.php:55 src/form.php:199
+#: resources/generator.php:515 resources/generator.php:539
+#: resources/generator.php:566 resources/generator.php:584
+#: resources/generator.php:602 src/examples/example_1.php:59
+#: src/examples/example_2.php:101 src/examples/example_3.php:50
+#: src/form.php:206
 msgid "Other skills"
 msgstr "Otras habilidades"
 
-#: src/about.php:7 src/about.php:41 src/form.php:41 src/index.php:43
-#: src/templates.php:41
+#: resources/generator.php:626
+msgid "Generate"
+msgstr "Generar"
+
+#: resources/generator.php:629
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/about.php:7 src/about.php:41 src/form.php:45 src/index.php:43
+#: src/new_account.php:46 src/register.php:46 src/register.php:100
+#: src/templates.php:45 src/templates.php:208
 msgid "About"
 msgstr "Acerca de"
 
-#: src/about.php:39 src/form.php:39 src/index.php:9 src/index.php:41
-#: src/templates.php:39
+#: src/about.php:39 src/form.php:43 src/index.php:9 src/index.php:41
+#: src/new_account.php:9 src/new_account.php:44 src/register.php:9
+#: src/register.php:44 src/register.php:98 src/templates.php:43
+#: src/templates.php:206
 msgid "Start"
 msgstr "Inicio"
 
-#: src/about.php:40 src/form.php:40 src/index.php:42 src/templates.php:7
-#: src/templates.php:40
+#: src/about.php:40 src/form.php:44 src/index.php:42 src/new_account.php:45
+#: src/register.php:45 src/register.php:99 src/templates.php:7
+#: src/templates.php:44 src/templates.php:207
 msgid "Templates"
 msgstr "Plantillas"
 
-#: src/about.php:47
+#: src/about.php:47 src/index.php:49 src/new_account.php:47
+#: src/register.php:101 src/templates.php:210
+msgid "log in"
+msgstr "iniciar sesion"
+
+#: src/about.php:55
 msgid "TEAM"
 msgstr "EQUIPO"
 
-#: src/about.php:50
+#: src/about.php:58
 msgid "OUR HISTORY"
 msgstr "NUESTRA HISTORIA"
 
-#: src/about.php:51
+#: src/about.php:59
 msgid ""
 "For the choice of this project, we observe that the ways of representing "
 "oneself have hardly changed, for this reason we decided to create this tool "
@@ -124,32 +99,52 @@ msgstr ""
 "representarse a uno mismo apenas ha variado, por ese motivo decidimos crear "
 "esta herramienta que complementa al courrículum tradicional."
 
-#: src/about.php:52
+#: src/about.php:60
 msgid "INVOLVE"
 msgstr "INVOLUCRARSE"
 
-#: src/examples/example_1.php:19 src/examples/example_1.php:35
-#: src/examples/example_1.php:47
+#: src/examples/example_1.php:23 src/examples/example_1.php:39
+#: src/examples/example_1.php:51 src/examples/example_2.php:46
+#: src/examples/example_2.php:63 src/examples/example_2.php:76
+#: src/examples/example_3.php:26 src/examples/example_3.php:36
+#: src/examples/example_3.php:44
 msgid "Spain"
 msgstr "España"
 
-#: src/examples/example_1.php:21 src/form.php:123
+#: src/examples/example_1.php:25 src/examples/example_2.php:48
+#: src/examples/example_3.php:27 src/form.php:130
 msgid "Mobile"
 msgstr "Móvil"
 
-#: src/examples/example_1.php:37
+#: src/examples/example_1.php:31 src/examples/example_2.php:55
+#: src/examples/example_3.php:31
+msgid "Studies"
+msgstr "Estudios"
+
+#: src/examples/example_1.php:39 src/examples/example_1.php:51
+#: src/examples/example_2.php:63 src/examples/example_2.php:76
+#: src/examples/example_3.php:36 src/examples/example_3.php:44
+msgid " in "
+msgstr " en "
+
+#: src/examples/example_1.php:39 src/examples/example_1.php:51
+#: src/examples/example_2.php:63 src/examples/example_2.php:76
+#: src/examples/example_3.php:36 src/examples/example_3.php:44
+msgid " of "
+msgstr " de "
+
+#: src/examples/example_1.php:41 src/examples/example_2.php:65
+#: src/examples/example_3.php:37
 msgid "Programming in server and client environment"
 msgstr "Programación en entorno cliente y servidor"
 
-#: src/examples/example_1.php:39
-msgid "Work experience"
-msgstr "Experiencia laboral"
-
-#: src/examples/example_1.php:47
+#: src/examples/example_1.php:51 src/examples/example_2.php:76
+#: src/examples/example_3.php:44
 msgid "Scholar"
 msgstr "Becario"
 
-#: src/examples/example_1.php:57
+#: src/examples/example_1.php:61 src/examples/example_2.php:103
+#: src/examples/example_3.php:51
 msgid "English medium level"
 msgstr "Ingles nivel medio"
 
@@ -157,144 +152,144 @@ msgstr "Ingles nivel medio"
 msgid "Form"
 msgstr "Formulario"
 
-#: src/form.php:47
+#: src/form.php:54
 msgid "FORM"
 msgstr "FORMULARIO"
 
-#: src/form.php:48
+#: src/form.php:55
 msgid ""
 "Fill in the options on the form, those with an exclamation are mandatory"
 msgstr ""
 "Complete las opciones en el formulario, aquellos con una exclamación son "
 "obligatorios"
 
-#: src/form.php:58
+#: src/form.php:65
 msgid "PERSONAL INFORMATION"
 msgstr "INFORMACIÓN PERSONAL"
 
-#: src/form.php:63
+#: src/form.php:70
 msgid "First name"
 msgstr "Nombre"
 
-#: src/form.php:64 src/form.php:71 src/form.php:83 src/form.php:94
-#: src/form.php:101 src/form.php:108 src/form.php:117 src/form.php:138
+#: src/form.php:71 src/form.php:78 src/form.php:90 src/form.php:101
+#: src/form.php:108 src/form.php:115 src/form.php:124 src/form.php:145
 msgid "Exclamation"
 msgstr "Exclamación"
 
-#: src/form.php:70
+#: src/form.php:77
 msgid "Last name"
 msgstr "Apellidos"
 
-#: src/form.php:77
+#: src/form.php:84
 msgid "Information circle"
 msgstr "Círculo de información"
 
-#: src/form.php:78
+#: src/form.php:85
 msgid "Click on the icon to geolocate your position"
 msgstr "Clic en el icono para eliminar el último campo"
 
-#: src/form.php:82
+#: src/form.php:89
 msgid "Home"
 msgstr "Domicilio"
 
-#: src/form.php:87
+#: src/form.php:94
 msgid "There was an error obtaining the street information"
 msgstr "Se produjo un error al obtener la información de la calle"
 
-#: src/form.php:93
+#: src/form.php:100
 msgid "City"
 msgstr "Ciudad"
 
-#: src/form.php:100
+#: src/form.php:107
 msgid "Country"
 msgstr "País"
 
-#: src/form.php:107
+#: src/form.php:114
 msgid "Postal Code"
 msgstr "Código postal"
 
-#: src/form.php:116
+#: src/form.php:123
 msgid "Phone"
 msgstr "Teléfono"
 
-#: src/form.php:122
+#: src/form.php:129
 msgid "Type"
 msgstr "Tipo"
 
-#: src/form.php:124
+#: src/form.php:131
 msgid "House"
 msgstr "Casa"
 
-#: src/form.php:125
+#: src/form.php:132
 msgid "Main"
 msgstr "Principal"
 
-#: src/form.php:126
+#: src/form.php:133
 msgid "Other"
 msgstr "Otro"
 
-#: src/form.php:137
+#: src/form.php:144 src/new_account.php:56
 msgid "Email"
 msgstr "Correo electrónico"
 
-#: src/form.php:144
+#: src/form.php:151
 msgid "PROFESSIONAL EXPERIENCE"
 msgstr "EXPERIENCIA PROFESIONAL"
 
-#: src/form.php:147 src/form.php:158
+#: src/form.php:154 src/form.php:165
 msgid "Plus"
 msgstr ""
 
-#: src/form.php:148 src/form.php:159
+#: src/form.php:155 src/form.php:166
 msgid "Click on the icon to add a field"
 msgstr "Clic en el icono para añadir un campo"
 
-#: src/form.php:151 src/form.php:162
+#: src/form.php:158 src/form.php:169
 msgid "X"
 msgstr ""
 
-#: src/form.php:152 src/form.php:163
+#: src/form.php:159 src/form.php:170
 msgid "Click on the icon to delete the last field"
 msgstr "Clic en el icono para eliminar el último campo"
 
-#: src/form.php:155
+#: src/form.php:162
 msgid "EDUCATION AND FORMATION"
 msgstr "EDUCACIÓN Y FORMACIÓN"
 
-#: src/form.php:166
+#: src/form.php:173
 msgid "ADDITIONAL FIELDS"
 msgstr "CAMPOS ADICIONALES"
 
-#: src/form.php:172
+#: src/form.php:179
 msgid "Search"
 msgstr "Buscar"
 
-#: src/form.php:172
+#: src/form.php:179
 msgid "Attach a photo"
 msgstr "Adjunta una foto"
 
-#: src/form.php:178
+#: src/form.php:185
 msgid "Driving license"
 msgstr "Permiso de conducir"
 
-#: src/form.php:205
+#: src/form.php:212
 msgid "Generate resume"
 msgstr "Generar fomulario"
 
-#: src/form.php:206
+#: src/form.php:213
 msgid "Clean form"
 msgstr "Limpiar formulario"
 
-#: src/index.php:50
+#: src/index.php:58
 msgid "HELLO"
 msgstr "HOLA"
 
-#: src/index.php:51
+#: src/index.php:59
 msgid "Welcome to the world's first augmented reality resume builder"
 msgstr ""
 "Bienvenido al primer generador de currículums en realidad aumentada del mundo"
 
-#: src/index.php:53
+#: src/index.php:61
 msgid ""
 "Designed by Axel Gabriel Calle Granda and Adrián Rodríguez Ballesteros as a "
 "final degree project in the Jose Ramón Otero cooperative"
@@ -302,29 +297,84 @@ msgstr ""
 "Diseñado por Axel Gabriel Calle Granda y Adrián Rodríguez Ballestero como "
 "proyecto de fin de grado para la cooperativa José Ramón Otero"
 
-#: src/templates.php:47
+#: src/new_account.php:53 src/register.php:111
+msgid "User"
+msgstr "Usuario"
+
+#: src/new_account.php:54 src/register.php:112
+msgid "password"
+msgstr "contraseña"
+
+#: src/new_account.php:55
+msgid "repit the password"
+msgstr "repite la contraseña"
+
+#: src/new_account.php:57
+msgid "accept"
+msgstr "cceptar"
+
+#: src/new_account.php:58
+msgid "return"
+msgstr "volver"
+
+#: src/register.php:57
+msgid "Log out"
+msgstr "Cerrar sesion"
+
+#: src/register.php:74
+msgid "You still don't have any resume"
+msgstr "Todavía no tienes ningún curriculum"
+
+#: src/register.php:75
+msgid "Choose one of our designs and create it"
+msgstr "Escoje uno de nuestros diseños y createlo"
+
+#: src/register.php:82
+msgid "Entering the link of your CV, scan the following image with the camera."
+msgstr ""
+"Entrando en el enlace de tu curriculum escanee con la cámara la siguiente "
+"imagen."
+
+#: src/register.php:113
+msgid "Log in"
+msgstr "Iniciar sesión"
+
+#: src/register.php:117
+msgid "If you don't have any account"
+msgstr "Si no tienes cuenta"
+
+#: src/register.php:118
+msgid "log up"
+msgstr "crear cuenta"
+
+#: src/templates.php:54 src/templates.php:217
 msgid "TEMPLATES"
 msgstr "PLANTILLAS"
 
-#: src/templates.php:48
+#: src/templates.php:55 src/templates.php:218
 msgid "Choose from three designs, the one that best suits you"
 msgstr "Elija de entre tres diseños, el que más se adapte a tí"
 
-#: src/templates.php:51 src/templates.php:53 src/templates.php:72
-#: src/templates.php:96 src/templates.php:98 src/templates.php:117
-#: src/templates.php:141 src/templates.php:143 src/templates.php:162
+#: src/templates.php:58 src/templates.php:60 src/templates.php:79
+#: src/templates.php:103 src/templates.php:105 src/templates.php:124
+#: src/templates.php:148 src/templates.php:150 src/templates.php:169
+#: src/templates.php:221 src/templates.php:223 src/templates.php:241
+#: src/templates.php:265 src/templates.php:267 src/templates.php:285
+#: src/templates.php:309 src/templates.php:311 src/templates.php:329
 msgid "Design"
 msgstr "Diseño"
 
-#: src/templates.php:65 src/templates.php:110 src/templates.php:155
+#: src/templates.php:72 src/templates.php:117 src/templates.php:162
 msgid "Access form"
 msgstr "Acceder al formulario"
 
-#: src/templates.php:66 src/templates.php:111 src/templates.php:156
+#: src/templates.php:73 src/templates.php:118 src/templates.php:163
+#: src/templates.php:235 src/templates.php:279 src/templates.php:323
 msgid "See example"
 msgstr "Ver ejemplo"
 
-#: src/templates.php:79 src/templates.php:124 src/templates.php:169
+#: src/templates.php:86 src/templates.php:131 src/templates.php:176
+#: src/templates.php:248 src/templates.php:292 src/templates.php:336
 msgid ""
 "First make sure that the web server works with HTTPS as it is a requirement "
 "to access the camera from a web browser"
@@ -332,21 +382,53 @@ msgstr ""
 "Primero asegúrate de que el servidor web funcione con HTTPS ya que es un "
 "requisito para acceder a la cámara desde un nevagador web"
 
-#: src/templates.php:84 src/templates.php:129 src/templates.php:174
+#: src/templates.php:91 src/templates.php:136 src/templates.php:181
+#: src/templates.php:253 src/templates.php:297 src/templates.php:341
 msgid "Access this "
 msgstr "Accede a esta "
 
-#: src/templates.php:84 src/templates.php:129 src/templates.php:174
+#: src/templates.php:91 src/templates.php:136 src/templates.php:181
+#: src/templates.php:253 src/templates.php:297 src/templates.php:341
 msgid "web page"
 msgstr "pagina web"
 
-#: src/templates.php:85 src/templates.php:130 src/templates.php:175
+#: src/templates.php:92 src/templates.php:137 src/templates.php:182
+#: src/templates.php:254 src/templates.php:298 src/templates.php:342
 msgid " from another camera device."
 msgstr " desde otro dispositivo con cámara."
 
-#: src/templates.php:86 src/templates.php:131 src/templates.php:176
+#: src/templates.php:93 src/templates.php:138 src/templates.php:183
+#: src/templates.php:255 src/templates.php:299 src/templates.php:343
 msgid "Now with the other device, scan the following mark"
 msgstr "Ahora con ese dispositivo, escanee la siguiente marca"
+
+#~ msgid "Instructions for use"
+#~ msgstr "Instrucciones de uso"
+
+#~ msgid "Download the cv at the following link"
+#~ msgstr "Descargue el cv en el siguiente enlace"
+
+#~ msgid "The downloaded zip will have a folder format like this"
+#~ msgstr "El zip descargado tendrá un formato de carpetas como el siguiente"
+
+#~ msgid "Inside the cv folder you will find this folder format"
+#~ msgstr "Dentro de la carpeta cv encontraras este formato de carpetas"
+
+#~ msgid "In user you have the file corresponding to your cv"
+#~ msgstr "En user tienes el archivo correspondiente a tu cv"
+
+#~ msgid ""
+#~ "Open this in any search engine and scan the mark in the first folder with "
+#~ "the camera"
+#~ msgstr ""
+#~ "Ábrelo en cualquier buscador y escanea la marca en la primera carpeta con "
+#~ "la camara."
+
+#~ msgid "Download"
+#~ msgstr "Descargar"
+
+#~ msgid "Studying "
+#~ msgstr "Estudiando "
 
 #~ msgid "Working from "
 #~ msgstr "Trabajando en "

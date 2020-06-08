@@ -207,7 +207,7 @@
                 <a href="#" class="nav-item nav-link active"><?=_("Templates")?></a>
                 <a href="about.php" class="nav-item nav-link"><?=_("About")?></a>
                 <?php
-                print "<a href='register.php' class='nav-item nav-link'>"._("iniciar seison")."</a>";
+                print "<a href='register.php' class='nav-item nav-link'>"._("log in")."</a>";
                 ?>
             </div>
         </div>
