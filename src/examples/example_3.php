@@ -20,7 +20,7 @@
                 
                 <a-image id="photo" position="-0.13 1.8 0" scale="0.55 0.55 1" src="../img/example_3/user_example_3.jpg" height="1.2" width="1.1" material="" visible="" animation="property: scale; to: 1.25 1.4 1; dur: 2500">
                 </a-image>
-                <a-text id="user" rotation="0 0 30" value="Ricardo Milos" position="-2.1 2.85 0" color="black"   font="mozillavr" tabSize="6" width="6"></a-text>
+                <a-text id="user" rotation="0 0 30" value="Ricardo Milos" position="-2.2 2.75 0" color="black"   font="mozillavr" tabSize="6" width="6"></a-text>
                 <a-text id="home" rotation="0 0 -13" value="Calle Mazarredo 24, 28005" position="-0.85 3.3 0" color="black"   font="mozillavr" tabSize="6" width='3'></a-text>
                 <?php
                 print "<a-text id='country' rotation='0 0 -13' value='Madrid, "._("Spain")."' position='-0.9 3.15 0' color='black'   font='mozillavr' tabSize='6' width='3'></a-text>

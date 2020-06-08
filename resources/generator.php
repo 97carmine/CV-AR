@@ -483,7 +483,7 @@ if(isset($_SESSION['login'])){
                     if($file_upload){
                         fputs($fp, "<a-image id='photo' position='-0.13 1.8 0' scale='0.55 0.55 1' src='".$path2."' height='1.2' width='1.1' material='' visible='' animation='property: scale; to: 1.25 1.4 1; dur: 2500'></a-image>\r\n");
                     }
-                    fputs($fp, "<a-text id='user' rotation='0 0 30' value='".$first_name." ".$last_name."' position='-2.1 2.85 0' color='black' font='mozillavr' tabSize='6' width='6'></a-text>\r\n");
+                    fputs($fp, "<a-text id='user' rotation='0 0 30' value='".$first_name." ".$last_name."' position='-2.2 2.75 0' color='black' font='mozillavr' tabSize='6' width='6'></a-text>\r\n");
                     fputs($fp, "<a-text id='home' rotation='0 0 -13' value='".$home.", ".$postal_code."' position='-0.85 3.3 0' color='black'   font='mozillavr' tabSize='6' width='3'></a-text>\r\n");
                     fputs($fp, "<a-text id='country' rotation='0 0 -13' value='".$city.", ".$country."' position='-0.9 3.15 0' color='black'   font='mozillavr' tabSize='6' width='3'></a-text>\r\n");
                     fputs($fp, "<a-text id='phone' rotation='0 0 25' value='".$type_phone.": ".$number_phone."' position='0.35 3.15 0' color='black'  font='mozillavr' tabSize='6' width='3'></a-text>\r\n");
