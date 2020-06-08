@@ -44,18 +44,16 @@
                 <a href="index.php" class="nav-item nav-link"><?=_("Start")?></a>
                 <a href="templates.php" class="nav-item nav-link"><?=_("Templates")?></a>
                 <a href="about.php" class="nav-item nav-link"><?=_("About")?></a>
-                <?php
-                print "<a href='#' class='nav-item nav-link' active>"._("iniciar seison")." </a>";
-                ?>
+                <a href="#" class="nav-item nav-link" active><?=_("log in")?></a>
             </div>
         </div>
     </nav>
     <div class="mt-5 d-flex justify-content-center container-fluid">
         <form action="../resources/account_creator.php" method="POST" align="center">
-            Usuario: <input type="text" name="login" value=""><br><br>
-            Contrasena: <input type='password' name='pswd1' value=''><br><br>
-            Repetir Contraseña: <input type='password' name='pswd2' value=''> <br><br>
-            Email: <input type='mail' name='mail' value=''><br><br>
+            <?=_('User')?>: <input type="text" name="login" value=""><br><br>
+            <?=_('password')?>: <input type='password' name='pswd1' value=''><br><br>
+            <?=_('repit the password')?>: <input type='password' name='pswd2' value=''> <br><br>
+            <?=_('Email')?>: <input type='mail' name='mail' value=''><br><br>
             <button type="submit" name="accept" class="btn btn-outline-dark"><?=_("accept")?></button>
             <button type="submit" name="return" class="btn btn-outline-dark"><?=_("return")?></button>
 		</form>
