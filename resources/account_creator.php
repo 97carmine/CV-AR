@@ -58,6 +58,9 @@ if(!(isset($_SESSION['login']))){
             header('refresh:3,url=../src/new_account.php');
         }
     }
+    if(isset($_POST['return'])){
+        header('Location:../src/register.php');
+    }
 }else{
     if(isset($_POST['exit'])){
         session_destroy();
