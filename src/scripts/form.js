@@ -1,5 +1,5 @@
 import { compareDates } from "../components/compareDates.js";
-import localization, { i18n } from "../components/localization.js";
+import { localization, i18n } from "../components/localization.js";
 
 if ($("input[name = 'design']").val() < 1 || $("input[name = 'design']").val() > 3) {
 	location.href = "templates.php";
