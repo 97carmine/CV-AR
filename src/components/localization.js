@@ -3,11 +3,10 @@ import gettext from "../libraries/gettext.js";
 var localization = function () {
 	let locale = navigator.language.substr(0, 2);
 
-	$.getJSON("locale/" + locale + "/LC_MESSAGES/default.json", function (jsonData) {
-		gettext().loadJSON(jsonData, "messages");
-		gettext().setLocale(locale);
-	})
-		.done(function () {
+	$.getJSON("locale/" + locale + "/LC_MESSAGES/default.json")
+		.done(function (jsonData) {
+			gettext().loadJSON(jsonData, "messages");
+			gettext().setLocale(locale);
 			console.log("Se ha establecido el idioma a " + locale);
 		})
 		.fail(function () {
