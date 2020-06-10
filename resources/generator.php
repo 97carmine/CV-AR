@@ -27,7 +27,7 @@ if(isset($_SESSION['login'])){
         
         $resume11 = $resume1."2";
         $resume2 = $resume2."2";
-        $fp = fopen($resume11.".html", "a+");
+        $fp = fopen($resume11.".php", "a+");
         fputs($fp, "<html>\r\n<head>\r\n");
         fputs($fp, "<script src='../libraries/aframe.min.js'></script>\r\n");
         fputs($fp, "<script src='../libraries/aframe-ar.js'></script>\r\n");
@@ -35,14 +35,19 @@ if(isset($_SESSION['login'])){
         
         $scene = $body->find("a-scene",0);
         $entity = $scene->find("a-entity");
+        $text = $scene->find("a-text");
 
         fputs($fp, "<body style='margin : 0px; overflow: hidden;'>\r\n");
+        fputs($fp, $body->find("a-assets",0));
         fputs($fp, "<a-scene embedded arjs>\r\n");
         fputs($fp, "<a-marker preset='hiro'>\r\n");
-        fputs($fp, "<a-entity position='0 0 10.5'><a-camera></a-camera></a-entity>\r\n");
-        fputs($fp, $scene->find("a-image"));
-        for($i=0;$i<count($entity);$i++){
+        fputs($fp, "<a-entity position='0 0 10'><a-camera></a-camera></a-entity>\r\n");
+        fputs($fp, $scene->find("a-image",0));
+        for($i=1;$i<count($entity);$i++){
             fputs($fp, $entity[$i]."\r\n");
+        }
+        for($j=0;$j<count($text);$j++){
+            fputs($fp, $text[$j]."\r\n");
         }
         fputs($fp, "</a-marker>\r\n</a-scene>\r\n</body>\r\n</html>\r\n");
         fclose($fp);
@@ -145,7 +150,7 @@ if(isset($_SESSION['login'])){
             $folder_cv = "../src/CVs/";
             $fp = fopen($folder_cv.$cv.".php", "a+");
 
-            fputs($fp, "<html>\r\n<head>\r\n<script src='../libraries/aframe.min.js'></script>\r\n</head>\r\n<body>\r\n");
+            fputs($fp, "<html>\r\n<head>\r\n<script src='../libraries/aframe.min.js'></script>\r\n</head>\r\n<body style='margin: 0px; overflow: hidden;'>\r\n");
 
             switch ($design) {
                 case "1":
@@ -403,7 +408,7 @@ if(isset($_SESSION['login'])){
                         }
                         fputs($fp, "<a-entity id='skills1' text='value: ".$acquired_skills1.".; width: 2; color: black' position='-0.7 1 0' rotation='0 0 48'></a-entity>\r\n");
 
-                        fputs($fp, "<a-entity id='works' text='value: "._("Work experience").":; width: 3.5; tabSize: 6; color: #EF2D5E' position='0.85 3.3 0' rotation='0 0 49'></a-entity>");
+                        fputs($fp, "<a-entity id='works' text='value: "._('Work experience').":; width: 3.5; tabSize: 6; color: #EF2D5E' position='0.85 3.3 0' rotation='0 0 49'></a-entity>");
                         fputs($fp, "<a-entity id='date_start2' text='value: ".$date_job_start1."; width: 2; color: black' position='0.47 2.63 0' rotation='0 0 49'></a-entity>\r\n");
                         if($current_job1 == "on"){
                             fputs($fp, "<a-entity id='title2' text='value: <?=_('Working from ')?>".$job1."<?=_(' in ')?>".$employer_name1."<?=_(' of ')?>".$employer_city1."<?=_(' in ')?>".$employer_country1.".; width: 2; color: black' position='0.85 3 0' rotation='0 0 49'></a-entity>\r\n");
@@ -450,7 +455,7 @@ if(isset($_SESSION['login'])){
                             }
                         }
                     }else if(!(empty($job1))){
-                        fputs($fp, "<a-entity id='studies' text='value: <?=_('Studies')?>:; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.3 2.7 0' rotation='0 0 49'></a-entity>\r\n");
+                        fputs($fp, "<a-entity id='works' text='value: <?=_('Work experience')?>:; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.3 2.7 0' rotation='0 0 49'></a-entity>\r\n");
                         fputs($fp, "<a-entity id='date_start1' text='value: ".$date_job_start1."; width: 2; color: black' position='-0.09 2.05 0' rotation='0 0 49'></a-entity>\r\n");
                         if($current_job1 == "on"){
                             fputs($fp, "<a-entity id='title1' text='value: <?=_('Working from ')?>".$job1."<?=_(' in ')?>".$employer_name1."<?=_(' of ')?>".$employer_city1."<?=_(' in ')?>".$employer_country1.".; width: 2; color: black' position='0.3 2.4 0' rotation='0 0 49'></a-entity>\r\n");
@@ -477,7 +482,7 @@ if(isset($_SESSION['login'])){
                     }
                 break;
                 case "3":
-                    fputs($fp, "<a-assets><img id='fondo' src='../img/example_3/suelo.png'><img id='fondo_normal' src='../img/example_3/suelo_normal.png'></a-assets>\r\n");
+                    fputs($fp, "<a-assets><img id='fondo' src='../img/example_3/muro.jpg'><img id='fondo_normal' src='../img/example_3/muro_normal.png'></a-assets>\r\n");
                     fputs($fp, "<a-scene>\r\n<a-entity position='0 0 2.6'><a-camera></a-camera></a-entity>\r\n");
                     fputs($fp, "<a-entity><a-plane position='0 0 -1' scale='15 15 1' material='src:#fondo; normal-map:#fondo_normal; repeat: 7 7 1; normal-texture-repeat: 7 7 1'></a-plane></a-entity>\r\n");
                     if($file_upload){
@@ -508,11 +513,11 @@ if(isset($_SESSION['login'])){
                         }
                         fputs($fp, "<a-text id='skilss2' rotation='0 0 30' value='".$acquired_skills2."' position='0.5 -0.2 0' color='black'   font='mozillavr' tabSize='6' width='2.5' scale='0.8'></a-text>\r\n");
                         if($have_license){
-                            fputs($fp, "<a-text id='licenses' rotation='0 0 35' value='"._("Licenses")."' position='-2.1 1.9 0' color='black' font='mozillavr' tabSize='6' width='5.5'></a-text>\r\n");
+                            fputs($fp, "<a-text id='licenses' rotation='0 0 35' value='<?=_('Licenses')?>' position='-2.1 1.9 0' color='black' font='mozillavr' tabSize='6' width='5.5'></a-text>\r\n");
                             fputs($fp, "<a-text id='licenses_drive' rotation='0 0 -13' value='".$licenses.".' position='-1.6 1.95 0' color='black'   font='mozillavr' tabSize='6' width='3'></a-text>\r\n");
                         }
                         if(!(empty($other_skills))){
-                            fputs($fp, "<a-text id='other_skills' rotation='0 0 35' value='"._("Other skills")."' position='0.55 2 0' color='black'   font='mozillavr' tabSize='6' width='5'></a-text>\r\n");
+                            fputs($fp, "<a-text id='other_skills' rotation='0 0 35' value='<?=_('Other skills')?>' position='0.55 2 0' color='black'   font='mozillavr' tabSize='6' width='5'></a-text>\r\n");
                             fputs($fp, "<a-text id='skils3' rotation='0 0 35' position='0.6 1.65 0' scale='0.75' value='".$other_skills.".' color='black'   font='mozillavr' tabSize='6' width='2.4'></a-text>\r\n");
                         }
                     }else if ((!(empty($job1)))&&(!(empty($job2)))){
@@ -532,11 +537,11 @@ if(isset($_SESSION['login'])){
                             fputs($fp, "<a-text id='experience2' rotation='0 0 30' value='".$job2."<?=_(' in ')?>".$employer_name2."<?=_(' of ')?>".$employer_city2."<?=_(' in ')?>".$employer_country2.".' position='0.4 0 0' color='black'   font='mozillavr' tabSize='6' width='2.5' scale='0.8'></a-text>\r\n");
                         }
                         if($have_license){
-                            fputs($fp, "<a-text id='licenses' rotation='0 0 35' value='"._("Licenses")."' position='-2.1 1.9 0' color='black' font='mozillavr' tabSize='6' width='5.5'></a-text>\r\n");
+                            fputs($fp, "<a-text id='licenses' rotation='0 0 35' value='<?=_('Licenses')?>' position='-2.1 1.9 0' color='black' font='mozillavr' tabSize='6' width='5.5'></a-text>\r\n");
                             fputs($fp, "<a-text id='licenses_drive' rotation='0 0 -13' value='".$licenses.".' position='-1.6 1.95 0' color='black'   font='mozillavr' tabSize='6' width='3'></a-text>\r\n");
                         }
                         if(!(empty($other_skills))){
-                            fputs($fp, "<a-text id='other_skills' rotation='0 0 35' value='"._("Other skills")."' position='0.55 2 0' color='black'   font='mozillavr' tabSize='6' width='5'></a-text>\r\n");
+                            fputs($fp, "<a-text id='other_skills' rotation='0 0 35' value='<?=_('Other skills')?>' position='0.55 2 0' color='black'   font='mozillavr' tabSize='6' width='5'></a-text>\r\n");
                             fputs($fp, "<a-text id='skils3' rotation='0 0 35' position='0.6 1.65 0' scale='0.75' value='".$other_skills.".' color='black'   font='mozillavr' tabSize='6' width='2.4'></a-text>\r\n");
                         }
                     }else if ((!(empty($title1)))&&(!(empty($job1)))){
@@ -559,11 +564,11 @@ if(isset($_SESSION['login'])){
                             fputs($fp, "<a-text id='experience' rotation='0 0 30' value='".$job1."<?=_(' in ')?>".$employer_name1."<?=_(' of ')?>".$employer_city1."<?=_(' in ')?>".$employer_country1.".' position='0.4 0 0' color='black'   font='mozillavr' tabSize='6' width='2.5' scale='0.8'></a-text>\r\n");
                         }
                         if($have_license){
-                            fputs($fp, "<a-text id='licenses' rotation='0 0 35' value='"._("Licenses")."' position='-2.1 1.9 0' color='black' font='mozillavr' tabSize='6' width='5.5'></a-text>\r\n");
+                            fputs($fp, "<a-text id='licenses' rotation='0 0 35' value='<?=_('Licenses')?>' position='-2.1 1.9 0' color='black' font='mozillavr' tabSize='6' width='5.5'></a-text>\r\n");
                             fputs($fp, "<a-text id='licenses_drive' rotation='0 0 -13' value='".$licenses.".' position='-1.6 1.95 0' color='black'   font='mozillavr' tabSize='6' width='3'></a-text>\r\n");
                         }
                         if(!(empty($other_skills))){
-                            fputs($fp, "<a-text id='other_skills' rotation='0 0 35' value='"._("Other skills")."' position='0.55 2 0' color='black'   font='mozillavr' tabSize='6' width='5'></a-text>\r\n");
+                            fputs($fp, "<a-text id='other_skills' rotation='0 0 35' value='<?=_('Other skills')?>' position='0.55 2 0' color='black'   font='mozillavr' tabSize='6' width='5'></a-text>\r\n");
                             fputs($fp, "<a-text id='skils3' rotation='0 0 35' position='0.6 1.65 0' scale='0.75' value='".$other_skills.".' color='black'   font='mozillavr' tabSize='6' width='2.4'></a-text>\r\n");
                         }
                     }else if (!(empty($title1))){
@@ -577,11 +582,11 @@ if(isset($_SESSION['login'])){
                         }
                         fputs($fp, "<a-text id='skills1' rotation='0 0 30' value='".$acquired_skills1.".' position='-0.7 -0.2 0' color='black' font='mozillavr' tabSize='6' width='2.5' scale='0.8'></a-text>\r\n");
                         if($have_license){
-                            fputs($fp, "<a-text id='licenses' rotation='0 0 35' value='"._("Licenses")."' position='-2.1 1.9 0' color='black' font='mozillavr' tabSize='6' width='5.5'></a-text>\r\n");
+                            fputs($fp, "<a-text id='licenses' rotation='0 0 35' value='<?=_('Licenses')?>' position='-2.1 1.9 0' color='black' font='mozillavr' tabSize='6' width='5.5'></a-text>\r\n");
                             fputs($fp, "<a-text id='licenses_drive' rotation='0 0 -13' value='".$licenses.".' position='-1.6 1.95 0' color='black'   font='mozillavr' tabSize='6' width='3'></a-text>\r\n");
                         }
                         if(!(empty($other_skills))){
-                            fputs($fp, "<a-text id='other_skills' rotation='0 0 35' value='"._("Other skills")."' position='0.55 2 0' color='black'   font='mozillavr' tabSize='6' width='5'></a-text>\r\n");
+                            fputs($fp, "<a-text id='other_skills' rotation='0 0 35' value='<?=_('Other skills')?>' position='0.55 2 0' color='black'   font='mozillavr' tabSize='6' width='5'></a-text>\r\n");
                             fputs($fp, "<a-text id='skils3' rotation='0 0 35' position='0.6 1.65 0' scale='0.75' value='".$other_skills.".' color='black'   font='mozillavr' tabSize='6' width='2.4'></a-text>\r\n");
                         }
                     }else if (!(empty($job1))){
@@ -595,11 +600,11 @@ if(isset($_SESSION['login'])){
                         }
                         
                         if($have_license){
-                            fputs($fp, "<a-text id='licenses' rotation='0 0 35' value='"._("Licenses")."' position='-2.1 1.9 0' color='black' font='mozillavr' tabSize='6' width='5.5'></a-text>\r\n");
+                            fputs($fp, "<a-text id='licenses' rotation='0 0 35' value='<?=_('Licenses')?>' position='-2.1 1.9 0' color='black' font='mozillavr' tabSize='6' width='5.5'></a-text>\r\n");
                             fputs($fp, "<a-text id='licenses_drive' rotation='0 0 -13' value='".$licenses.".' position='-1.6 1.95 0' color='black'   font='mozillavr' tabSize='6' width='3'></a-text>\r\n");
                         }
                         if(!(empty($other_skills))){
-                            fputs($fp, "<a-text id='other_skills' rotation='0 0 35' value='"._("Other skills")."' position='0.55 2 0' color='black'   font='mozillavr' tabSize='6' width='5'></a-text>\r\n");
+                            fputs($fp, "<a-text id='other_skills' rotation='0 0 35' value='<?=_('Other skills')?>' position='0.55 2 0' color='black'   font='mozillavr' tabSize='6' width='5'></a-text>\r\n");
                             fputs($fp, "<a-text id='skils3' rotation='0 0 35' position='0.6 1.65 0' scale='0.75' value='".$other_skills.".' color='black'   font='mozillavr' tabSize='6' width='2.4'></a-text>\r\n");
                         }
                     }else{

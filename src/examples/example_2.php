@@ -70,10 +70,8 @@
             ?>
             <a-entity id="date_start2" text="value: 25/3/2019; width: 2; color: black" position="0.47 2.63 0" rotation="0 0 49">
             </a-entity>
-            <a-entity id="date_end2" text="value: 13/6/2019; width: 2; color: black" position="0.57 2.53 0" rotation="0 0 49">
-            </a-entity>
             <?php
-            print "<a-entity id='experience' text='value: "._("Scholar")._(" in ")."CGM-Telecomunicaciones"._(" of ")."Madrid"._(" in ")._("Spain").".; width: 2; color: black' position='0.85 3 0' rotation='0 0 49'>
+            print "<a-entity id='experience' text='value: "._("Working from ")._("Scholar")._(" in ")."CGM-Telecomunicaciones"._(" of ")."Madrid"._(" in ")._("Spain").".; width: 2; color: black' position='0.85 3 0' rotation='0 0 49'>
                 </a-entity>";
             ?>
             

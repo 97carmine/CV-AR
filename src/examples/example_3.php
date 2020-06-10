@@ -3,10 +3,10 @@
         <script src="../libraries/aframe.min.js"></script>
         <script src="../libraries/aframe-ar.js"></script>
   </head>
-  <body>
+  <body style="margin : 0px; overflow: hidden;">
     <a-assets>
-        <img id="fondo" src="../img/example_3/suelo.png">
-        <img id="fondo_normal" src="../img/example_3/suelo_normal.png">
+        <img id="fondo" src="../img/example_3/muro.jpg">
+        <img id="fondo_normal" src="../img/example_3/muro_normal.png">
     </a-assets>
         <a-scene embedded arjs>
             <a-marker preset="hiro">
@@ -14,7 +14,7 @@
                     <a-camera></a-camera>
                 </a-entity>
                 <a-entity>
-                    <a-plane position="0 0 -1" material="src:#fondo; normal-map:#fondo_normal; repeat: 7 7 1; normal-texture-repeat: 7 7 1" scale="15 15 1">
+                    <a-plane position="0 0 -1" material="src:#fondo; normal-map:#fondo_normal; repeat: 5 10 1; normal-texture-repeat: 5 10 1" scale="15 15 1">
                     </a-plane>
                 </a-entity>
                 
@@ -31,9 +31,8 @@
                 print "<a-text id='studies' rotation='0 0 30' value='"._("Studies")."' position='-2.1 0 0' color='black'   font='mozillavr' tabSize='6' width='5.5'></a-text>";
                 ?>
                 <a-text id="date_start1" rotation="0 0 30" value="19/9/2019" position="-2 -0.25 0" color="black"   font="mozillavr" tabSize="6" width="2.5"></a-text>
-                <a-text id="date_end1" rotation="0 0 30" value="18/6/2020" position="-1.96 -0.35 0" color="black"   font="mozillavr" tabSize="6" width="2.5"></a-text>
                 <?php
-                print "<a-text id='title' rotation='0 0 30' value='D.A.W."._(" in ")."J.R.Otero"._(" of ")."Madrid"._(" in ")._("Spain")."' position='-1.4 0 0' color='black' font='mozillavr' tabSize='6' width='2.5' scale='0.8'></a-text>
+                print "<a-text id='title' rotation='0 0 30' value='"._("studying ")."D.A.W."._(" in ")."J.R.Otero"._(" of ")."Madrid"._(" in ")._("Spain")."' position='-1.4 0 0' color='black' font='mozillavr' tabSize='6' width='2.5' scale='0.8'></a-text>
                 <a-text id='skils1' rotation='0 0 30' value='-"._("Programming in server and client environment").".' position='-1.3 -0.2 0' color='black' font='mozillavr' tabSize='6' width='2.5' scale='0.8'></a-text>
             
                 <a-text id='works' rotation='0 0 30' value='"._("Work experience")."' position='-0.3 0 0' color='black' font='mozillavr' tabSize='6' width='5.5'></a-text>";
