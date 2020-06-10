@@ -13,6 +13,7 @@ RUN apt-get update \
     && apt install --no-install-recommends --no-install-suggests locales-all -y \
     && docker-php-ext-install gettext \
     && a2enmod ssl \
+    && a2enmod http2 \
     && a2enmod rewrite  \
     && if [ "$develop" = "yes" ]; then \
         pecl install xdebug-2.9.5 \
