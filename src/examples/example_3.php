@@ -10,7 +10,7 @@
     </a-assets>
         <a-scene embedded arjs>
             <a-marker preset="hiro">
-                <a-entity position="0 0 10.5">
+                <a-entity position="0 0 10">
                     <a-camera></a-camera>
                 </a-entity>
                 <a-entity>

@@ -57,7 +57,7 @@
                     <button type="submit" name="exit" class="btn btn-outline-dark"><?=_("Log out")?></button>
                     </form>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-4">
                 <?php
                 $conexion = mysqli_connect ("localhost", "root", "") or die ("No se puede conectar con el servidor");
                 mysqli_select_db ($conexion,"cv-ar") or die ("No se puede seleccionar la base de datos");
@@ -71,14 +71,14 @@
                         print "<a href='".$fila["cv"]."' class='mt-4'>CV_".$_SESSION['login'].$i."</a><br>";
                     }
                 }else{
-                    print "<p>"._("You still don't have any resume").".</p>";
+                    print "<p class='my-4'>"._("You still don't have any resume").".</p>";
                     print "<p>"._("Choose one of our designs and create it").".</p>";
                 }
             
                 mysqli_close($conexion);
                 ?>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-5">
                     <p class="my-4"><?=_("Entering the link of your CV, scan the following image with the camera.")?></p>
                     <img src="img/patterns/hiro.png" class="img-fluid">
                 </div>
