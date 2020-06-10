@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-06-08 20:31+0200\n"
-"PO-Revision-Date: 2020-06-08 20:44+0200\n"
+"POT-Creation-Date: 2020-06-10 16:08+0200\n"
+"PO-Revision-Date: 2020-06-10 16:23+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -17,45 +17,66 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 "X-Poedit-SearchPathExcluded-1: *.js\n"
 
-#: resources/generator.php:130
+#: resources/generator.php:135
 msgid "You can't upload such a heavy image, the maximum size is "
 msgstr "No puedes subir una imagen tan pesada, el tamaño máximo es "
 
-#: resources/generator.php:134
+#: resources/generator.php:139
 msgid "Could not upload image"
 msgstr "No se pudo subir la imagen"
 
-#: resources/generator.php:138
+#: resources/generator.php:143
 msgid "The creation could not be carried out due to:"
 msgstr "La creación no pudo llevarse a cabo debido a:"
 
-#: resources/generator.php:406 src/examples/example_1.php:43
-#: src/examples/example_2.php:68 src/examples/example_3.php:39
+#: resources/generator.php:411 src/examples/example_1.php:43
+#: src/examples/example_2.php:68 src/examples/example_3.php:38
 msgid "Work experience"
 msgstr "Experiencia laboral"
 
-#: resources/generator.php:511 resources/generator.php:535
-#: resources/generator.php:562 resources/generator.php:580
-#: resources/generator.php:598 src/examples/example_1.php:53
-#: src/examples/example_2.php:94 src/examples/example_3.php:46
-msgid "Licenses"
-msgstr "Carnets"
-
-#: resources/generator.php:515 resources/generator.php:539
-#: resources/generator.php:566 resources/generator.php:584
-#: resources/generator.php:602 src/examples/example_1.php:59
-#: src/examples/example_2.php:101 src/examples/example_3.php:50
-#: src/form.php:206
-msgid "Other skills"
-msgstr "Otras habilidades"
-
-#: resources/generator.php:626
+#: resources/generator.php:631
 msgid "Generate"
 msgstr "Generar"
 
-#: resources/generator.php:629
+#: resources/generator.php:634
 msgid "Cancel"
 msgstr "Cancelar"
+
+#: src/CVs/1591797687.php:16 src/CVs/1591797828.php:31
+#: src/examples/example_1.php:31 src/examples/example_2.php:55
+#: src/examples/example_3.php:31
+msgid "Studies"
+msgstr "Estudios"
+
+#: src/CVs/1591797687.php:18 src/CVs/1591797828.php:33
+msgid "Studying "
+msgstr "Estudiando "
+
+#: src/CVs/1591797687.php:18 src/CVs/1591797828.php:33
+#: src/examples/example_1.php:39 src/examples/example_1.php:51
+#: src/examples/example_2.php:63 src/examples/example_2.php:76
+#: src/examples/example_3.php:35 src/examples/example_3.php:43
+msgid " in "
+msgstr " en "
+
+#: src/CVs/1591797687.php:18 src/CVs/1591797828.php:33
+#: src/examples/example_1.php:39 src/examples/example_1.php:51
+#: src/examples/example_2.php:63 src/examples/example_2.php:76
+#: src/examples/example_3.php:35 src/examples/example_3.php:43
+msgid " of "
+msgstr " de "
+
+#: src/CVs/1591797687.php:20 src/CVs/1591797828.php:35
+#: src/examples/example_1.php:53 src/examples/example_2.php:94
+#: src/examples/example_3.php:45
+msgid "Licenses"
+msgstr "Carnets"
+
+#: src/CVs/1591797687.php:22 src/CVs/1591797828.php:37
+#: src/examples/example_1.php:59 src/examples/example_2.php:101
+#: src/examples/example_3.php:49 src/form.php:206
+msgid "Other skills"
+msgstr "Otras habilidades"
 
 #: src/about.php:7 src/about.php:41 src/form.php:45 src/index.php:43
 #: src/new_account.php:46 src/register.php:46 src/register.php:100
@@ -106,8 +127,8 @@ msgstr "INVOLUCRARSE"
 #: src/examples/example_1.php:23 src/examples/example_1.php:39
 #: src/examples/example_1.php:51 src/examples/example_2.php:46
 #: src/examples/example_2.php:63 src/examples/example_2.php:76
-#: src/examples/example_3.php:26 src/examples/example_3.php:36
-#: src/examples/example_3.php:44
+#: src/examples/example_3.php:26 src/examples/example_3.php:35
+#: src/examples/example_3.php:43
 msgid "Spain"
 msgstr "España"
 
@@ -116,37 +137,28 @@ msgstr "España"
 msgid "Mobile"
 msgstr "Móvil"
 
-#: src/examples/example_1.php:31 src/examples/example_2.php:55
-#: src/examples/example_3.php:31
-msgid "Studies"
-msgstr "Estudios"
-
-#: src/examples/example_1.php:39 src/examples/example_1.php:51
-#: src/examples/example_2.php:63 src/examples/example_2.php:76
-#: src/examples/example_3.php:36 src/examples/example_3.php:44
-msgid " in "
-msgstr " en "
-
-#: src/examples/example_1.php:39 src/examples/example_1.php:51
-#: src/examples/example_2.php:63 src/examples/example_2.php:76
-#: src/examples/example_3.php:36 src/examples/example_3.php:44
-msgid " of "
-msgstr " de "
-
 #: src/examples/example_1.php:41 src/examples/example_2.php:65
-#: src/examples/example_3.php:37
+#: src/examples/example_3.php:36
 msgid "Programming in server and client environment"
 msgstr "Programación en entorno cliente y servidor"
 
 #: src/examples/example_1.php:51 src/examples/example_2.php:76
-#: src/examples/example_3.php:44
+#: src/examples/example_3.php:43
 msgid "Scholar"
 msgstr "Becario"
 
 #: src/examples/example_1.php:61 src/examples/example_2.php:103
-#: src/examples/example_3.php:51
+#: src/examples/example_3.php:50
 msgid "English medium level"
 msgstr "Ingles nivel medio"
+
+#: src/examples/example_2.php:76
+msgid "Working from "
+msgstr "Trabajando en "
+
+#: src/examples/example_3.php:35
+msgid "studying "
+msgstr "Estudiando "
 
 #: src/form.php:7
 msgid "Form"
@@ -426,9 +438,3 @@ msgstr "Ahora con ese dispositivo, escanee la siguiente marca"
 
 #~ msgid "Download"
 #~ msgstr "Descargar"
-
-#~ msgid "Studying "
-#~ msgstr "Estudiando "
-
-#~ msgid "Working from "
-#~ msgstr "Trabajando en "
