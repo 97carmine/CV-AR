@@ -104,18 +104,25 @@
         </nav>
         <?php
         ?>
-        <div class="mt-5 d-flex justify-content-center container-fluid">
-            <div class="row d-flex justify-content-center" style="width:80%;">
-                <div class="col-9 d-flex justify-content-center">
-                <form action="../resources/account_creator.php" method="POST" align="center" style="width:80%;">
-                    <?=_('User')?>: <input type="text" name="usuario" value="" required><br><br>
-                    <?=_('password')?>: <input type="password" name="pass" value="" required><br><br>
-                    <button type="submit" name="enter" class="btn btn-outline-dark"><?=_("Log in")?></button>
-                    </form>
+        <div class="d-flex justify-content-center container-fluid pt-4">
+            <div class="row d-flex justify-content-center mt-5 pt-4" style="width:80%;">
+                <div class="col-md-7 d-flex justify-content-center">
+                    <div class="row" style="width:80%;">
+                        <div class="col-12 d-flex justify-content-center"><p><?=_("Enter with your account")?></p></div>
+                        <div class="col-12 d-flex justify-content-center">
+                            <form action="../resources/account_creator.php" method="POST">
+                                <?=_('User')?>: <input type="text" name="usuario" value="" required><br><br>
+                                <?=_('password')?>: <input type="password" name="pass" value="" required><br><br>
+                                <button type="submit" name="enter" class="btn btn-outline-dark"><?=_("Log in")?></button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-3">
-                    <p><?=_("If you don't have any account")?></p>
-                    <a class="btn btn-outline-dark" href="new_account.php"><?=_("log up")?></a>
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center"><p><?=_("If you don't have any account")?></p></div>
+                        <div class="col-12"><center><a class="btn btn-outline-dark" href="new_account.php"><?=_("log up")?></a></center></div>
+                    </div>
                 </div>
             </div>
         </div>

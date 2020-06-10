@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-06-10 16:08+0200\n"
-"PO-Revision-Date: 2020-06-10 16:23+0200\n"
+"POT-Creation-Date: 2020-06-10 18:05+0200\n"
+"PO-Revision-Date: 2020-06-10 18:06+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -41,42 +41,6 @@ msgstr "Generar"
 #: resources/generator.php:634
 msgid "Cancel"
 msgstr "Cancelar"
-
-#: src/CVs/1591797687.php:16 src/CVs/1591797828.php:31
-#: src/examples/example_1.php:31 src/examples/example_2.php:55
-#: src/examples/example_3.php:31
-msgid "Studies"
-msgstr "Estudios"
-
-#: src/CVs/1591797687.php:18 src/CVs/1591797828.php:33
-msgid "Studying "
-msgstr "Estudiando "
-
-#: src/CVs/1591797687.php:18 src/CVs/1591797828.php:33
-#: src/examples/example_1.php:39 src/examples/example_1.php:51
-#: src/examples/example_2.php:63 src/examples/example_2.php:76
-#: src/examples/example_3.php:35 src/examples/example_3.php:43
-msgid " in "
-msgstr " en "
-
-#: src/CVs/1591797687.php:18 src/CVs/1591797828.php:33
-#: src/examples/example_1.php:39 src/examples/example_1.php:51
-#: src/examples/example_2.php:63 src/examples/example_2.php:76
-#: src/examples/example_3.php:35 src/examples/example_3.php:43
-msgid " of "
-msgstr " de "
-
-#: src/CVs/1591797687.php:20 src/CVs/1591797828.php:35
-#: src/examples/example_1.php:53 src/examples/example_2.php:94
-#: src/examples/example_3.php:45
-msgid "Licenses"
-msgstr "Carnets"
-
-#: src/CVs/1591797687.php:22 src/CVs/1591797828.php:37
-#: src/examples/example_1.php:59 src/examples/example_2.php:101
-#: src/examples/example_3.php:49 src/form.php:206
-msgid "Other skills"
-msgstr "Otras habilidades"
 
 #: src/about.php:7 src/about.php:41 src/form.php:45 src/index.php:43
 #: src/new_account.php:46 src/register.php:46 src/register.php:100
@@ -126,7 +90,7 @@ msgstr "INVOLUCRARSE"
 
 #: src/examples/example_1.php:23 src/examples/example_1.php:39
 #: src/examples/example_1.php:51 src/examples/example_2.php:46
-#: src/examples/example_2.php:63 src/examples/example_2.php:76
+#: src/examples/example_2.php:63 src/examples/example_2.php:74
 #: src/examples/example_3.php:26 src/examples/example_3.php:35
 #: src/examples/example_3.php:43
 msgid "Spain"
@@ -137,22 +101,49 @@ msgstr "España"
 msgid "Mobile"
 msgstr "Móvil"
 
+#: src/examples/example_1.php:31 src/examples/example_2.php:55
+#: src/examples/example_3.php:31
+msgid "Studies"
+msgstr "Estudios"
+
+#: src/examples/example_1.php:39 src/examples/example_1.php:51
+#: src/examples/example_2.php:63 src/examples/example_2.php:74
+#: src/examples/example_3.php:35 src/examples/example_3.php:43
+msgid " in "
+msgstr " en "
+
+#: src/examples/example_1.php:39 src/examples/example_1.php:51
+#: src/examples/example_2.php:63 src/examples/example_2.php:74
+#: src/examples/example_3.php:35 src/examples/example_3.php:43
+msgid " of "
+msgstr " de "
+
 #: src/examples/example_1.php:41 src/examples/example_2.php:65
 #: src/examples/example_3.php:36
 msgid "Programming in server and client environment"
 msgstr "Programación en entorno cliente y servidor"
 
-#: src/examples/example_1.php:51 src/examples/example_2.php:76
+#: src/examples/example_1.php:51 src/examples/example_2.php:74
 #: src/examples/example_3.php:43
 msgid "Scholar"
 msgstr "Becario"
 
-#: src/examples/example_1.php:61 src/examples/example_2.php:103
+#: src/examples/example_1.php:53 src/examples/example_2.php:92
+#: src/examples/example_3.php:45
+msgid "Licenses"
+msgstr "Carnets"
+
+#: src/examples/example_1.php:59 src/examples/example_2.php:99
+#: src/examples/example_3.php:49 src/form.php:206
+msgid "Other skills"
+msgstr "Otras habilidades"
+
+#: src/examples/example_1.php:61 src/examples/example_2.php:101
 #: src/examples/example_3.php:50
 msgid "English medium level"
 msgstr "Ingles nivel medio"
 
-#: src/examples/example_2.php:76
+#: src/examples/example_2.php:74
 msgid "Working from "
 msgstr "Trabajando en "
 
@@ -309,11 +300,11 @@ msgstr ""
 "Diseñado por Axel Gabriel Calle Granda y Adrián Rodríguez Ballestero como "
 "proyecto de fin de grado para la cooperativa José Ramón Otero"
 
-#: src/new_account.php:53 src/register.php:111
+#: src/new_account.php:53 src/register.php:114
 msgid "User"
 msgstr "Usuario"
 
-#: src/new_account.php:54 src/register.php:112
+#: src/new_account.php:54 src/register.php:115
 msgid "password"
 msgstr "contraseña"
 
@@ -347,15 +338,19 @@ msgstr ""
 "Entrando en el enlace de tu curriculum escanee con la cámara la siguiente "
 "imagen."
 
-#: src/register.php:113
+#: src/register.php:111
+msgid "Enter with your account"
+msgstr "Entra con tu cuenta"
+
+#: src/register.php:116
 msgid "Log in"
 msgstr "Iniciar sesión"
 
-#: src/register.php:117
+#: src/register.php:123
 msgid "If you don't have any account"
 msgstr "Si no tienes cuenta"
 
-#: src/register.php:118
+#: src/register.php:124
 msgid "log up"
 msgstr "crear cuenta"
 
@@ -413,6 +408,9 @@ msgstr " desde otro dispositivo con cámara."
 #: src/templates.php:255 src/templates.php:299 src/templates.php:343
 msgid "Now with the other device, scan the following mark"
 msgstr "Ahora con ese dispositivo, escanee la siguiente marca"
+
+#~ msgid "Studying "
+#~ msgstr "Estudiando "
 
 #~ msgid "Instructions for use"
 #~ msgstr "Instrucciones de uso"
