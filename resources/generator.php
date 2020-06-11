@@ -38,16 +38,20 @@ if(isset($_SESSION['login'])){
         $text = $scene->find("a-text");
 
         fputs($fp, "<body style='margin : 0px; overflow: hidden;'>\r\n");
-        fputs($fp, $body->find("a-assets",0));
+        fputs($fp, $body->find("a-assets",0)."\r\n");
         fputs($fp, "<a-scene embedded arjs>\r\n");
         fputs($fp, "<a-marker preset='hiro'>\r\n");
         fputs($fp, "<a-entity position='0 0 10'><a-camera></a-camera></a-entity>\r\n");
-        fputs($fp, $scene->find("a-image",0));
+        fputs($fp, $scene->find("a-image",0)."\r\n");
         for($i=1;$i<count($entity);$i++){
-            fputs($fp, $entity[$i]."\r\n");
+            if(!(empty($entity[$i]->text))){
+                fputs($fp, "<a-entity id='".$entity[$i]->id."' text='".$entity[$i]->text."' position='".$entity[$i]->position."' rotation='".$entity[$i]->rotation."'></a-entity>\r\n");
+            }else{
+                fputs($fp, $entity[$i]."\r\n");
+            }
         }
         for($j=0;$j<count($text);$j++){
-            fputs($fp, $text[$j]."\r\n");
+            fputs($fp, "<a-text id='".$text[$j]->id."' rotation='".$text[$j]->rotation."' value='".$text[$j]->value."' position='".$text[$j]->position."' color='".$text[$j]->color."' font='".$text[$j]->font."' tabsize='".$text[$j]->tabsize."' width='".$text[$j]->width."' scale='".$text[$j]->scale."'></a-text>\r\n");
         }
         fputs($fp, "</a-marker>\r\n</a-scene>\r\n</body>\r\n</html>\r\n");
         fclose($fp);
@@ -55,7 +59,7 @@ if(isset($_SESSION['login'])){
         $conexion = mysqli_connect ("localhost", "root", "") or die ("No se puede conectar con el servidor");
         mysqli_select_db ($conexion,"cv-ar") or die ("No se puede seleccionar la base de datos");
         
-        $consulta = mysqli_query ($conexion, "INSERT INTO curriculums(usuario, cv) VALUES ('".$_SESSION['login']."','CVs/".$resume2.".html')") or die ("Fallo en la consulta de usuarios 2");
+        $consulta = mysqli_query ($conexion, "INSERT INTO curriculums(usuario, cv) VALUES ('".$_SESSION['login']."','CVs/".$resume2.".php')") or die ("Fallo en la consulta de usuarios 2");
         mysqli_close($conexion);
         
         header('Location:../src/register.php');
@@ -202,7 +206,7 @@ if(isset($_SESSION['login'])){
                         fputs($fp, "<a-entity id='works' text='value: <?=_('Work experience')?>:; width: 3.5; tabSize: 6; color:  #EF2D5E' position='0.77 1.95 0'></a-entity>\r\n");
                         fputs($fp, "<a-entity id='date_start1' text='value: ".$date_education_start1."; width: 2; color: #4CC3D9' position='0.04 1.75 0'></a-entity>\r\n");
                         if($current_job1 == "on"){
-                            fputs($fp, "<a-entity id='experience1' text='value: <?=_('Studying ')?>".$job1."<?=_(' in ')?>".$employer_name1."<?=_(' of ')?>".$employer_city1."<?=_(' in ')?>".$employer_country1.".; width: 2; color: #4CC3D9' position='0.6 1.75 0'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='experience1' text='value: Trabajando de ".$job1."<?=_(' in ')?>".$employer_name1."<?=_(' of ')?>".$employer_city1."<?=_(' in ')?>".$employer_country1.".; width: 2; color: #4CC3D9' position='0.6 1.75 0'></a-entity>\r\n");
                         }else{
                             fputs($fp, "<a-entity id='date_end1' text='value: ".$date_job_end1."; width: 2; color: #4CC3D9' position='0.04 1.65 0'></a-entity>\r\n");
                             fputs($fp, "<a-entity id='experience1' text='value: ".$job1."<?=_(' in ')?>".$employer_name1."<?=_(' of ')?>".$employer_city1."<?=_(' in ')?>".$employer_country1.".; width: 2; color: #4CC3D9' position='0.6 1.75 0'></a-entity>\r\n");
@@ -210,7 +214,7 @@ if(isset($_SESSION['login'])){
 
                         fputs($fp, "<a-entity id='date_start2' text='value: ".$date_job_start1."; width: 2; color: #4CC3D9' position='0.04 1.3 0'></a-entity>\r\n");
                         if($current_job2 == "on"){
-                            fputs($fp, "<a-entity id='experience2' text='value: <?=_('Working from ')?>".$job2."<?=_(' in ')?>".$employer_name2."<?=_(' of ')?>".$employer_city2."<?=_(' in ')?>".$employer_country2.".; width: 2; color: #4CC3D9' position='0.6 1.25 0'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='experience2' text='value: Trabajando de ".$job2."<?=_(' in ')?>".$employer_name2."<?=_(' of ')?>".$employer_city2."<?=_(' in ')?>".$employer_country2.".; width: 2; color: #4CC3D9' position='0.6 1.25 0'></a-entity>\r\n");
                         }else{
                             fputs($fp, "<a-entity id='date_end2' text='value: ".$date_job_end2."; width: 2; color: #4CC3D9' position='0.04 1. 0'></a-entity>\r\n");
                             fputs($fp, "<a-entity id='experience2' text='value: ".$job2."<?=_(' in ')?>".$employer_name2."<?=_(' of ')?>".$employer_city2."<?=_(' in ')?>".$employer_country2.".; width: 2; color: #4CC3D9' position='0.6 1.25 0'></a-entity>\r\n");
@@ -315,7 +319,7 @@ if(isset($_SESSION['login'])){
                     fputs($fp, "<a-assets><img id='fondo' src='../img/example_2/fondo.png'></a-assets>\r\n");
                     fputs($fp, "<a-scene>\r\n<a-entity position='0 0 2.6'><a-camera></a-camera></a-entity>\r\n");
                     fputs($fp, "<a-entity><a-plane position='0 0 -1' scale='15 15 1'></a-plane></a-entity>\r\n");
-                    fputs($fp, "<a-entity><a-plane material='src:#fondo;' position='0 1.6 -0.5' scale='4.85 5.15 1'></a-plane></a-entity>\r\n");
+                    fputs($fp, "<a-entity><a-plane material='src:#fondo;' position='0 1.6 -0.5' scale='4.12 4.557 1'></a-plane></a-entity>\r\n");
                     fputs($fp, "<a-entity><a-sphere material='color:blue;' scale='0.08 0.08 0.08' position='-0.35 2.55 0.8'></a-sphere></a-entity>\r\n
                                 <a-entity rotation='0 0 0' animation='property: rotation; to: 360 0 0; loop: true; dur: 5000'  scale='0.05 0.05 0.05' position='-0.35 2.6 0.75'><a-sphere position='0 1 -3' scale='0.5 0.5 0.5'></a-sphere></a-entity>\r\n
                                 <a-entity rotation='0 0 0' animation='property: rotation; to: 0 360 0; loop: true; dur: 5000'  scale='0.05 0.05 0.05' position='-0.35 2.5 0.8'><a-sphere position='0 1 -3' scale='0.5 0.5 0.5'></a-sphere></a-entity>\r\n

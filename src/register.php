@@ -53,7 +53,7 @@
         <div class="mt-5 d-flex justify-content-center container-fluid">
             <div class="row d-flex justify-content-center" style="width:80%;">
                 <div class="col-12 d-flex justify-content-end">
-                    <form action="../resources/account_creator.php" method="POST" align="right" style="width:80%;">
+                    <form action="../resources/account_creator.php" method="POST" style="width:21%;">
                     <button type="submit" name="exit" class="btn btn-outline-dark"><?=_("Log out")?></button>
                     </form>
                 </div>
