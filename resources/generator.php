@@ -45,7 +45,7 @@ if(isset($_SESSION['login'])){
         fputs($fp, $scene->find("a-image",0)."\r\n");
         for($i=1;$i<count($entity);$i++){
             if(!(empty($entity[$i]->text))){
-                fputs($fp, "<a-entity id='".$entity[$i]->id."' text='".$entity[$i]->text."' position='".$entity[$i]->position."' rotation='".$entity[$i]->rotation."'></a-entity>\r\n");
+                fputs($fp, "<a-entity id='".$entity[$i]->id."' text='".$entity[$i]->text."' position='".$entity[$i]->position."' rotation='".$entity[$i]->rotation."' scale='".$entity[$i]->scale."'></a-entity>\r\n");
             }else{
                 fputs($fp, $entity[$i]."\r\n");
             }
@@ -319,7 +319,7 @@ if(isset($_SESSION['login'])){
                     fputs($fp, "<a-assets><img id='fondo' src='../img/example_2/fondo.png'></a-assets>\r\n");
                     fputs($fp, "<a-scene>\r\n<a-entity position='0 0 2.6'><a-camera></a-camera></a-entity>\r\n");
                     fputs($fp, "<a-entity><a-plane position='0 0 -1' scale='15 15 1'></a-plane></a-entity>\r\n");
-                    fputs($fp, "<a-entity><a-plane material='src:#fondo;' position='0 1.6 -0.5' scale='4.12 4.557 1'></a-plane></a-entity>\r\n");
+                    fputs($fp, "<a-entity><a-plane material='src:#fondo;' position='0 1.6 -0.5' scale='4.15 4.6 1'></a-plane></a-entity>\r\n");
                     fputs($fp, "<a-entity><a-sphere material='color:blue;' scale='0.08 0.08 0.08' position='-0.35 2.55 0.8'></a-sphere></a-entity>\r\n
                                 <a-entity rotation='0 0 0' animation='property: rotation; to: 360 0 0; loop: true; dur: 5000'  scale='0.05 0.05 0.05' position='-0.35 2.6 0.75'><a-sphere position='0 1 -3' scale='0.5 0.5 0.5'></a-sphere></a-entity>\r\n
                                 <a-entity rotation='0 0 0' animation='property: rotation; to: 0 360 0; loop: true; dur: 5000'  scale='0.05 0.05 0.05' position='-0.35 2.5 0.8'><a-sphere position='0 1 -3' scale='0.5 0.5 0.5'></a-sphere></a-entity>\r\n
@@ -350,10 +350,10 @@ if(isset($_SESSION['login'])){
 
                         fputs($fp, "<a-entity id='date_start2' text='value: ".$date_education_start2."; width: 2; color: black' position='0.47 2.63 0' rotation='0 0 49'></a-entity>\r\n");
                         if($current_education2 == "on"){
-                            fputs($fp, "<a-entity id='title2' text='value: <?=_('Studying ')?>".$title2."<?=_(' in ')?>".$school_name2."<?=_(' of ')?>".$school_city2."<?=_(' in ')?>".$school_country2.".; width: 2; color: black' position='0.85 3 0' rotation='0 0 49'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='title2' text='value: <?=_('Studying ')?>".$title2."<?=_(' in ')?>".$school_name2."<?=_(' of ')?>".$school_city2."<?=_(' in ')?>".$school_country2.".; width: 2; color: black' position='0.8 2.95 0' rotation='0 0 49' scale='0.9'></a-entity>\r\n");
                         }else{
                             fputs($fp, "<a-entity id='date_end2' text='value: ".$date_education_end2."; width: 2; color: black' position='0.57 2.53 0' rotation='0 0 49'></a-entity>\r\n");
-                            fputs($fp, "<a-entity id='title2' text='value: ".$title2."<?=_(' in ')?>".$school_name2."<?=_(' of ')?>".$school_city2."<?=_(' in ')?>".$school_country2.".; width: 2; color: black' position='0.85 3 0' rotation='0 0 49'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='title2' text='value: ".$title2."<?=_(' in ')?>".$school_name2."<?=_(' of ')?>".$school_city2."<?=_(' in ')?>".$school_country2.".; width: 2; color: black' position='0.8 2.95 0' rotation='0 0 49' scale='0.9'></a-entity>\r\n");
                         }
                         fputs($fp, "<a-entity id='skills2' text='value: ".$acquired_skills2.".; width: 2; color: black' position='0.95 2.9 0' rotation='0 0 49'></a-entity>\r\n");
 
@@ -382,10 +382,10 @@ if(isset($_SESSION['login'])){
 
                         fputs($fp, "<a-entity id='date_start2' text='value: ".$date_job_start2."; width: 2; color: black' position='0.47 2.63 0' rotation='0 0 49'></a-entity>\r\n");
                         if($current_job2 == "on"){
-                            fputs($fp, "<a-entity id='title2' text='value: <?=_('Working from ')?>".$job2."<?=_(' in ')?>".$employer_name2."<?=_(' of ')?>".$employer_city2."<?=_(' in ')?>".$employer_country2.".; width: 2; color: black' position='0.85 3 0' rotation='0 0 49'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='title2' text='value: <?=_('Working from ')?>".$job2."<?=_(' in ')?>".$employer_name2."<?=_(' of ')?>".$employer_city2."<?=_(' in ')?>".$employer_country2.".; width: 2; color: black' position='0.8 2.95 0' rotation='0 0 49' scale='0.9'></a-entity>\r\n");
                         }else{
                             fputs($fp, "<a-entity id='date_end2' text='value: ".$date_job_end2."; width: 2; color: black' position='0.57 2.53 0' rotation='0 0 49'></a-entity>\r\n");
-                            fputs($fp, "<a-entity id='title2' text='value: ".$job2."<?=_(' in ')?>".$employer_name2."<?=_(' of ')?>".$employer_city2."<?=_(' in ')?>".$employer_country2.".; width: 2; color: black' position='0.85 3 0' rotation='0 0 49'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='title2' text='value: ".$job2."<?=_(' in ')?>".$employer_name2."<?=_(' of ')?>".$employer_city2."<?=_(' in ')?>".$employer_country2.".; width: 2; color: black' position='0.8 2.95 0' rotation='0 0 49' scale='0.9'></a-entity>\r\n");
                         }
                         
                         if($have_license){
@@ -415,10 +415,10 @@ if(isset($_SESSION['login'])){
                         fputs($fp, "<a-entity id='works' text='value: "._('Work experience').":; width: 3.5; tabSize: 6; color: #EF2D5E' position='0.85 3.3 0' rotation='0 0 49'></a-entity>");
                         fputs($fp, "<a-entity id='date_start2' text='value: ".$date_job_start1."; width: 2; color: black' position='0.47 2.63 0' rotation='0 0 49'></a-entity>\r\n");
                         if($current_job1 == "on"){
-                            fputs($fp, "<a-entity id='title2' text='value: <?=_('Working from ')?>".$job1."<?=_(' in ')?>".$employer_name1."<?=_(' of ')?>".$employer_city1."<?=_(' in ')?>".$employer_country1.".; width: 2; color: black' position='0.85 3 0' rotation='0 0 49'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='title2' text='value: <?=_('Working from ')?>".$job1."<?=_(' in ')?>".$employer_name1."<?=_(' of ')?>".$employer_city1."<?=_(' in ')?>".$employer_country1.".; width: 2; color: black' position='0.8 2.95 0' rotation='0 0 49' scale='0.9'></a-entity>\r\n");
                         }else{
                             fputs($fp, "<a-entity id='date_end2' text='value: ".$date_job_end1."; width: 2; color: black' position='0.57 2.53 0' rotation='0 0 49'></a-entity>\r\n");
-                            fputs($fp, "<a-entity id='title2' text='value: ".$job1."<?=_(' in ')?>".$employer_name1."<?=_(' of ')?>".$employer_city1."<?=_(' in ')?>".$employer_country1.".; width: 2; color: black' position='0.85 3 0' rotation='0 0 49'></a-entity>\r\n");
+                            fputs($fp, "<a-entity id='title2' text='value: ".$job1."<?=_(' in ')?>".$employer_name1."<?=_(' of ')?>".$employer_city1."<?=_(' in ')?>".$employer_country1.".; width: 2; color: black' position='0.8 2.95 0' rotation='0 0 49' scale='0.9'></a-entity>\r\n");
                         }
 
                         if($have_license){
