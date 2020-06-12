@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-06-12 20:08+0200\n"
-"PO-Revision-Date: 2020-06-12 20:08+0200\n"
+"POT-Creation-Date: 2020-06-12 20:27+0200\n"
+"PO-Revision-Date: 2020-06-12 20:27+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -41,6 +41,39 @@ msgstr "Generar"
 #: resources/generator.php:638
 msgid "Cancel"
 msgstr "Cancelar"
+
+#: src/CVs/15919863002.php:18 src/examples/example_1.php:31
+#: src/examples/example_2.php:55 src/examples/example_3.php:31
+msgid "Studies"
+msgstr "Estudios"
+
+#: src/CVs/15919863002.php:20 src/examples/example_3.php:35
+msgid "Studying "
+msgstr "Estudiando "
+
+#: src/CVs/15919863002.php:20 src/CVs/15919863002.php:25
+#: src/examples/example_1.php:39 src/examples/example_1.php:51
+#: src/examples/example_2.php:63 src/examples/example_2.php:74
+#: src/examples/example_3.php:35 src/examples/example_3.php:43
+msgid " in "
+msgstr " en "
+
+#: src/CVs/15919863002.php:20 src/CVs/15919863002.php:25
+#: src/examples/example_1.php:39 src/examples/example_1.php:51
+#: src/examples/example_2.php:63 src/examples/example_2.php:74
+#: src/examples/example_3.php:35 src/examples/example_3.php:43
+msgid " of "
+msgstr " de "
+
+#: src/CVs/15919863002.php:26 src/examples/example_1.php:53
+#: src/examples/example_2.php:92 src/examples/example_3.php:45
+msgid "Licenses"
+msgstr "Carnets"
+
+#: src/CVs/15919863002.php:28 src/examples/example_1.php:59
+#: src/examples/example_2.php:99 src/examples/example_3.php:49 src/form.php:206
+msgid "Other skills"
+msgstr "Otras habilidades"
 
 #: src/about.php:7 src/about.php:41 src/form.php:45 src/index.php:43
 #: src/new_account.php:46 src/register.php:46 src/register.php:100
@@ -101,23 +134,6 @@ msgstr "España"
 msgid "Mobile"
 msgstr "Móvil"
 
-#: src/examples/example_1.php:31 src/examples/example_2.php:55
-#: src/examples/example_3.php:31
-msgid "Studies"
-msgstr "Estudios"
-
-#: src/examples/example_1.php:39 src/examples/example_1.php:51
-#: src/examples/example_2.php:63 src/examples/example_2.php:74
-#: src/examples/example_3.php:35 src/examples/example_3.php:43
-msgid " in "
-msgstr " en "
-
-#: src/examples/example_1.php:39 src/examples/example_1.php:51
-#: src/examples/example_2.php:63 src/examples/example_2.php:74
-#: src/examples/example_3.php:35 src/examples/example_3.php:43
-msgid " of "
-msgstr " de "
-
 #: src/examples/example_1.php:41 src/examples/example_2.php:65
 #: src/examples/example_3.php:36
 msgid "Programming in server and client environment"
@@ -128,16 +144,6 @@ msgstr "Programación en entorno cliente y servidor"
 msgid "Scholar"
 msgstr "Becario"
 
-#: src/examples/example_1.php:53 src/examples/example_2.php:92
-#: src/examples/example_3.php:45
-msgid "Licenses"
-msgstr "Carnets"
-
-#: src/examples/example_1.php:59 src/examples/example_2.php:99
-#: src/examples/example_3.php:49 src/form.php:206
-msgid "Other skills"
-msgstr "Otras habilidades"
-
 #: src/examples/example_1.php:61 src/examples/example_2.php:101
 #: src/examples/example_3.php:50
 msgid "English medium level"
@@ -146,10 +152,6 @@ msgstr "Ingles nivel medio"
 #: src/examples/example_2.php:74
 msgid "Working from "
 msgstr "Trabajando en "
-
-#: src/examples/example_3.php:35
-msgid "Studying "
-msgstr "Estudiando "
 
 #: src/form.php:7
 msgid "Form"

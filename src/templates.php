@@ -125,9 +125,9 @@
                         <p class="card-text"><?=_("Their characteristics are")?>:</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><?=_("Creative")?>Creativo</li>
-                        <li class="list-group-item"><?=_("Witty")?>Ingenioso</li>
-                        <li class="list-group-item"><?=_("Animated")?>Animado</li>
+                        <li class="list-group-item"><?=_("Creative")?></li>
+                        <li class="list-group-item"><?=_("Witty")?></li>
+                        <li class="list-group-item"><?=_("Animated")?></li>
                     </ul>
                     <div class="card-body">
                         <?php if(isset($_SESSION['login'])){ ?>
@@ -169,9 +169,9 @@
                         <p class="card-text"><?=_("Their characteristics are")?>:</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><?=_("Outgoing")?>extrovertido</li>
-                        <li class="list-group-item"><?=_("Curious")?>curioso</li>
-                        <li class="list-group-item"><?=_("Image enhancer")?>Potenciador de la imagen</li>
+                        <li class="list-group-item"><?=_("Outgoing")?></li>
+                        <li class="list-group-item"><?=_("Curious")?></li>
+                        <li class="list-group-item"><?=_("Image enhancer")?></li>
                     </ul>
                     <div class="card-body">
                         <?php if(isset($_SESSION['login'])){ ?>
