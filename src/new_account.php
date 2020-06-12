@@ -44,7 +44,7 @@
                 <a href="index.php" class="nav-item nav-link"><?=_("Start")?></a>
                 <a href="templates.php" class="nav-item nav-link"><?=_("Templates")?></a>
                 <a href="about.php" class="nav-item nav-link"><?=_("About")?></a>
-                <a href="#" class="nav-item nav-link" active><?=_("log in")?></a>
+                <a href="#" class="nav-item nav-link" active><?=_("acount")?></a>
             </div>
         </div>
     </nav>

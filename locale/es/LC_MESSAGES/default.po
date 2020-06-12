@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-06-10 18:05+0200\n"
-"PO-Revision-Date: 2020-06-10 18:06+0200\n"
+"POT-Creation-Date: 2020-06-12 15:33+0200\n"
+"PO-Revision-Date: 2020-06-12 15:34+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -17,54 +17,54 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: node_modules\n"
 "X-Poedit-SearchPathExcluded-1: *.js\n"
 
-#: resources/generator.php:135
+#: resources/generator.php:139
 msgid "You can't upload such a heavy image, the maximum size is "
 msgstr "No puedes subir una imagen tan pesada, el tamaño máximo es "
 
-#: resources/generator.php:139
+#: resources/generator.php:143
 msgid "Could not upload image"
 msgstr "No se pudo subir la imagen"
 
-#: resources/generator.php:143
+#: resources/generator.php:147
 msgid "The creation could not be carried out due to:"
 msgstr "La creación no pudo llevarse a cabo debido a:"
 
-#: resources/generator.php:411 src/examples/example_1.php:43
+#: resources/generator.php:415 src/examples/example_1.php:43
 #: src/examples/example_2.php:68 src/examples/example_3.php:38
 msgid "Work experience"
 msgstr "Experiencia laboral"
 
-#: resources/generator.php:631
+#: resources/generator.php:635
 msgid "Generate"
 msgstr "Generar"
 
-#: resources/generator.php:634
+#: resources/generator.php:638
 msgid "Cancel"
 msgstr "Cancelar"
 
 #: src/about.php:7 src/about.php:41 src/form.php:45 src/index.php:43
 #: src/new_account.php:46 src/register.php:46 src/register.php:100
-#: src/templates.php:45 src/templates.php:208
+#: src/templates.php:45 src/templates.php:63
 msgid "About"
 msgstr "Acerca de"
 
 #: src/about.php:39 src/form.php:43 src/index.php:9 src/index.php:41
 #: src/new_account.php:9 src/new_account.php:44 src/register.php:9
 #: src/register.php:44 src/register.php:98 src/templates.php:43
-#: src/templates.php:206
+#: src/templates.php:61
 msgid "Start"
 msgstr "Inicio"
 
 #: src/about.php:40 src/form.php:44 src/index.php:42 src/new_account.php:45
 #: src/register.php:45 src/register.php:99 src/templates.php:7
-#: src/templates.php:44 src/templates.php:207
+#: src/templates.php:44 src/templates.php:62
 msgid "Templates"
 msgstr "Plantillas"
 
 #: src/about.php:47 src/index.php:49 src/new_account.php:47
-#: src/register.php:101 src/templates.php:210
-msgid "log in"
-msgstr "iniciar sesion"
+#: src/register.php:101 src/templates.php:65
+msgid "acount"
+msgstr "Cuenta"
 
 #: src/about.php:55
 msgid "TEAM"
@@ -354,34 +354,29 @@ msgstr "Si no tienes cuenta"
 msgid "log up"
 msgstr "crear cuenta"
 
-#: src/templates.php:54 src/templates.php:217
+#: src/templates.php:74
 msgid "TEMPLATES"
 msgstr "PLANTILLAS"
 
-#: src/templates.php:55 src/templates.php:218
+#: src/templates.php:75
 msgid "Choose from three designs, the one that best suits you"
 msgstr "Elija de entre tres diseños, el que más se adapte a tí"
 
-#: src/templates.php:58 src/templates.php:60 src/templates.php:79
-#: src/templates.php:103 src/templates.php:105 src/templates.php:124
-#: src/templates.php:148 src/templates.php:150 src/templates.php:169
-#: src/templates.php:221 src/templates.php:223 src/templates.php:241
-#: src/templates.php:265 src/templates.php:267 src/templates.php:285
-#: src/templates.php:309 src/templates.php:311 src/templates.php:329
+#: src/templates.php:78 src/templates.php:80 src/templates.php:101
+#: src/templates.php:125 src/templates.php:127 src/templates.php:148
+#: src/templates.php:172 src/templates.php:174 src/templates.php:195
 msgid "Design"
 msgstr "Diseño"
 
-#: src/templates.php:72 src/templates.php:117 src/templates.php:162
+#: src/templates.php:93 src/templates.php:140 src/templates.php:187
 msgid "Access form"
 msgstr "Acceder al formulario"
 
-#: src/templates.php:73 src/templates.php:118 src/templates.php:163
-#: src/templates.php:235 src/templates.php:279 src/templates.php:323
+#: src/templates.php:95 src/templates.php:142 src/templates.php:189
 msgid "See example"
 msgstr "Ver ejemplo"
 
-#: src/templates.php:86 src/templates.php:131 src/templates.php:176
-#: src/templates.php:248 src/templates.php:292 src/templates.php:336
+#: src/templates.php:108 src/templates.php:155 src/templates.php:202
 msgid ""
 "First make sure that the web server works with HTTPS as it is a requirement "
 "to access the camera from a web browser"
@@ -389,25 +384,24 @@ msgstr ""
 "Primero asegúrate de que el servidor web funcione con HTTPS ya que es un "
 "requisito para acceder a la cámara desde un nevagador web"
 
-#: src/templates.php:91 src/templates.php:136 src/templates.php:181
-#: src/templates.php:253 src/templates.php:297 src/templates.php:341
+#: src/templates.php:113 src/templates.php:160 src/templates.php:207
 msgid "Access this "
 msgstr "Accede a esta "
 
-#: src/templates.php:91 src/templates.php:136 src/templates.php:181
-#: src/templates.php:253 src/templates.php:297 src/templates.php:341
+#: src/templates.php:113 src/templates.php:160 src/templates.php:207
 msgid "web page"
 msgstr "pagina web"
 
-#: src/templates.php:92 src/templates.php:137 src/templates.php:182
-#: src/templates.php:254 src/templates.php:298 src/templates.php:342
+#: src/templates.php:114 src/templates.php:161 src/templates.php:208
 msgid " from another camera device."
 msgstr " desde otro dispositivo con cámara."
 
-#: src/templates.php:93 src/templates.php:138 src/templates.php:183
-#: src/templates.php:255 src/templates.php:299 src/templates.php:343
+#: src/templates.php:115 src/templates.php:162 src/templates.php:209
 msgid "Now with the other device, scan the following mark"
 msgstr "Ahora con ese dispositivo, escanee la siguiente marca"
+
+#~ msgid "log in"
+#~ msgstr "iniciar sesion"
 
 #~ msgid "Studying "
 #~ msgstr "Estudiando "
