@@ -73,7 +73,7 @@ if(isset($_SESSION['login'])){
         @$city = $_POST["city"];
         @$country = $_POST["country"];
         @$postal_code = $_POST["postal_code"];
-        @$type_phone = $_POST["type_phone"];
+        @$type_phone = str_replace("_"," ",$_POST["type_phone"]);
         @$number_phone = $_POST["number_phone"];
         @$email = $_POST["email"];
         @$date_job_start1 = $_POST["date_job_start_1"];
@@ -114,9 +114,9 @@ if(isset($_SESSION['login'])){
         $licenses = "";
         if($num_licenses != 0){
             $have_license = true;
-            $licenses = $licenses.$drive_license[0];
+            $licenses = $licenses.str_replace("_"," ",$drive_license[0]);
             for($i=1;$i<$num_licenses;$i++){
-                $licenses = $licenses.", ".$drive_license[$i];
+                $licenses = $licenses.", ".str_replace("_"," ",$drive_license[$i]);
             }
         }
     
