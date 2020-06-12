@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-06-12 15:33+0200\n"
-"PO-Revision-Date: 2020-06-12 15:34+0200\n"
+"POT-Creation-Date: 2020-06-12 20:08+0200\n"
+"PO-Revision-Date: 2020-06-12 20:08+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -63,7 +63,7 @@ msgstr "Plantillas"
 
 #: src/about.php:47 src/index.php:49 src/new_account.php:47
 #: src/register.php:101 src/templates.php:65
-msgid "acount"
+msgid "Acount"
 msgstr "Cuenta"
 
 #: src/about.php:55
@@ -148,7 +148,7 @@ msgid "Working from "
 msgstr "Trabajando en "
 
 #: src/examples/example_3.php:35
-msgid "studying "
+msgid "Studying "
 msgstr "Estudiando "
 
 #: src/form.php:7
@@ -362,21 +362,37 @@ msgstr "PLANTILLAS"
 msgid "Choose from three designs, the one that best suits you"
 msgstr "Elija de entre tres diseños, el que más se adapte a tí"
 
-#: src/templates.php:78 src/templates.php:80 src/templates.php:101
-#: src/templates.php:125 src/templates.php:127 src/templates.php:148
-#: src/templates.php:172 src/templates.php:174 src/templates.php:195
+#: src/templates.php:78 src/templates.php:80 src/templates.php:98
+#: src/templates.php:122 src/templates.php:124 src/templates.php:142
+#: src/templates.php:166 src/templates.php:168 src/templates.php:186
 msgid "Design"
 msgstr "Diseño"
 
-#: src/templates.php:93 src/templates.php:140 src/templates.php:187
+#: src/templates.php:81 src/templates.php:125 src/templates.php:169
+msgid "Their characteristics are"
+msgstr "Sus características son"
+
+#: src/templates.php:84
+msgid "Simple"
+msgstr "Simple"
+
+#: src/templates.php:85
+msgid "Discreet"
+msgstr "Discreto"
+
+#: src/templates.php:86
+msgid "Formal"
+msgstr "Formal"
+
+#: src/templates.php:90 src/templates.php:134 src/templates.php:178
 msgid "Access form"
 msgstr "Acceder al formulario"
 
-#: src/templates.php:95 src/templates.php:142 src/templates.php:189
+#: src/templates.php:92 src/templates.php:136 src/templates.php:180
 msgid "See example"
 msgstr "Ver ejemplo"
 
-#: src/templates.php:108 src/templates.php:155 src/templates.php:202
+#: src/templates.php:105 src/templates.php:149 src/templates.php:193
 msgid ""
 "First make sure that the web server works with HTTPS as it is a requirement "
 "to access the camera from a web browser"
@@ -384,27 +400,51 @@ msgstr ""
 "Primero asegúrate de que el servidor web funcione con HTTPS ya que es un "
 "requisito para acceder a la cámara desde un nevagador web"
 
-#: src/templates.php:113 src/templates.php:160 src/templates.php:207
+#: src/templates.php:110 src/templates.php:154 src/templates.php:198
 msgid "Access this "
 msgstr "Accede a esta "
 
-#: src/templates.php:113 src/templates.php:160 src/templates.php:207
+#: src/templates.php:110 src/templates.php:154 src/templates.php:198
 msgid "web page"
 msgstr "pagina web"
 
-#: src/templates.php:114 src/templates.php:161 src/templates.php:208
+#: src/templates.php:111 src/templates.php:155 src/templates.php:199
 msgid " from another camera device."
 msgstr " desde otro dispositivo con cámara."
 
-#: src/templates.php:115 src/templates.php:162 src/templates.php:209
+#: src/templates.php:112 src/templates.php:156 src/templates.php:200
 msgid "Now with the other device, scan the following mark"
 msgstr "Ahora con ese dispositivo, escanee la siguiente marca"
 
+#: src/templates.php:128
+msgid "Creative"
+msgstr "Creativo"
+
+#: src/templates.php:129
+msgid "Witty"
+msgstr "Ingenioso"
+
+#: src/templates.php:130
+msgid "Animated"
+msgstr "Animado"
+
+#: src/templates.php:172
+msgid "Outgoing"
+msgstr "Extrovertido"
+
+#: src/templates.php:173
+msgid "Curious"
+msgstr "Curioso"
+
+#: src/templates.php:174
+msgid "Image enhancer"
+msgstr "Potenciador de la imagen"
+
+#~ msgid "studying "
+#~ msgstr "Estudiando "
+
 #~ msgid "log in"
 #~ msgstr "iniciar sesion"
-
-#~ msgid "Studying "
-#~ msgstr "Estudiando "
 
 #~ msgid "Instructions for use"
 #~ msgstr "Instrucciones de uso"

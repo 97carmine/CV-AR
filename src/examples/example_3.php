@@ -32,7 +32,7 @@
                 ?>
                 <a-text id="date_start1" rotation="0 0 30" value="19/9/2019" position="-2 -0.25 0" color="black"   font="mozillavr" tabSize="6" width="2.5"></a-text>
                 <?php
-                print "<a-text id='title' rotation='0 0 30' value='"._("studying ")."D.A.W."._(" in ")."J.R.Otero"._(" of ")."Madrid"._(" in ")._("Spain")."' position='-1.4 0 0' color='black' font='mozillavr' tabSize='6' width='2.5' scale='0.8'></a-text>
+                print "<a-text id='title' rotation='0 0 30' value='"._("Studying ")."D.A.W."._(" in ")."J.R.Otero"._(" of ")."Madrid"._(" in ")._("Spain")."' position='-1.4 0 0' color='black' font='mozillavr' tabSize='6' width='2.5' scale='0.8'></a-text>
                 <a-text id='skils1' rotation='0 0 30' value='-"._("Programming in server and client environment").".' position='-1.3 -0.2 0' color='black' font='mozillavr' tabSize='6' width='2.5' scale='0.8'></a-text>
             
                 <a-text id='works' rotation='0 0 30' value='"._("Work experience")."' position='-0.3 0 0' color='black' font='mozillavr' tabSize='6' width='5.5'></a-text>";

@@ -62,7 +62,7 @@
                 <a href="#" class="nav-item nav-link active"><?=_("Templates")?></a>
                 <a href="about.php" class="nav-item nav-link"><?=_("About")?></a>
                 <?php
-                print "<a href='register.php' class='nav-item nav-link'>"._("acount")."</a>";
+                print "<a href='register.php' class='nav-item nav-link'>"._("Acount")."</a>";
                 ?>
             </div>
         </div>
@@ -78,15 +78,12 @@
                     <img src="img/examples/example_1.PNG" class="card-img-top" alt="<?=_("Design")?> 1">
                     <div class="card-body">
                         <h4 class="card-title"><?=_("Design")?> 1</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eaque neque
-                            libero aut eos excepturi reiciendis odit rem autem quibusdam, blanditiis animi temporibus
-                            sunt nam, natus sequi cupiditate eveniet facere!</p>
-                        <p class="card-text">Sus características son:</p>
+                        <p class="card-text"><?=_("Their characteristics are")?>:</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Característica 1</li>
-                        <li class="list-group-item">Característica 2</li>
-                        <li class="list-group-item">Característica 3</li>
+                        <li class="list-group-item"><?=_("Simple")?></li>
+                        <li class="list-group-item"><?=_("Discreet")?></li>
+                        <li class="list-group-item"><?=_("Formal")?></li>
                     </ul>
                     <div class="card-body">
                         <?php if(isset($_SESSION['login'])){ ?>
@@ -125,15 +122,12 @@
                     <img src="img/examples/example_2.PNG" class="card-img-top" alt="<?=_("Design")?> 2">
                     <div class="card-body">
                         <h4 class="card-title"><?=_("Design")?> 2</h4>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam sed
-                            accusantium nam iste explicabo cupiditate neque atque natus aut adipisci dolores, facere
-                            temporibus quisquam dicta expedita asperiores ipsum architecto. Vitae?</p>
-                        <p class="card-text">Sus características son:</p>
+                        <p class="card-text"><?=_("Their characteristics are")?>:</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Característica 1</li>
-                        <li class="list-group-item">Característica 2</li>
-                        <li class="list-group-item">Característica 3</li>
+                        <li class="list-group-item"><?=_("Creative")?>Creativo</li>
+                        <li class="list-group-item"><?=_("Witty")?>Ingenioso</li>
+                        <li class="list-group-item"><?=_("Animated")?>Animado</li>
                     </ul>
                     <div class="card-body">
                         <?php if(isset($_SESSION['login'])){ ?>
@@ -172,15 +166,12 @@
                     <img src="img/examples/example_3.PNG" class="card-img-top" alt="<?=_("Design")?> 3">
                     <div class="card-body">
                         <h4 class="card-title"><?=_("Design")?> 3</h4>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam veniam
-                            voluptatibus natus at quos id commodi sequi unde animi, tempore consectetur dicta. Nostrum
-                            illum ex eum quidem commodi veritatis a.</p>
-                        <p class="card-text">Sus características son:</p>
+                        <p class="card-text"><?=_("Their characteristics are")?>:</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Característica 1</li>
-                        <li class="list-group-item">Característica 2</li>
-                        <li class="list-group-item">Característica 3</li>
+                        <li class="list-group-item"><?=_("Outgoing")?>extrovertido</li>
+                        <li class="list-group-item"><?=_("Curious")?>curioso</li>
+                        <li class="list-group-item"><?=_("Image enhancer")?>Potenciador de la imagen</li>
                     </ul>
                     <div class="card-body">
                         <?php if(isset($_SESSION['login'])){ ?>
