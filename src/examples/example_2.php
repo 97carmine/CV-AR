@@ -19,7 +19,7 @@
                 </a-plane>
             </a-entity>
             <a-entity>
-                <a-plane material="src:#fondo;" position="0 1.6 -0.5" scale="4.15 4.6 1">
+                <a-plane material="src:#fondo;" position="0 1.6 -0.5" scale="4.85 5.15 1">
                 </a-plane>
             </a-entity>
             

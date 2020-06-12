@@ -319,7 +319,7 @@ if(isset($_SESSION['login'])){
                     fputs($fp, "<a-assets><img id='fondo' src='../img/example_2/fondo.png'></a-assets>\r\n");
                     fputs($fp, "<a-scene>\r\n<a-entity position='0 0 2.6'><a-camera></a-camera></a-entity>\r\n");
                     fputs($fp, "<a-entity><a-plane position='0 0 -1' scale='15 15 1'></a-plane></a-entity>\r\n");
-                    fputs($fp, "<a-entity><a-plane material='src:#fondo;' position='0 1.6 -0.5' scale='4.15 4.6 1'></a-plane></a-entity>\r\n");
+                    fputs($fp, "<a-entity><a-plane material='src:#fondo;' position='0 1.6 -0.5' scale='4.85 5.15 1'></a-plane></a-entity>\r\n");
                     fputs($fp, "<a-entity><a-sphere material='color:blue;' scale='0.08 0.08 0.08' position='-0.35 2.55 0.8'></a-sphere></a-entity>\r\n
                                 <a-entity rotation='0 0 0' animation='property: rotation; to: 360 0 0; loop: true; dur: 5000'  scale='0.05 0.05 0.05' position='-0.35 2.6 0.75'><a-sphere position='0 1 -3' scale='0.5 0.5 0.5'></a-sphere></a-entity>\r\n
                                 <a-entity rotation='0 0 0' animation='property: rotation; to: 0 360 0; loop: true; dur: 5000'  scale='0.05 0.05 0.05' position='-0.35 2.5 0.8'><a-sphere position='0 1 -3' scale='0.5 0.5 0.5'></a-sphere></a-entity>\r\n
