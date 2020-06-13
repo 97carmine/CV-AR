@@ -189,7 +189,7 @@
                                 <option value="A1">A1</option>
                                 <option value="A">A</option>
                                 <option value="B">B</option>
-                                <option value="B_+_E_">B + E</option>
+                                <option value="B_+_E">B + E</option>
                                 <option value="C1">C1</option>
                                 <option value="C1_+_E">C1 + E</option>
                                 <option value="C">C</option>

@@ -53,11 +53,11 @@
         <div class="mt-5 d-flex justify-content-center container-fluid">
             <div class="row d-flex justify-content-center" style="width:80%;">
                 <div class="col-12 d-flex justify-content-end">
-                    <form action="../resources/account_creator.php" method="POST" align="right" style="width:80%;">
+                    <form action="../resources/account_creator.php" method="POST" style="width:21%;">
                     <button type="submit" name="exit" class="btn btn-outline-dark"><?=_("Log out")?></button>
                     </form>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-4">
                 <?php
                 $conexion = mysqli_connect ("localhost", "root", "") or die ("No se puede conectar con el servidor");
                 mysqli_select_db ($conexion,"cv-ar") or die ("No se puede seleccionar la base de datos");
@@ -71,14 +71,14 @@
                         print "<a href='".$fila["cv"]."' class='mt-4'>CV_".$_SESSION['login'].$i."</a><br>";
                     }
                 }else{
-                    print "<p>"._("You still don't have any resume").".</p>";
+                    print "<p class='my-4'>"._("You still don't have any resume").".</p>";
                     print "<p>"._("Choose one of our designs and create it").".</p>";
                 }
             
                 mysqli_close($conexion);
                 ?>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-5">
                     <p class="my-4"><?=_("Entering the link of your CV, scan the following image with the camera.")?></p>
                     <img src="img/patterns/hiro.png" class="img-fluid">
                 </div>
@@ -98,24 +98,31 @@
                     <a href="index.php" class="nav-item nav-link"><?=_("Start")?></a>
                     <a href="templates.php" class="nav-item nav-link"><?=_("Templates")?></a>
                     <a href="about.php" class="nav-item nav-link"><?=_("About")?></a>
-                    <a href="#" class="nav-item nav-link" active><?=_("log in")?></a>
+                    <a href="#" class="nav-item nav-link" active><?=_("Acount")?></a>
                 </div>
             </div>
         </nav>
         <?php
         ?>
-        <div class="mt-5 d-flex justify-content-center container-fluid">
-            <div class="row d-flex justify-content-center" style="width:80%;">
-                <div class="col-9 d-flex justify-content-center">
-                <form action="../resources/account_creator.php" method="POST" align="center" style="width:80%;">
-                    <?=_('User')?>: <input type="text" name="usuario" value="" required><br><br>
-                    <?=_('password')?>: <input type="password" name="pass" value="" required><br><br>
-                    <button type="submit" name="enter" class="btn btn-outline-dark"><?=_("Log in")?></button>
-                    </form>
+        <div class="d-flex justify-content-center container-fluid pt-4">
+            <div class="row d-flex justify-content-center mt-5 pt-4" style="width:80%;">
+                <div class="col-md-7 d-flex justify-content-center">
+                    <div class="row" style="width:80%;">
+                        <div class="col-12 d-flex justify-content-center"><p><?=_("Enter with your account")?></p></div>
+                        <div class="col-12 d-flex justify-content-center">
+                            <form action="../resources/account_creator.php" method="POST">
+                                <?=_('User')?>: <input type="text" name="usuario" value="" required><br><br>
+                                <?=_('password')?>: <input type="password" name="pass" value="" required><br><br>
+                                <button type="submit" name="enter" class="btn btn-outline-dark"><?=_("Log in")?></button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-3">
-                    <p><?=_("If you don't have any account")?></p>
-                    <a class="btn btn-outline-dark" href="new_account.php"><?=_("log up")?></a>
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center"><p><?=_("If you don't have any account")?></p></div>
+                        <div class="col-12"><center><a class="btn btn-outline-dark" href="new_account.php"><?=_("log up")?></a></center></div>
+                    </div>
                 </div>
             </div>
         </div>
